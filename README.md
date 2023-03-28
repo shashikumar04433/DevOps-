@@ -60,15 +60,15 @@
      
  ## Docker Commands Example:
       ## Command to check the version:
-                  <u>Docker --version<u>
+                  Docker --version
       ## Command to check the Docker Images:
-                  <u>Sudo Docker Images<u>
+                  Sudo Docker Images
       ## Command to run the docker:
-                  <u>Sudo docker run -it -d Ubuntu(where d is demon and it is itteractive)<u>
+                  Sudo docker run -it -d Ubuntu(where d is demon and it is itteractive)
       ## Command to display docker which started:
-                  <u>Sudo docker ps<u>
+                  Sudo docker ps
       ## Command to display docker stopped one:
-                  <u>Sudo docker ps -a<u>
+                  Sudo docker ps -a
      
                 
 
