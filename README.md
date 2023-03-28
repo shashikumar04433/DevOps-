@@ -103,7 +103,10 @@
             7. Sudo service apache2 status.
             8. Sudo docker commit <container id of img> username/<anyname as u wish>.
             9. Sudo docker images.
-            10.Sudo docker run -it -p 82:80 -d username/apache2.
+            10.Sudo docker run -it -p 82:80 -d username/<same name as u have given on 8 cmd>.
+            11.Sudo docker ps
+            12.Sudo docker exec -it <id of the name which created>bash.
+            13.Service apache2 start.
        
       
                  
