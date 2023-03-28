@@ -1,4 +1,11 @@
-# Docker Commands
+# Docker 
+
+
+## Docker Installation in Ubuntu:
+      Sudo apt-get update
+      Sudo apt-get install docker.io
+
+## Docker Commands:
 
       attach      Attach local standard input, output, and error streams to a running container.
       
@@ -50,5 +57,9 @@
      update      Update configuration of one or more containers
      
      wait        Block until one or more containers stop, then print their exit codes
+     
+ ## Docker Commands Example:
+ 
+      1.
 
   
