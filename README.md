@@ -89,6 +89,8 @@
             Sudo docker images
  ### Command to delete the image in docker:
             Sudo docker rmi<img id>
+ ### Command to delete all containers at once:
+            Sudo docker rm -f $(sudo docker ps -a -q)
             
          
        
