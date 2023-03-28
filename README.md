@@ -88,7 +88,7 @@
  ### Command to see the imaages in docker:
             Sudo docker images
  ### Command to delete the image in docker:
-            Sudo docker rmi<ing id>
+            Sudo docker rmi<img id>
             
          
        
