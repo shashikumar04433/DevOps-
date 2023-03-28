@@ -75,6 +75,23 @@
              
  ### Command to display docker stopped one:
              Sudo docker ps -a
+        
+ ### Command to Login/Accessing the Docker:
+            Sudo Docker exec -it -d <id docker>bash
+            
+ ### Command to Stop running Container:
+            Sudo docker stop <id of docker>
+ ### Command to kill the docker:
+            Sudo docker kill <id of docker>
+ ### Command to remove stopped container:
+            Sudo docker rm <id of docker>
+ ### Command to see the imaages in docker:
+            Sudo docker images
+ ### Command to delete the image in docker:
+            Sudo docker rmi<ing id>
+            
+         
+       
       
                  
      
