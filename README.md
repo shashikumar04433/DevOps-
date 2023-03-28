@@ -95,7 +95,7 @@
 ## Steps To Install Apache in Docker:
 
             1. Sudo docker run -it -d ubuntu.
-            2. Sudo docker run -it -d <name of ubantu id after first cmd execution >bash.
+            2. Sudo docker exec -it  <name of ubantu id after first cmd execution >bash.
             3. Sudo apt-get update.
             4. Sudo apt-get install apache2.
             5. Sudo service apache2 status.
