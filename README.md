@@ -59,25 +59,24 @@
      wait        Block until one or more containers stop, then print their exit codes
      
  ## Docker Commands Example:
+ 
       ### Command to check the version:
-      
-                  Docker --version
+             Docker --version
                   
       ### Command to check the Docker Images:
-      
-                  Sudo Docker Images
+             Sudo Docker Images
                   
       ### Command to run the docker:
-      
-                  Sudo docker run -it -d Ubuntu(where d is demon and it is itteractive)
-                  
+            Sudo docker run -it -d Ubuntu(where d is demon and it is itteractive)
+            
       ### Command to display docker which started:
+            Sudo docker ps
       
-                  Sudo docker ps
-                  
+             
       ### Command to display docker stopped one:
+             Sudo docker ps -a
       
-                  Sudo docker ps -a
+                 
      
                 
 
