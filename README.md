@@ -92,7 +92,10 @@
  ### Command to delete all containers at once:
             Sudo docker rm -f $(sudo docker ps -a -q)
             
-         
+## Steps To Install Apache in Docker:
+
+            1. Sudo docker run -it -d ubuntu
+            2. Sudo 
        
       
                  
