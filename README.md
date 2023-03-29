@@ -106,7 +106,7 @@
             10.Sudo docker run -it -p 82:80 -d username/<same name as u have given on 8 cmd>.
             11.Sudo docker ps
             12.Sudo docker exec -it <id of the name which created>bash.
-            13.Service apache2 start.
+            13.Service apache2 start..
        
       
                  
