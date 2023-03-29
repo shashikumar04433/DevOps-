@@ -130,9 +130,24 @@
             9.sudo docker exec -it <id>bash.
             10.cd var/www/html.
             11.Echo $name.
-            
-        
-       
+  
+## Maven Installation:
+      First Install java:
+            Sudo yum install java-1.8.0-openjdk-devel
+            Sudo yum installed |grep "java"
+            cd /opt
+     Maven Installation:
+            Sudo Yum install wget
+            Sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.1/binaries/apache-maven-3.9.1-bin.tar.gz
+            ls
+            cd /opt
+            sudo tar zxf apache-maven-3.9.1-bin.tar.gz tar.gz
+            ls
+            cd apache-maven-3.9.1/bin
+            export path=$path:/opt/apache-maven-3.9.1 bin
+            ls
+            mvn --version
+
       
                  
      
