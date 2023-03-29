@@ -106,7 +106,32 @@
             10.Sudo docker run -it -p 82:80 -d username/<same name as u have given on 8 cmd>.
             11.Sudo docker ps
             12.Sudo docker exec -it <id of the name which created>bash.
-            13.Service apache2 start..
+            13.Service apache2 start.
+            
+## To show the Html page on Web using Docker.
+            Steps:
+            1. Mkdir <Dir name>.
+            2. CD <that Dir>
+            3. Vi Dockerfile (Wirte this below cmds in that).
+                  FromFROM ubuntu
+                  RUN apt-get update
+                  RUN apt-get -y install apache
+                  ADD . /var/www/html
+                  ENTRYPOINT apachectl -D FOREGROUND
+                  ENV NameisShashi Protivit
+            
+            4. Vi 1.html
+                  write helloworld program.
+            5.Build the docker file use following cmd:
+                  Sudo docker build . -t new_dockerfile.
+            6.Docker ps.
+            7.Sudo docker run -it -p 70:80 -d new_dockerfile.
+            8.Then check server ip :port/1.html.
+            9.sudo docker exec -it <id>bash.
+            10.cd var/www/html.
+            11.Echo $name.
+            
+        
        
       
                  
