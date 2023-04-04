@@ -149,8 +149,22 @@
             mvn --version
 
       
-                 
-     
+## Puppet Installation & Setting Up Puppet Master-Slave on AWS:
+      Setup on Master Server:
+            sudo apt-get update
+            sudo apt-get install wget
+            sudo wget https://apt.puppetlabs.com/puppet-release-bionic.deb
+            sudo dpkg -i puppet-release-bionic.deb
+            sudo apt-get install puppet-master
+            sudo apt policy puppet-master
+            sudo systemctl status puppet-master.service
+            sudo vim /etc/default/puppet-master
+            JAVA-ARGS="-Xms512m-Xmx512m"
+            sudo systemctl restart puppet-master.service
+            sudo cfw allow 8140/tcp
+     Setup on Slave Server:
+            
+            
                 
 
   
