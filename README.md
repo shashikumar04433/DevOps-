@@ -163,6 +163,9 @@
             sudo systemctl restart puppet-master.service
             sudo cfw allow 8140/tcp
      Setup on Slave Server:
+            All this mentioned in the above file which is in the Puppet Installation.
+            
+     
             
             
                 
