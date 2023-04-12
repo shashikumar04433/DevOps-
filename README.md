@@ -167,8 +167,8 @@
         
 ## Jenkins Installation Steps:
             step1: Install Java, Git, Maven, Jenkins. 
-            step2: IP:8080 in the browser.
-            step3: Then follow CAT the given path.
+            step2: https://pkg.jenkins.io/debian-stable/ follow that commands.
+            step3: IP:8080 in the browser & Then follow CAT the given path.
             step: Paste the Key in Password.
             
      
