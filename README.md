@@ -164,6 +164,12 @@
             sudo cfw allow 8140/tcp
      Setup on Slave Server:
             All this mentioned in the above file which is in the Puppet Installation.
+        
+## Jenkins Installation Steps:
+            step1: Install Java, Git, Maven, Jenkins. 
+            step2: IP:8080 in the browser.
+            step3: Then follow CAT the given path.
+            step: Paste the Key in Password.
             
      
             
