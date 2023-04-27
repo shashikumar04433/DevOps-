@@ -181,5 +181,35 @@
             6) 16.16.124.242  in chrome.
             
  
-
+## Jenkins Pipeline Synatx:
+            Jenkinsfile (Declarative Pipeline)
+             pipeline {
+                  agent any (1)
+                   stages {
+                        stage('Build') { (2)
+                          steps {(3)
+                                 // 
+                         }
+                      }
+                        stage('Test') { (4)
+                          steps {(5)
+                                  // 
+                              }
+                           }
+                     stage('Deploy') { (6)
+                          steps {
+                                     // (7)
+                           }
+                         }
+                   }
+                 }
+                 Below steps are the explanation of the above numbers:
+                 
+                   1) Execute this Pipeline or any of its stages, on any available agent.
+                   2) Defines the "Build" stage.
+                   3) Perform some steps related to the "Build" stage.
+                   4) Defines the "Test" stage.
+                   5) Perform some steps related to the "Test" stage.
+                   6) Defines the "Deploy" stage.
+                   7) Perform some steps related to the "Deploy" stage.
   
