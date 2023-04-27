@@ -172,8 +172,14 @@
             step: Paste the Key in Password.
             
      
+## To work on Websites to show in Server:
+            1) create a New Item choose freestyle project.
+            2) Attach the Github link to work on it in that.
+            3) then come to the server & cd/var/lib/jenkins/workspace.
+            4) cd var/www/html.
+            5) mv the github file to index.html.
+            6) 16.16.124.242  in chrome.
             
-            
-                
+ 
 
   
