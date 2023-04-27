@@ -212,4 +212,29 @@
                    5) Perform some steps related to the "Test" stage.
                    6) Defines the "Deploy" stage.
                    7) Perform some steps related to the "Deploy" stage.
-  
+                   
+                   
+ ## Jenkins Pipeline Example:
+                        
+                            pipeline{
+                               agent any
+                                     stages{
+                                          stage("clone repo and clean"){
+                                                 steps{
+                                                       sh "git clone https://github.com/shashikumar04433/my-app.git"
+                                                       sh "mvn clean -f my-app"
+                                                      }
+                                                     }
+                                          stage("test"){
+                                                 steps{
+                                                        sh "mvn test -f my-app"
+                                                      }
+                                                   }
+                                          stage("Deploy"){
+                                                steps{
+                                                         sh "mvn package -f my-app"
+                                                      }
+                                                    }
+                  
+                                              }
+                                          }
