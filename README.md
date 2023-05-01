@@ -240,3 +240,13 @@
                                           }
 ## Jenkins Pipeline link for Reference:
                   https://www.jenkins.io/doc/book/pipeline/
+                  
+# KUBERNETES(K8s):
+            Container:
+                        -->App
+                            |
+                        -->Dependencies in Container
+                         Out side Container
+                         Container Engine 
+                         OS(Kernal)
+                         eg: Linux,Windows,Ubuntu.
