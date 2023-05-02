@@ -249,6 +249,7 @@
                   
                   
 # KUBERNETES(K8s):
+            Its similar to Docker and added few features.
             Maintaing all the containers called Kubernetes.
             (Maintaining Workloads & Services using Kubernetes)
             Container:
@@ -260,7 +261,13 @@
                          OS(Kernal)
                          eg: Linux,Windows,Ubuntu.
                          
-                         
+            Pods :Combo of Containers.
+            
+            Replication Controller : Used in different kind of Docker use cases.
+            
+            Storage Management : Storing and Delivering Containers.
+            
+                   
             Kube Ctl:
                         It will connect to Master to API Server.
             ETDC(DataBase):
