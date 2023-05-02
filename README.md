@@ -242,6 +242,8 @@
                   https://www.jenkins.io/doc/book/pipeline/
                   
 # KUBERNETES(K8s):
+            Maintaing all the containers called Kubernetes.
+            (Maintaining Workloads & Services using Kubernetes)
             Container:
                         -->App
                             |
@@ -250,3 +252,15 @@
                          Container Engine 
                          OS(Kernal)
                          eg: Linux,Windows,Ubuntu.
+                         
+                         
+            Kube Ctl:
+                        It will connect to Master to API Server.
+            ETDC(DataBase):
+                        It is used to store the  Key & Value Pair .
+            Schedules:
+                        It schedules when the Kubernetes and Containers down and make it to scale up.
+                  
+            
+                        
+            
