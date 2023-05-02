@@ -241,6 +241,13 @@
 ## Jenkins Pipeline link for Reference:
                   https://www.jenkins.io/doc/book/pipeline/
                   
+## Managing and Assing Roles in Jenkins:
+            step1:
+                  Go to Configure Global Security  and Enable Security and Role based Strategy.
+            step 2:
+                  Role and Add --> Employee(Then give the permissions what ever you want)
+                  
+                  
 # KUBERNETES(K8s):
             Maintaing all the containers called Kubernetes.
             (Maintaining Workloads & Services using Kubernetes)
