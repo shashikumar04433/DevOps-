@@ -249,10 +249,13 @@
                   
                   
 # KUBERNETES(K8s):
-            Its similar to Docker and added few features.
-            Maintaing all the containers called Kubernetes.
-            (Maintaining Workloads & Services using Kubernetes)
-            Container:
+      Containers are a good way to bundle and run your applications.
+            In a Production Environment ,you need to manage the containers that run the applications and ensure that there is no downtime ,
+            and thats where the kubernetes comes into picture.Its similar to Docker and added few features.
+          
+           Maintaing all the containers called Kubernetes.
+           (Maintaining Workloads & Services using Kubernetes)
+           Container:
                         -->App
                             |
                         -->Dependencies in Container
