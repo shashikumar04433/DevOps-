@@ -249,9 +249,11 @@
                   
                   
 # KUBERNETES(K8s):
-      Containers are a good way to bundle and run your applications.
+      * Containers are a good way to bundle and run your applications.
             In a Production Environment ,you need to manage the containers that run the applications and ensure that there is no downtime ,
             and thats where the kubernetes comes into picture.Its similar to Docker and added few features.
+            
+       * Kubernetes takes care of Scaling and Failover of your application and provides deployment patterns and more.
           
            Maintaing all the containers called Kubernetes.
            (Maintaining Workloads & Services using Kubernetes)
