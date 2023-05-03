@@ -132,11 +132,11 @@
             11.Echo $name.
   
 ## Maven Installation:
-      First Install java:
+     * First Install java:
             Sudo yum install java-1.8.0-openjdk-devel
             Sudo yum installed |grep "java"
             cd /opt
-     Maven Installation:
+     * Maven Installation:
             Sudo Yum install wget
             Sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.1/binaries/apache-maven-3.9.1-bin.tar.gz
             ls
@@ -150,7 +150,7 @@
 
       
 ## Puppet Installation & Setting Up Puppet Master-Slave on AWS:
-      Setup on Master Server:
+      * Setup on Master Server:
             sudo apt-get update
             sudo apt-get install wget
             sudo wget https://apt.puppetlabs.com/puppet-release-bionic.deb
@@ -162,7 +162,7 @@
             JAVA-ARGS="-Xms512m-Xmx512m"
             sudo systemctl restart puppet-master.service
             sudo cfw allow 8140/tcp
-     Setup on Slave Server:
+      * Setup on Slave Server:
             All this mentioned in the above file which is in the Puppet Installation.
         
 ## Jenkins Installation Steps:
@@ -266,18 +266,18 @@
                          OS(Kernal)
                          eg: Linux,Windows,Ubuntu.
                          
-            Pods :Combo of Containers.
+           *  Pods :Combo of Containers.
             
-            Replication Controller : Used in different kind of Docker use cases.
+           * Replication Controller : Used in different kind of Docker use cases.
             
-            Storage Management : Storing and Delivering Containers.
+           * Storage Management : Storing and Delivering Containers.
             
                    
-            Kube Ctl:
+           *  Kube Ctl:
                         It will connect to Master to API Server.
-            ETDC(DataBase):
+           * ETDC(DataBase):
                         It is used to store the  Key & Value Pair .
-            Schedules:
+           * Schedules:
                         It schedules when the Kubernetes and Containers down and make it to scale up.
                   
             
