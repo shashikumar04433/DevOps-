@@ -1,0 +1,30 @@
+
+================< Maven installation >================
+
+Launch a RedHat Instance
+
+put 'ec2-user' as the login.
+
+put 'sudo su' to get root access
+
+'yum install -y java-1.8.0-openjdk-devel'
+
+'which java' => /bin/java 
+
+'yum list installed | grep "java"'
+
+'java -version'
+
+'cd /opt/'
+
+'curl -O  http://mirrors.estointernet.in/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.tar.gz' 
+
+'tar zxf apache-maven-3.6.2-bin.tar.gz'
+
+'cd apache-maven-3.6.2'
+
+'cd bin/'
+
+'./mvn -version'
+
+'export PATH=$PATH:/opt/apache-maven-3.6.2/bin' 
