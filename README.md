@@ -278,7 +278,7 @@
            * ETDC(DataBase):
                         It is used to store the  Key & Value Pair .
            * Schedules:
-                        It schedules when the Kubernetes and Containers down and make it to scale up.
+                        It schedules when the Kubernetes and Containers down and make it to scale up
                   
             
                         
