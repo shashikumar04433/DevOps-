@@ -281,7 +281,17 @@
                         It schedules when the Kubernetes and Containers down and make it to scale up.
                         
 ## Kubernetes Feature:
-            * Installation of Kubernetes steps mentioned above in the word file please go though that.
+
+                  * Installation of Kubernetes steps mentioned above in the word file please go though that.
+### Features of Kubernetes:
+
+                  * Service Discovery and Load Balancing.
+                  * Storage Orchestration(multiple servers use)
+                  * Automated rollouts & rollbacks.
+                  * Automatic Bin Packing.
+                  * Self Healing.
+                  * Secret & Configuration Management.
+                  
                   
             
                         
