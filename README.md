@@ -290,7 +290,9 @@
                   * Automated rollouts & rollbacks.
                   * Automatic Bin Packing.
                   * Self Healing.
-                  * Secret & Configuration Management.
+                  * Secret & 
+                  Configuration Management.
+                  
                   
                   
             
