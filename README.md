@@ -295,7 +295,10 @@
 ### Kubernetes Architecture:
                   1. Etcd.
                   2. Api Server.
-                  3.
+                  3. Kube-Conroller-Manager.
+                  4. Scheduler.
+                  5. Cloud-Controller-Manager.
+                  
                   
                   
             
