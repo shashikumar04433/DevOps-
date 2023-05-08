@@ -292,6 +292,10 @@
                   * Self Healing.
                   * Secret & Configuration Management.
                   
+### Kubernetes Architecture:
+                  1. Etcd.
+                  2. Api Server.
+                  3.
                   
                   
             
