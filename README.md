@@ -248,8 +248,8 @@
                   Role and Add --> Employee(Then give the permissions what ever you want).
  # Apache-Tomcat:
             Tomcat types:
-                  1.  Manager Application
-                  2.
+                  1. Manager Application.
+                  2. Host Manager Application.
  
                   
                   
