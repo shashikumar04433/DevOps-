@@ -245,7 +245,9 @@
             step1:
                   Go to Configure Global Security  and Enable Security and Role based Strategy.
             step 2:
-                  Role and Add --> Employee(Then give the permissions what ever you want)
+                  Role and Add --> Employee(Then give the permissions what ever you want).
+ # Apache-Tomcat:
+ 
                   
                   
 # KUBERNETES(K8s):
@@ -298,6 +300,7 @@
                   3. Kube-Conroller-Manager.
                   4. Scheduler.
                   5. Cloud-Controller-Manager.
+   
                   
                   
                   
