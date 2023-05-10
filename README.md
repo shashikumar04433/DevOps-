@@ -246,13 +246,8 @@
                   Go to Configure Global Security  and Enable Security and Role based Strategy.
             step 2:
                   Role and Add --> Employee(Then give the permissions what ever you want).
- # Apache-Tomcat:
-            Tomcat types:
-                  1. Manager Application.
-                  2. Host Manager Application.
  
-                  
-                  
+                       
 # KUBERNETES(K8s):
       * Containers are a good way to bundle and run your applications.
             In a Production Environment ,you need to manage the containers that run the applications and ensure that there is no downtime ,
