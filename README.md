@@ -304,6 +304,8 @@
             Tomcat types:
                   1. Manager Application.
                   2. Host Manager Application.
+            Task:
+                  Create a two tomcats with different port one with the 8080 and 9090 then configure with the apache2.
                   
                   
                   
