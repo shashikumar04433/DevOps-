@@ -299,6 +299,11 @@
                   4. Scheduler.
                   5. Cloud-Controller-Manager.
    
+   
+  # Apache-Tomcat:
+            Tomcat types:
+                  1. Manager Application.
+                  2. Host Manager Application.
                   
                   
                   
