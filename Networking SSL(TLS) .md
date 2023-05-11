@@ -41,12 +41,23 @@
                    * They are two types of SSL encryption:
                           1. Asymmetric.
                           2. Symetric.
+                            
+          * Combination of Asymmetric & Symmetric :
+          
+                    * Step1:
+                              Client request to connect server and server sends asymmetric Public key to client.
+                    * Step 2:
+                              Symmetric Session key + As Public Key = Encrypted Session Key.
+                    * Step 3:
+                              Decrypt encrypted Session key using Private Key.
+                     * Step 4:
+                              Session Key established it will be valid for that session.
                           
-                          Diagram of Asystematic Encryption:
                           
                           
                           
-                          ![Asymmetric-Encryption](https://github.com/shashikumar04433/DevOps-/assets/55330284/faadcf55-657a-4e5b-8e08-b6daec0b5883)
+                          
+                       
                           
                           
                           
