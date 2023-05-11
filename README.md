@@ -1,7 +1,5 @@
 # Docker 
 
-(https://github.com/shashikumar04433/DevOps-/assets/55330284/4913bc1c-8413-4a6e-90b0-7b82e073a316)
-
 ## Docker Installation in Ubuntu:
       Sudo apt-get update
       Sudo apt-get install docker.io
