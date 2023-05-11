@@ -4,6 +4,7 @@
 
 **OSI Layers:**
       Short cut to remember:
+      
         All ---------------------- (7) Application.
         
         people ------------------- (6) Presentation.
