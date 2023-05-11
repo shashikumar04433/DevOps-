@@ -42,8 +42,12 @@
                           1. Asymmetric.
                           2. Symetric.
                           
+                          Diagram of Asystematic Encryption:
                           
-                         
+                          ![Asymmetric-Encryption]                                                                                                                  (https://github.com/shashikumar04433/DevOps-/assets/55330284/4913bc1c-8413-4a6e-90b0-7b82e073a316)
+
+
+
                       
                    
                                                 
