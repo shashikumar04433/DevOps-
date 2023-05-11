@@ -44,6 +44,12 @@
                           
                           Diagram of Asystematic Encryption:
                           
+                          
+                          
+                          ![Asymmetric-Encryption](https://github.com/shashikumar04433/DevOps-/assets/55330284/faadcf55-657a-4e5b-8e08-b6daec0b5883)
+                          
+                          
+                          
                                                                                                                           
 
 
