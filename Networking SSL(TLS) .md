@@ -20,7 +20,7 @@
         pizza -------------------- (1) Physical .
         
         
-        **Difference between Http & Http(s):**
+       <b> **Difference between Http & Http(s):** <b>
         
                   Http----Hyper text transfer protocol.
                   Http(s)----Hyper text transfer protocol secure.
