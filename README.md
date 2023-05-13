@@ -337,7 +337,7 @@
 
              change the name in Ui tomcat1 ----
 		 |
-		 |------Webapps
+		 Webapps
 			-root
 			index.js  
                   
