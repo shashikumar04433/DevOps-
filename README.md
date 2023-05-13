@@ -332,14 +332,11 @@
              ProxyPassReverse / balancer://mycluster/
             </VirtualHost>
 
-            service httpd restart
-
-
-             change the name in Ui tomcat1 ----
-		 |
-		 Webapps
-			-root
-			index.js  
+            * service httpd restart
+            * change the name in Ui tomcat1:
+		 Webapps>root>index.js 
+			
+			 
                   
             
                         
