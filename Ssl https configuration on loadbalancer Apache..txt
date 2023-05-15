@@ -1,0 +1,16 @@
+
+SSL Configuration on Apache using load balancer:
+
+ Put the below code in Ssl-config file below </Directory>
+
+<Proxy balancer://mycluster>
+    BalancerMember http://43.207.223.192:8080/
+    BalancerMember http://43.207.223.192:8081/
+</Proxy>
+
+    ProxyPreserveHost On
+
+    ProxyPass / balancer://mycluster/
+    ProxyPassReverse / balancer://mycluster/
+
+Then restart the apache and run in ui.
