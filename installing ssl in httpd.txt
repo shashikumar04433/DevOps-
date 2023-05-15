@@ -1,0 +1,29 @@
+pre install httpd and mod_ssl
+
+yum install httpd mod_ssl -y
+
+go to the cd /etc/httpd and create directory name certs and execute below commands
+
+Go to the certs directory
+
+openssl genrsa -out server.key 2048
+
+openssl req -new -key server.key -out server.csr ||||||---> openssl req -in server.csr -text --- this command to see the file in human readle format
+
+Above command will ask information about our ssl certificate
+
+openssl x509 -req -in server.csr -signkey server.key -days 365 -out server.crt  |||||--->  openssl x509 -in server.crt -text --- this command to see the file in human readle format
+
+now go back to httpd and go to conf.d and edit ssl.conf 
+
+Go to the <VirtualHost _default_:443> this line and change like this <VirtualHost *:443> 
+
+And check below lines has to be same on this file 
+
+SSLEngine on
+SSLcertificatefile "/etc/httpd/certs/server.crt"
+SSLcertificatekeyfile "/etc/httpd/certs/server.key"
+
+save and exit
+
+and restart httpd
