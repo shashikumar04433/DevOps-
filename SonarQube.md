@@ -13,3 +13,12 @@
       * Code Coverage.
       * Unit Test Cases.
       
+## Installation on SonarQube Steps:
+      
+      Pre-Requirements of Installation:
+      It must have 4 CPUs or 4 GB of RAM to work on SonarQube.
+      
+      step1:
+            Install java
+            
+      
