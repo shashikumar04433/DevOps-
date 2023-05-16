@@ -34,10 +34,16 @@
              
  ## Setup Requirements to Work on SonarQube:
             1. Add user to perform in Sonar cube (Dont run as Root for the best practises).
-                  useradd shashi
+                  useradd sonar
             2. passwd shashi
                   set password
-            3.Set the permissions using Chown:
-                  chown -R shashi:shashi sonar/  (it creates all same permission through out the sonarqube directory)
-            4
-      
+            3. Set the permissions using Chown:
+                  chown -R sonar:sonar sonar/  (it creates all same permission through out the sonarqube directory)
+            4. Then go to bin folder:
+                cd bin
+                vim linux (linux folder as we are working in linux).
+                Uncomment Run_as_user=sonar
+             5. Then start the sonar.
+                  sh sonar.sh start
+             6.To check the status of the sonar:
+                  sh sonar.sh status 
