@@ -20,7 +20,7 @@
       
       step1:
             Install java
-            sudo java-11-openjdk-devel -y
+            sudo java-11-openjdk-devel wget unzip -y
        step2:
             Go to SonarQube Downloads:
                   wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.1.0.47736.zip
