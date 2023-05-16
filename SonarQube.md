@@ -30,4 +30,14 @@
               Yum install unzip
         step4:
               sudo unzip https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.1.69595.zip?_gl=1*1kog3oh*_ga*MTg2ODY3OTQ3Mi4xNjg0MjEyNjA1*_ga_9JZ0GZ5TC6*MTY4NDIxMjYwNC4xLjEuMTY4NDIxNTg2Ni41NC4wLjA. 
+             
+             
+ ## Setup Requirements to Work on SonarQube:
+            1. Add user to perform in Sonar cube (Dont run as Root for the best practises).
+                  useradd shashi
+            2. passwd shashi
+                  set password
+            3.Set the permissions using Chown:
+                  chown -R shashi:shashi sonar/  (it creates all same permission through out the sonarqube directory)
+            4
       
