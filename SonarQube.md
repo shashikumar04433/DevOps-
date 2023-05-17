@@ -43,6 +43,7 @@
             4. Then go to bin folder:
                 cd bin
                  cd linux.
+                 (before starting the sonar shift to the user and start otherwise we will face the errors)
              5. Then start the sonar.
                   sh sonar.sh start
              6.To check the status of the sonar:
