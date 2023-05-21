@@ -7,7 +7,7 @@
 
         * Application----> Data ---->Logstash--->Elastic Search--->Kibana
 
-## Installation Process of Elastic Search Engine:
+## Installation Process of Elastic Search Engine on Ubuntu:
 
         Download and install ElasticSearch :
         
@@ -51,6 +51,66 @@
                 (or)
                 ip:9200 (in web)
                 
+                
+   
+## Installation of Kibana on Ubuntu:
         
+        Step1:
+                        apt-get install kibana
+                        vim /etc/kibana/kibana.yml
+        Step2:
+                        Edit:
+                        server.port: 5601
+                        server.host: "private ip"
+                        elasticsearch.hosts: ["http://privateip:9200"]
+                
+         Step3:
+                        systemctl start kibana
+                        systemctl enable kibana
+                
+          Step4:
+                        allow traffic on port 5601 to access the Kibana dashboard.
+                        ufw allow 5601/tcp
+                
+## Installation of Logstash on Ubuntu:
+
+           Step1:
+                        apt-get install logstash
+                        systemctl start logstash
+                        systemctl enable logstash
+                        systemctl status logstash
+
+            Step2:
+                        Logstash is a highly customizable part of the ELK stack. Once installed, configure its INPUT, FILTERS, and OUTPUT                               pipelines according to your own individual use case.
+
+                        * All logstash files will be sored in  /etc/logstash/conf.d/.
+                        * Logstash Process :
+                                input-->filter-->output
+
+                         apt-get install filebeat
+             Step3:
+                         vim /etc/filebeat/filebeat.yml
+                         Edit:
+                                output.logstash
+                                hosts: ["privateip:5044"]
+              Step4:
+                         filebeat modules enable system
+                         filebeat setup --index-management -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=                                            ["172.31.34.157:9200"]'
+                         systemctl start filebeat
+                         systemctl enable filebeat
+               Step5:
+                      To display on screen:
+                        curl -XGET http://172.31.34.157:9200/_cat/indices?v
+                        (or)
+                        http://172.31.34.157:9200
+                         
+                         
+                         
+                  
+                 
+
+
+
+
        
              
