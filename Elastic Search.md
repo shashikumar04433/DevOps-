@@ -33,15 +33,16 @@
               vi ./etc/elasticsearch/elasticsearch.yml 
       Step8:
               Edit : Uncmment and put ur private id :
-                network.host: 172.31.46.149
+                network.host: 172.31.46.149 
                 http.port: 9200
-                discovery.seed_hosts: 172.31.46.149
+                discovery.seed_hosts: 172.31.46.149 (its ur private ip)
        Step9:
                 service elasticsearch restart
                 service elasticsearch status
                 
        Step10: 
                 ip:9200
+                
         
        
              
