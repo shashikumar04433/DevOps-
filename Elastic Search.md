@@ -8,21 +8,8 @@
         * Application----> Data ---->Logstash--->Elastic Search--->Kibana
 
 ## Installation Process of Elastic Search Engine:
-sudo su
-    
-   
-    apt-get install apt-transport-https~
-    apt-get install apt-transport-https
-    echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee –a /etc/apt/sources.list.d/elastic-7.x.list
-    apt-get update
-    apt-get install elasticsearch
-    vim /etc/elasticsearch/elasticsearch.yml
-    vim /etc/elasticsearch/jvm.options
-    systemctl start elasticsearch.service
-    systemctl enable elasticsearch.service
-    curl -X GET "172.31.34.157:9200"
 
-        Download and install the RPM manually using below link:
+        Download and install ElasticSearch :
         
       Step1: 
             sudo su
@@ -35,27 +22,34 @@ sudo su
              apt-get install apt-transport-https
       
       Step4:  
-             systemctl demon-reload
-      
+             echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee –a /etc/apt/sources.list.d/elastic-7.x.list
+              apt-get update
       Step5: 
-             systemctl enable elasticsearch.service
+            apt-get install elasticsearch
       
       Step6: 
-             systemctl Start elasticsearch.service
+             apt-get install vim
+             vim /etc/elasticsearch/elasticsearch.yml
+              Edit : Uncmment and put ur private id :
+                network.host: private ip (its ur private ip)
+                http.port: 9200
+                discovery.seed_hosts: private ip (its ur private ip)
+             
       
       Step7: Go to 
-              vi ./etc/elasticsearch/elasticsearch.yml 
+              vim /etc/elasticsearch/jvm.options   (This is to give the size of jvm)
+              edit:
+              -Xms512m 
+              -Xmx512m
+              
       Step8:
-              Edit : Uncmment and put ur private id :
-                network.host: 172.31.46.149 (its ur private ip)
-                http.port: 9200
-                discovery.seed_hosts: 172.31.46.149 (its ur private ip)
-       Step9:
-                service elasticsearch restart
-                service elasticsearch status
-                
-       Step10: 
-                ip:9200
+                systemctl start elasticsearch.service
+                systemctl enable elasticsearch.service
+         
+       Step9: 
+                curl -X GET "172.31.34.157:9200" 
+                (or)
+                ip:9200 (in web)
                 
         
        
