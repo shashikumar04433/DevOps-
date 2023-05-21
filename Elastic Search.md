@@ -33,7 +33,7 @@
               vi ./etc/elasticsearch/elasticsearch.yml 
       Step8:
               Edit : Uncmment and put ur private id :
-                network.host: 172.31.46.149 
+                network.host: 172.31.46.149 (its ur private ip)
                 http.port: 9200
                 discovery.seed_hosts: 172.31.46.149 (its ur private ip)
        Step9:
