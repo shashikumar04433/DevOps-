@@ -100,9 +100,10 @@
                          systemctl enable filebeat
                Step5:
                       To display on screen:
+                      Finally, verify if Filebeat is shipping log files to Logstash for processing. Once processed, data is sent to                                    Elasticsearch.
+                      
                         curl -XGET http://172.31.34.157:9200/_cat/indices?v
-                        (or)
-                        http://172.31.34.157:9200
+                        
                          
                          
                          
