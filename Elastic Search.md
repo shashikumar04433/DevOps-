@@ -8,17 +8,31 @@
         * Application----> Data ---->Logstash--->Elastic Search--->Kibana
 
 ## Installation Process of Elastic Search Engine:
+sudo su
+    
+   
+    apt-get install apt-transport-https~
+    apt-get install apt-transport-https
+    echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee –a /etc/apt/sources.list.d/elastic-7.x.list
+    apt-get update
+    apt-get install elasticsearch
+    vim /etc/elasticsearch/elasticsearch.yml
+    vim /etc/elasticsearch/jvm.options
+    systemctl start elasticsearch.service
+    systemctl enable elasticsearch.service
+    curl -X GET "172.31.34.157:9200"
 
         Download and install the RPM manually using below link:
         
       Step1: 
-             wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.10-x86_64.rpm
+            sudo su
+            apt-get install openjdk-8-jdk
       
       Step2: 
-             wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.10-x86_64.rpm.sha512 shasum -a 512 -c                          elasticsearch-7.17.10-x86_64.rpm.sha512
+              wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
       
       Step3: 
-             sudo rpm --install elasticsearch-7.17.10-x86_64.rpm
+             apt-get install apt-transport-https
       
       Step4:  
              systemctl demon-reload
