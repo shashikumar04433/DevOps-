@@ -95,6 +95,7 @@
                                 hosts: ["privateip:5044"]
               Step4:
                         * What is Filebeat?
+                        Filebeat is a lightweight shipper for forwarding and centralizing log data.
                         
                          filebeat modules enable system
                          filebeat setup --index-management -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=                                            ["172.31.34.157:9200"]'
