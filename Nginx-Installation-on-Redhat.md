@@ -11,7 +11,27 @@
              
           * Working of Nginx:
                      Nginx works as Gateway 
-                     Example:
-                               It works as loadbalancer.
+                     Example: It works as loadbalancer.
+
            * UseCase:
+                     Only Software tested that was capable of repliably handling over 10,100 requests per second.
+                    
+## Installation of Nginx on Redhat:
                      
+                     * Yum install Nginx
+
+## Connecting the nginx to apache tomcat:
+                
+                cd /etc/nignx
+                vim nginx.conf
+              
+                then comment 404 all that files
+                        server {
+                    listen 80;
+                    server_name 18.216.96.3;(tomcat public id)
+                    location / {
+                        proxy_pass http://18.216.96.3:8080/;((tomcat public link)
+                         }
+                         }
+                 then save & systemctl start nginx
+        
