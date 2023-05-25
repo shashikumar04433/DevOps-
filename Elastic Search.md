@@ -51,8 +51,31 @@
                 (or)
                 ip:9200 (in web)
                 
-                
-   
+   ### To run the elastic server automatic when ever server starts :
+                go to 
+                cd /systemd/system
+                touch elastic.service
+                vim elastic.service
+                paste below code:
+                [Unit]
+                Description=Elasticsearch
+                Documentation=https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
+                Wants=network-online.target
+                After=network-online.target
+
+                [Service]
+                Type=simple
+                User=elasticsearch
+                Group=elasticsearch
+                ExecStart=/usr/share/elasticsearch/bin/elasticsearch
+                Restart=always
+                RestartSec=10
+                StartLimitInterval=0
+                LimitMEMLOCK=infinity
+
+                [Install]
+                WantedBy=multi-user.target
+                  
 ## Installation of Kibana on Ubuntu:
         
         Step1:
