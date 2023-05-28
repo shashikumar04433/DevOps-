@@ -60,52 +60,52 @@
  ## Docker Commands Example:
  
  ### Command to check the version:
-             Docker --version
+             docker --version
                   
  ### Command to check the Docker Images:
-             Sudo Docker Images
+             sudo Docker Images
                   
  ### Command to run the docker:
-            Sudo docker run -it -d Ubuntu(where d is demon and it is itteractive)
+            sudo docker run -it -d Ubuntu(where d is demon and it is itteractive)
             
  ### Command to display docker which started:
-            Sudo docker ps
+            sudo docker ps
       
              
  ### Command to display docker stopped one:
-             Sudo docker ps -a
+             sudo docker ps -a
         
  ### Command to Login/Accessing the Docker:
-            Sudo Docker exec -it -d <id docker>bash
+            sudo Docker exec -it -d <id docker>bash
             
  ### Command to Stop running Container:
-            Sudo docker stop <id of docker>
+            sudo docker stop <id of docker>
  ### Command to kill the docker:
-            Sudo docker kill <id of docker>
+            sudo docker kill <id of docker>
  ### Command to remove stopped container:
-            Sudo docker rm <id of docker>
+            sudo docker rm <id of docker>
  ### Command to see the imaages in docker:
-            Sudo docker images
+            sudo docker images
  ### Command to delete the image in docker:
-            Sudo docker rmi<img id>
+            sudo docker rmi<img id>
  ### Command to delete all containers at once:
-            Sudo docker rm -f $(sudo docker ps -a -q)
+            c docker rm -f $(sudo docker ps -a -q)
             
 ## Steps To Install Apache in Docker:
 
-            1. Sudo docker run -it -d ubuntu.
-            2. Sudo docker exec -it  <name of ubantu id after first cmd execution >bash.
-            3. Sudo apt-get update.
-            4. Sudo apt-get install apache2.
-            5. Sudo service apache2 status.
-            6. Sudo service apache2 start.
-            7. Sudo service apache2 status.
-            8. Sudo docker commit <container id of img> username/<anyname as u wish>.
-            9. Sudo docker images.
-            10.Sudo docker run -it -p 82:80 -d username/<same name as u have given on 8 cmd>.
-            11.Sudo docker ps
-            12.Sudo docker exec -it <id of the name which created>bash.
-            13.Service apache2 start.
+            1. sudo docker run -it -d ubuntu.
+            2. sudo docker exec -it  <name of ubantu id after first cmd execution >bash.
+            3. sudo apt-get update.
+            4. sudo apt-get install apache2.
+            5. sudo service apache2 status.
+            6. sudo service apache2 start.
+            7. sudo service apache2 status.
+            8. sudo docker commit <container id of img> username/<anyname as u wish>.
+            9. sudo docker images.
+            10.sudo docker run -it -p 82:80 -d username/<same name as u have given on 8 cmd>.
+            11.sudo docker ps
+            12.sudo docker exec -it <id of the name which created>bash.
+            13.service apache2 start.
             
 ## To show the Html page on Web using Docker.
             Steps:
