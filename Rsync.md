@@ -23,5 +23,16 @@
                      paste the copied code from s1 server.
              Step4:
                    Now come back to S1 server:
+                   * visudo
+                   if u have created user then give the nopasswd=all
+                   like below:
+                   * shashi  ALL=(ALL)  NOPASSWD:ALL
+                    
+                    Now goto :
+                    cd /etc/ssh/
+                    vi sshd_config
+                    at the last line make  permission-yes
                    
+                   
+
                 
