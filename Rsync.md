@@ -29,9 +29,20 @@
                    * shashi  ALL=(ALL)  NOPASSWD:ALL
                     
                     Now goto :
-                    cd /etc/ssh/
-                    vi sshd_config
+                             cd /etc/ssh/
+                             vi sshd_config
                     at the last line make  permission-yes
+                    In S1:
+                           mkdir folders
+                    In S2: 
+                           mkdir folders
+                    In S1:
+                           rsync -av -e ssh /root/folders/* root@172.31.6.43:/home/ec2-user/shashifold
+                           
+                    * if suppose u forform with user ex shashi:
+                           rsync -av -e ssh /shashi/folders/* root@172.31.6.43:/home/ec2-user/shashifold
+                           
+                    
                    
                    
 
