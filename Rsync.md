@@ -41,7 +41,7 @@
                            
                     * if suppose u forform with user example shashi:
                            generate ssh-keygen in user then paste id_rsa.pub in S2 then run below command:
-                           rsync -av -e ssh /home/shashi/folders/* root@172.31.6.43:/home/ec2-user/shashifold
+                            rsync -av -e ssh /home/shashi/manishproject/* root@172.31.6.43:/home/ec2-user/shashifold/
                            
                     
                    
