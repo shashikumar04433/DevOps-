@@ -39,7 +39,7 @@
                     In S1:
                            rsync -av -e ssh /root/folders/* root@172.31.6.43:/home/ec2-user/shashifold
                            
-                    * if suppose u forform with user ex shashi:
+                    * if suppose u forform with user example shashi:
                            rsync -av -e ssh /shashi/folders/* root@172.31.6.43:/home/ec2-user/shashifold
                            
                     
