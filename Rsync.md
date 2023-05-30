@@ -58,8 +58,40 @@
                            Then check logs in :
                                     * tail -f /var/log/corn
                     
-                     If suppose you have created user name mani in S2 server all the source files 
-                     should visible in shashi user in destination folder :                          
+                              If suppose you have created user name mani in S1 server all the source files 
+                              should visible  in destination folder :    
+                     
+                     for that:
+                              useradd mani
+                              passwd mani (set passwd)
+                              chown -R mani:mani /root/
+                              sudo su - mani
+                              ssh-keygen
+                              cat id_rsa.pub (copy content)
+                     then paste that in s2:
+                              authorized keys
+                      then follow this:
+                                   * example: backing.sh
+                                   *  vi backing.sh
+                                   *  !#/bin/bash
+                                   * /usr/bin/rsync -av -e ssh /root/source/* root@172.31.3.142:/root/destination
+                          
+                     Then create crontab -e write inside that:
+                     
+                                    contab -e
+                                    * * * * * bash /root/backing.sh  (syntax)
+                                     min hour day week month bash /root/backing.sh
+                           Example:
+                                    33 05 * * * bash /root/backing.sh
+                           
+                           Then check logs in :
+                                    * tail -f /var/log/corn
+                              
+                            
+
+                     
+                     
+                      
 
                    
                    
