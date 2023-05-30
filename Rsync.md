@@ -64,8 +64,7 @@
                      for that:
                               useradd mani
                               passwd mani (set passwd)
-                              chown -R mani:mani /root/
-                              sudo su - mani
+                              cd mani
                               ssh-keygen
                               cat id_rsa.pub (copy content)
                      then paste that in s2:
@@ -74,10 +73,10 @@
                                    * example: backing.sh
                                    *  vi backing.sh
                                    *  !#/bin/bash
-                                   * /usr/bin/rsync -av -e ssh /root/source/* root@172.31.3.142:/root/destination
+                                   * /usr/bin/rsync -av -e ssh /home/shashi/source/* root@172.31.3.142:/root/destination
                           
                      Then create crontab -e write inside that:
-                     
+                                    run as being root not user:
                                     contab -e
                                     * * * * * bash /root/backing.sh  (syntax)
                                      min hour day week month bash /root/backing.sh
