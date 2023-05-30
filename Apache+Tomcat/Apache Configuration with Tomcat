@@ -1,0 +1,73 @@
+Installation and Apache Configuration with Tomcat:
+step 1:
+
+yum install wget,httpd,java-11-openjdk-devel -y
+service httpd start
+service httpd status
+
+step2:
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.75/bin/apache-tomcat-9.0.75.tar.gz
+tar -xvf apache-tomcat-9.0.75.tar.gz
+cp -pr apache-tomcat-9.0.75 tomcat1
+cp -pr apache-tomcat-9.0.75 tomcat2
+https://crunchify.com/how-to-run-multiple-tomcat-instances-on-one-server/
+
+step3:
+sudo vi /etc/httpd/conf.d/proxy.conf
+<VirtualHost *:80>
+<Proxy balancer://mycluster>
+    BalancerMember http://13.233.80.182:9090/
+    BalancerMember http://13.233.80.182:8080/
+</Proxy>
+    ProxyPreserveHost On
+    ProxyPass / balancer://mycluster/
+    ProxyPassReverse / balancer://mycluster/
+</VirtualHost>
+
+service httpd restart
+
+
+ change the name in Ui tomcat1 ----
+		|
+		|------Webapps
+			-root
+			index.js
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
