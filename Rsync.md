@@ -42,8 +42,30 @@
                     * if suppose u forform with user example shashi:
                            generate ssh-keygen in user then paste id_rsa.pub in S2 then run below command:
                             rsync -av -e ssh /home/shashi/manishproject/* root@172.31.6.43:/home/ec2-user/shashifold/
+                     
+ ### For creating cronjobs(which is autosyncing of two servers)
+                  mkdir source in S1 server
+                  mkdir destination in S2 server
+                   create .sh file 
                            
+                          * example: backing.sh
+                          *  vi backing.sh
+                          *  !#/bin/bash
+                          * /usr/bin/rsync -av -e ssh /root/source/* root@172.31.3.142:/root/destination
+                          
+                     then create crontab -e write inside that:
+                     
+                                    contab -e
+                                    * * * * * bash /root/backing.sh  (syntax)
+                                     min hour day week month bash /root/backing.sh
+                           Example:
+                                    33 05 * * * bash /root/backing.sh
+                           
+                           then check logs in :
+                                    * tail -f /var/log/corn
                     
+                          
+
                    
                    
 
