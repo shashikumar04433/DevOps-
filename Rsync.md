@@ -58,7 +58,8 @@
                            Then check logs in :
                                     * tail -f /var/log/corn
                     
-                     If suppose you have created user name mani in S2 server all the source files should visible in shashi user in                                destination folder :
+                     If suppose you have created user name mani in S2 server all the source files 
+                     should visible in shashi user in destination folder :                          
 
                    
                    
