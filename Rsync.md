@@ -21,13 +21,7 @@
                      cd ~/.ssh
                      vi authorized_keys
                      paste the copied code from s1 server.
-             Step4:
-                   Now come back to S1 server:
-                   * visudo
-                   if u have created user then give the nopasswd=all
-                   like below:
-                   * shashi  ALL=(ALL)  NOPASSWD:ALL
-                    
+             Step4:                              
                     Now goto :
                              cd /etc/ssh/
                              vi sshd_config
@@ -64,7 +58,7 @@
                            Then check logs in :
                                     * tail -f /var/log/corn
                     
-                          
+                     If suppose you have created user name mani in S2 server all the source files should visible in shashi user in                                destination folder :
 
                    
                    
