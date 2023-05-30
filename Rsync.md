@@ -53,7 +53,7 @@
                           *  !#/bin/bash
                           * /usr/bin/rsync -av -e ssh /root/source/* root@172.31.3.142:/root/destination
                           
-                     then create crontab -e write inside that:
+                     Then create crontab -e write inside that:
                      
                                     contab -e
                                     * * * * * bash /root/backing.sh  (syntax)
@@ -61,7 +61,7 @@
                            Example:
                                     33 05 * * * bash /root/backing.sh
                            
-                           then check logs in :
+                           Then check logs in :
                                     * tail -f /var/log/corn
                     
                           
