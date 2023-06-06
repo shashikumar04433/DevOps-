@@ -7,6 +7,8 @@
                             sudo apt update
                             apt upgrade
                             sudo apt-get install -y curl openssh-server ca-certificates
+                            (if u get problem for above command then try below and then try)
+                            sudo dpkg --configure -a
                       Step 2:   
                             sudo apt-get install -y postfix
                             systemctl reload postfix
