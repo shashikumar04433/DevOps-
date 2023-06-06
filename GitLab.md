@@ -23,6 +23,32 @@
                             present username: username (eg: root)
                             then set passwd 
                 
-                T
+ ### Create the Gitlab Account on Redhat using below command:
+                     Step 1: 
+                            yum -y install postfix
+                            systemctl start postfix
+                            systemctl enable postfix
+                     Step 2:
+                            yum -y install curl openssh-server cronie
+                            curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh |bash
+                     Step 3:
+                            yum install gitlab-ce
+                            https://packages.gitlab.com/gitlab/gitlab-ce?filter=rpms
+                     
+                     Step 4:
+                            cd /etc/gitlab/
+                            vi gitlab.rb
+                            sudo gitlab-rake "gitlab:password:reset"
+                            root username
+                            setpasswd
+                            sudo gitlab-ctl reconfigure
+                            (bye)
+                         
+
+                            
+
+                            
+
+                     
        
               
