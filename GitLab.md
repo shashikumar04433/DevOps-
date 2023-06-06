@@ -15,7 +15,7 @@
                             systemctl status postfix
                       Step 3:
                             curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
-                            sudo EXTERNAL_URL="http://gitlabce.example.com" apt-get install gitlab-ce
+                            sudo EXTERNAL_URL="http://private ip" apt-get install gitlab-ce
                             (or)
                             sudo apt-get install gitlab-ce
                       Step 4:
