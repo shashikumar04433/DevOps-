@@ -24,6 +24,7 @@
                             then set passwd 
                 
  ### Create the Gitlab Account on Redhat using below command:
+                    https://medium.com/devops-world/installing-gitlab-on-centos7-8d4230cb145a (link for steps of installtion)
                      Step 1: 
                             yum -y install postfix
                             systemctl start postfix
@@ -38,6 +39,7 @@
                      Step 4:
                             cd /etc/gitlab/
                             vi gitlab.rb
+                            edit the <make it changes as ur ip (https://privateip) >
                             sudo gitlab-rake "gitlab:password:reset"
                             root username
                             setpasswd
