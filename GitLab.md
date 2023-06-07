@@ -34,7 +34,6 @@
                             curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh |bash
                      Step 3:
                             yum install gitlab-ce
-                            https://packages.gitlab.com/gitlab/gitlab-ce?filter=rpms
                      
                      Step 4:
                             cd /etc/gitlab/
