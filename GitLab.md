@@ -43,7 +43,7 @@
                             root username
                             setpasswd
                             sudo gitlab-ctl reconfigure
-                            (bye)
+                            (bye).
                          
 
                             
