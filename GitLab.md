@@ -47,9 +47,24 @@
                          
 ### Installing the Gitlab-Runner:
                   
-                    https://docs.gitlab.com/runner/install/linux-repository.html
-
+                           https://docs.gitlab.com/runner/install/linux-repository.html
+                    Step1:
+                           curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh" | sudo bash
+                   
+                    Step2:
+                            sudo yum install gitlab-runner
                             
+                     Step3:
+                            Goto this link:
+                            https://docs.gitlab.com/runner/register/index.html
+                            
+                     Step4:
+                            gitlab-runner register
+                            
+                            goto gitlab and generate the token while creating new project.
+                            take that token and paste in terminal.
+                            
+                     
 
                             
 
