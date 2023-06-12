@@ -46,6 +46,12 @@
                           *  vi backing.sh
                           *  !#/bin/bash
                           * /usr/bin/rsync -av -e ssh /root/source/* root@172.31.3.142:/root/destination
+                           –a: archive mode
+                           –v: shows details of the copying process
+                           –p: shows the progress bar
+                           –r: copies data recursively
+                           –z: compresses data
+                           –q: suppress output
                           
                      Then create crontab -e write inside that:
                      
