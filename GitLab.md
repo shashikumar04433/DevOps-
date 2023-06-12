@@ -45,6 +45,9 @@
                             sudo gitlab-ctl reconfigure
                             (bye).
                          
+### Installing the Gitlab-Runner:
+                  
+                    https://docs.gitlab.com/runner/install/linux-repository.html
 
                             
 
