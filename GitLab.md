@@ -47,6 +47,55 @@
                       Step 5:
                             create a new project 
                             and import the project and paste the git url.
+                            then write or create the file .gitlab-ce.yml
+                            paste the below code code CI/CD performances.
+                            stages:
+
+                            - build
+
+                            - deploy
+
+                             build-java-project:
+
+                             stage: build
+
+                             script:
+
+                             mvn package
+
+                            artifacts:
+
+                              paths:
+
+                                - /home/gitlab-runner/builds/zrC/0/java/java/target/
+                                
+                          
+                            deploy-java-project:
+
+                            stage: deploy
+
+                            script:
+                            -  cp -r  /home/gitlab-runner/builds/zrC/0/java/java/target/my-app.jar /opt/tomcat/webapps
+                            
+                                                              
+                           #before_script:
+
+                            #- 'command -v ssh-agent >/dev/null || (apk add-update openssh )'
+
+                            #- eval $(ssh-agent -s)
+
+                            #- echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+
+                            #- mkdir -p ~/.ssh
+
+                            #- chmod 700 ~/.ssh
+
+                            #- ssh-keyscan $EC2_IPADDRESS >> ~/.ssh/known_hosts
+
+                            #- chmod 644 ~/.ssh/known_hosts
+                            #script:
+                            #- cp -r  /home/gitlab-runner/builds/zrC/0/java/java/target/my-app.jar /opt/tomcat/webapps
+                            
                             
                          
 ### Installing the Gitlab-Runner:
