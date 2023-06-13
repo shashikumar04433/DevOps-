@@ -44,6 +44,10 @@
                             setpasswd
                             sudo gitlab-ctl reconfigure
                             (bye).
+                      Step 5:
+                            create a new project 
+                            and import the project and paste the git url.
+                            
                          
 ### Installing the Gitlab-Runner:
                   
