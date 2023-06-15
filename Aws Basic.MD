@@ -23,7 +23,8 @@
           
           8.Deploy a Instance(VM) and access using putty.
           
-          
+  ### AWS NAT GATEWAY:
+            
                 
                 
                 
