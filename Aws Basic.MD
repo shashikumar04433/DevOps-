@@ -57,11 +57,25 @@
           Step4:   (Route Table)
                     Create a Route table called Routing-Server.
                     Choose VPC
-                    and in the route allow 0.0.0.0/0 IGW to connect.
-                    then in subnet-associations
-                    connect
                     public--->public
-                    private--->private
+                    and in the route allow 0.0.0.0/0 IGW to connect.
+                    then in subnet-associations connect.
+                    private--->private (here need not of any IGW to connect)
+
+         Step5:   (EC2-Instance)
+                    Create two instances named:
+                    1.Public-Ec2 -->Attach VPC & Public subnet to Public Ec2 & Allow 80 port everywhere.
+                    2.Private-Ec2 -->Attach VPC & Private subnet to Private Ec2 and ssh port should be custom 10.0.0.0/16 as to get                               access all within that  vpc.
+                    3. Then MobaXterm to connect the server.
+                    4. Access the server and install httpd.
+                    5. in the path var/www/html. 
+                    6. vi index.html(write some content).
+                    7. chown 400 shashikey.pem
+                    8. Connect the private server using ssh.
+
+                    
+                    
+          
                     
                     
                     
