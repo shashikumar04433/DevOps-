@@ -57,6 +57,12 @@
           Step4:   (Route Table)
                     Create a Route table called Routing-Server.
                     Choose VPC
+                    and in the route allow 0.0.0.0/0 IGW to connect.
+                    then in subnet-associations
+                    connect
+                    public--->public
+                    private--->private
+                    
                     
                     
           
