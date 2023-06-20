@@ -32,7 +32,37 @@
           8.Deploy a Instance(VM) and access using putty.
           
  ### VPC Architecture:
-                    ..
+
+          Step1:  (VPC)
+                    Create a VPC:
+                    10.0.0.0/16
+                    enable domain hostname
+
+          Step2:   (Subnets) 
+                    Create two subnets named Public-Subnet and Private-Subnet:
+                    Public-Subnet---> 10.0.0.0/16 ---->It means it allocated 255 ips 
+                    Private-Subnet--> 10.0.1.0/16
+                    eg :
+                    10.0.2.0/16
+                    10.0.3.0/16
+                    10.0.4.0/16
+                    .. 
+                    10.0.255.0/16
+                    Enable auto-assign public IPv4 addresses for both subnets.
+
+          Step3:   (IGW -->Internet Gateway):          
+                    It is used to connect to the internet using IGW.
+                    & attach to the VPC.
+
+          Step4:   (Route Table)
+                    Create a Route table called Routing-Server.
+                    Choose VPC
+                    
+                    
+          
+          
+          
+                    
                       
                     
                       
