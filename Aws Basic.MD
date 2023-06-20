@@ -29,11 +29,25 @@
           
           6.Create a Keypair.
           
-          7.Convert .pem file to .ppk using putty ppk tool.
+          7.Convert .pem file to .ppk using Putty ppk tool.
           
           8.Deploy a Instance(VM) and access using putty.
           
  ### VPC Architecture:
+                    ..
+                      
+                    
+                      
+
+                     
+                      
+
+          
+                       
+                      
+                      
+
+                    
                               
   
             
