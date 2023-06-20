@@ -1,15 +1,13 @@
 ## Aws Basics:
 
 ### Topics in VPC:
-          1.Subnets and IP Addressing.
-          2.Routing in VPC.
-          3.Network Access Control.
-          4.VPC Peering.
-          5.Internet Connectivity.
-          6.VPC Connection.
-          7.VPC Security.
-          8.VPC Flow Logs and Monitoring.
-          9.Advanced VPC Features.
+          1. IP Addressing.
+          2. Subnets
+          3. Routing in VPC.
+          4. Network Access Control.
+          5. Internet Connectivity.
+          6. VPC Peering. 
+          7. VPC Connection.
     
    ## Working on VPC:
    
