@@ -31,7 +31,7 @@
           
           8.Deploy a Instance(VM) and access using putty.
           
- ### VPC Architecture:
+ ### VPC Practical Demo:
 
           Step1:  (VPC)
                     Create a VPC:
@@ -73,6 +73,11 @@
                     7. chown 400 shashikey.pem
                     8. Connect the private server using ssh.
 
+          Step6:
+                    if Private-Subnets wants to connect internet in that case:
+                     we use NAT Gateway for secure purpose
+                    * Create a NAT Gateway and select public and attach elastic IP .
+                    * Go back to the private routing table, allow 0.0.0.0/0, and attach the NAT gateway.
                     
                     
           
