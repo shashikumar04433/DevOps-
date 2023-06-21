@@ -78,7 +78,10 @@
                      we use NAT Gateway for secure purpose
                     * Create a NAT Gateway and select public and attach elastic IP .
                     * Go back to the private routing table, allow 0.0.0.0/0, and attach the NAT gateway.
-                    
+
+
+### VPC Peering:
+
                     
           
                     
