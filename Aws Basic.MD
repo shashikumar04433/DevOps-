@@ -88,7 +88,7 @@
                               * You can peer one region to another region.
                               * You can peer from one account to another account.
 
-                    ![image!](https://disaster-recovery.workshop.aws/images/vpc-peering-diagram.png)
+![image!](https://disaster-recovery.workshop.aws/images/vpc-peering-diagram.png)
                     
           
                     
