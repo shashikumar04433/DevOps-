@@ -133,7 +133,8 @@
                     5. Connect the private server using ssh.
 
 ### VPC connection between two regions:
-Step1:  (VPC)
+
+      Step1:  (VPC)
                 Create a VPC1 in the Mumbai region:
                 10.0.0.0/16
                 Create VPC2 the Tokyo region :
