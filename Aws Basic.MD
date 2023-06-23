@@ -131,8 +131,40 @@
                     3. Then MobaXterm to connect the server.
                     4. chown 400 shashikey.pem
                     5. Connect the private server using ssh.
-                              
-                              
+
+### VPC connection between two regions:
+Step1:  (VPC)
+                Create a VPC1 in the Mumbai region:
+                10.0.0.0/16
+                Create VPC2 the Tokyo region :
+                20.0.0.0/16
+                enable domain hostname for both VPCs.  
+
+      Step2:   (Subnets) 
+                Create subnet named First-Subnet in the Mumbai Vpc region and Second-Subnet in the Tokyo Vpc region:
+                First-Subnet---> 10.0.0.0/16 ---->It means it allocated 255 ips 
+                Second-Subnet---> 20.0.0.0/16
+                Enable auto-assign public IPv4 addresses for both subnets.
+
+      Step3:   (IGW -->Internet Gateway):          
+                Create two IGWs named First IGW in the Mumbai Vpc region and Second IGW Tokyo Vpc region.
+                It is used to connect to the first-->First-VPC and Second-->Second-Vpc
+                & attach to the VPC.
+
+      Step4:   (Route Table)
+                Create a Route table called Routing-Server.
+                Choose VPC  in the Mumbai Vpc region and Second-Route in Tokyo Vpc region.
+                and in the route allow 0.0.0.0/0 IGW to connect first-subnet.
+                then for second subnet as well. 
+      Step5:
+                Create a peering connection from Mumbai to the Tokyo region.
+                    First step choose Mumbai in peering to different region selections and then select Tokyo region.
+                    Connection accepts in the second region.
+                    Connect alternative to each other in route table.
+     Step6:
+          Create instances in each region using their own Vpc's.
+                    then connect it using ssh.
+                    
                     
           
                     
