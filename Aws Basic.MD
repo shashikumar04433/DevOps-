@@ -23,8 +23,19 @@
 
           Internet Connectivity:
 
-                  An Internet Gateway acts as a bridge between your VPC and the public internet. It provides a target for internet-bound 
+                  An Internet Gateway acts as a bridge between your VPC and the public Internet. It provides a target for internet-bound 
                   traffic from resources within the VPC and allows them to access the internet or be accessed by internet users.
+
+           NAT (Network Address Translation):
+
+                 Gateways are a managed network service provided by cloud service providers to enable outbound internet connectivity for 
+                 private subnets within a Virtual Private Cloud (VPC) environment. NAT gateways allow resources in private subnets to 
+                 communicate with the internet while hiding their private IP addresses.
+
+           Peering connections:
+
+                    Peering connections enable resources in different VPCs to communicate with each other as if they were on the same                        network.
+
 
  ### VPC Practical Demo:
 
