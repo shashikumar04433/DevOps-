@@ -122,7 +122,7 @@
           Step6:
                     Then go to the Route table gives an alternate to connect the peer:
                     for  first-routing connect--->20.0.0.0/16 the next box choose peering and connect.
-                    For second-routing connect--->20.0.0.0/16 the next box choose peering and connect
+                    For second-routing connect--->10.0.0.0/16 the next box choose peering and connect
                     
          Step7:   (EC2-Instance)
                     Create two instances named:
