@@ -167,12 +167,15 @@
                 Create a peering connection from Mumbai to the Tokyo region.
                     First step choose Mumbai in peering to different region selections and then select Tokyo region.
                     Connection accepts in the second region.
-                    Connect alternative to each other in route table.
+                    Connect alternatives to each other in the route table.
      Step6:
           Create instances in each region using their own Vpc's.
                     then connect it using ssh.
  
   ### Vpc Endpoints:
+
+
+          
                     
           
                     
