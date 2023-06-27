@@ -8,29 +8,24 @@
           5. Internet Connectivity.
           6. VPC Peering. 
           7. VPC Connection.
-    
-   ## Working on VPC:
-   
-          1. Create a VPC called as MANISH -10.1.0.0/16  --65000 IP's --Enable DNS Hostnames.
-          
-          2. Create Subnets for web,App and DB Servers . Enable auto Assign Ip:
-          
-                Web Servers -- 10.1.1.0/24 -->Server1
-                App Servers -- 10.1.2.0/24 -->Server2
-                DB Servers -- 10.1.3.0/24 -->Server3
-                
-          3. Create a internet gateway and attach it to VPC.
-          
-          4.Creating routing Table & Assign IGW(Internet Gate Way) & subnets to it.
-          
-          5.Create a Security Group (As Firewall) and allow traffic.
-          
-          6.Create a Keypair.
-          
-          7.Convert .pem file to .ppk using Putty ppk tool.
-          
-          8.Deploy a Instance(VM) and access using putty.
-          
+
+          IP Address Ranges: 
+          When you create a VPC, you specify an IP address range for the VPC. This range is defined using CIDR (Classless Inter-Domain             Routing) notation, such as 10.0.0.0/16. The CIDR block determines the total number of available IP addresses that can be used            within the VPC.
+
+          Subnets:
+                 Subnets are logical divisions of an IP address range within a network, including a Virtual Private Cloud (VPC) in cloud                  computing. They enable you to segment and organize your network into smaller, more manageable networks. Each subnet has 
+                 its unique CIDR (Classless Inter-Domain Routing) block, which defines the range of IP addresses assigned to resources 
+                 within that subnet.
+          Routing:
+                 A routing table is a key component of networking that is used to determine the path of network traffic between 
+                 different networks or subnets. It is a data structure or a configuration file that resides on a router or a network 
+                 device and contains a set of rules, called routes.
+
+          Internet Connectivity:
+
+                  An Internet Gateway acts as a bridge between your VPC and the public internet. It provides a target for internet-bound 
+                  traffic from resources within the VPC and allows them to access the internet or be accessed by internet users.
+
  ### VPC Practical Demo:
 
           Step1:  (VPC)
