@@ -34,7 +34,7 @@
 
            Peering connections:
 
-                    Peering connections enable resources in different VPCs to communicate with each other as if they were on the same                        network.
+                    Peering connections enable resources in different VPCs to communicate with each other as if they were on the same network.
 
 
  ### VPC Practical Demo:
