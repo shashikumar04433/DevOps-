@@ -173,6 +173,8 @@
                     then connect it using ssh.
  
   ### Vpc Endpoints:
+                    Vpc Endpoints enables private connections between your Vpc and supported aws services.
+
 
 
           
