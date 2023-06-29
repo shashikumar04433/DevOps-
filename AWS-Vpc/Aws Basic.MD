@@ -232,8 +232,6 @@
                               5. Then go to ec2-instance click and go to actions security and click on modify iam role and select the                                      iam role u created.
                               6. Then write the command 
                                  aws s3 ls --endpoint-url https://bucket.vpce-019d6908cb4472d22-c5jwui77.s3.ap-south-                                                     2.vpce.amazonaws.com --region ap-south-2  (careful with the role which u choose for the ec2-user to                                     avoid a errors
-
-![]("C:\Users\shashi.reddy\Pictures\Screenshots\Screenshot 2023-06-29 130355.png")
           
                     
           
