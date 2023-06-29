@@ -175,6 +175,10 @@
   ### Vpc Endpoints:
                     Vpc Endpoints enable private connections between your Vpc and supported AWS services.
 
+                    Types of Endpoints:
+                    1. Interface Endpoints---->It supports 86 services.
+                    2. Gateway Endpoints----->It supports only s3 & Dynamo DB.
+                    3. Gateway Load Balancer.
 
 
           
