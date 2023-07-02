@@ -172,7 +172,66 @@
           Create instances in each region using their own Vpc's.
                     then connect it using ssh.
  
-  ### Vpc Endpoints:
+  ### Vpc Endpoint:
+
+                Vpc Endpoints enable private connections between your Vpc and supported AWS services.
+
+                Types of Endpoints:
+                1. Interface Endpoints---->It supports 86 services.
+                2. Gateway Endpoints----->It supports only s3 & Dynamo DB.
+                3. Gateway Load Balancer.
+Vpc Endpoint Hands-on:
+                Step1:  (VPC)
+      
+                          Create a VPC:
+                          10.0.0.0/16
+                          enable domain hostname
+
+                 Step2:   (Subnets) 
+      
+                          Create two subnets named Public-Subnet and Private-Subnet:
+                          Public-Subnet---> 10.0.0.0/16 ---->It means it allocated 255 ips 
+                          Private-Subnet--> 10.0.1.0/16
+                          Enable auto-assign public IPv4 addresses for both subnets.
+
+                Step3:   (IGW -->Internet Gateway):   
+
+                          It is used to connect to the internet using IGW.
+                          & attach to the VPC.
+
+                Step4:   (Route Table)
+
+                          Create a Route table called Routing-Server.
+                          Choose VPC
+                          public--->public
+                          and in the route allow 0.0.0.0/0 IGW to connect.
+                          then in subnet-associations connect.
+                          private--->private (here need not of any IGW to connect)
+
+                 Step5:   (EC2-Instance)
+
+                          Create two instances named:
+                          1.Public-Ec2 -->Attach VPC & Public subnet to Public Ec2 & Allow 80 port everywhere.
+                          2.Private-Ec2 -->Attach VPC & Private subnet to Private Ec2 and ssh port should be custom 10.0.0.0/16 as                                   to get access all within that  vpc
+                          3. Then MobaXterm to connect the server.
+
+                Step6:   Then create an IAM role:
+
+                          1. Create an IAM Role.
+                          2. select ec2 below & click next
+                          3. Create a policy and select AmazonS3FullAccess & click next.
+                          4. Give role name as s3role & click create the role.
+
+                Step7:    Then create an endpoint:
+
+                          1. Go to the Vpc section and create a endpoint name as s3-endpoint.
+                          2. below choose com.amazonaws.ap-south-2.s3 service as interface one.
+                          3. Then choose vpc and private subnet to which you want to connect.
+                          4. Then select default security group and click create endpoint.
+                          5. Then go to ec2-instance click and go to actions security and click on modify iam role and select the                                      iam role u created.
+                          6. Then write the command 
+                             aws s3 ls --endpoint-url https://bucket.vpce-019d6908cb4472d22-c5jwui77.s3.ap-south-                                                     2.vpce.amazonaws.com --region ap-south-2  (careful with the role which u choose for the ec2-user to                                     avoid a errors ..
+
 
 
           
