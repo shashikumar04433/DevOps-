@@ -1,5 +1,7 @@
-Aws Basics:
+### Aws Basics:
+
 Topics in VPC:
+
       1. IP Addressing.
       2. Subnets
       3. Routing in VPC.
@@ -8,8 +10,8 @@ Topics in VPC:
       6. VPC Peering. 
       7. VPC Connection.
 
-      IP Address Ranges: 
-      When you create a VPC, you specify an IP address range for the VPC. This range is defined using CIDR (Classless Inter-Domain             Routing) notation, such as 10.0.0.0/16. The CIDR block determines the total number of available IP addresses that can be used            within the VPC.
+            IP Address Ranges: 
+            When you create a VPC, you specify an IP address range for the VPC. This range is defined using CIDR (Classless Inter-Domain             Routing) notation, such as 10.0.0.0/16. The CIDR block determines the total number of available IP addresses that can be                 used  within the VPC.
 
       Subnets:
              Subnets are logical divisions of an IP address range within a network, including a Virtual Private Cloud (VPC) in cloud                  computing. They enable you to segment and organize your network into smaller, more manageable networks. Each subnet has 
