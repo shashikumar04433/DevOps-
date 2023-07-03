@@ -35,8 +35,10 @@ Topics in VPC:
 
        Peering connections:
 
-                Peering connections enable resources in different VPCs to communicate with each other as if they were on the same network.
-VPC Practical Demo:
+                Peering connections enable resources in different VPCs to communicate with each other as if they were on the same                         network.
+                
+### VPC Practical Demo:
+
       Step1:  (VPC)
                 Create a VPC:
                 10.0.0.0/16
@@ -84,7 +86,7 @@ VPC Practical Demo:
                 * Go back to the private routing table, allow 0.0.0.0/0, and attach the NAT gateway.
 
 
-VPC Peering:
+### VPC Peering:
                 The connection between two Vpc's is called VPC Peering.
 
                 * The rules of Vpc Peering:
@@ -134,7 +136,10 @@ VPC Peering:
                 3. Then MobaXterm to connect the server.
                 4. chown 400 shashikey.pem
                 5. Connect the private server using ssh.
-VPC connection between two regions:
+                
+### VPC connection between two regions:
+
+
   Step1:  (VPC)
             Create a VPC1 in the Mumbai region:
             10.0.0.0/16
@@ -173,7 +178,9 @@ Vpc Endpoint:
             1. Interface Endpoints---->It supports 86 services.
             2. Gateway Endpoints----->It supports only s3 & Dynamo DB.
             3. Gateway Load Balancer.
-Vpc Endpoint Hands-on:
+            
+### Vpc Endpoint Hands-on:
+
             Step1:  (VPC)
   
                       Create a VPC:
