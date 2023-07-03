@@ -97,87 +97,87 @@ Topics in VPC:
 
              Same steps as above but peering should be created:
       
-      Step1:  (VPC)
-                Create a VPC1:
-                10.0.0.0/16
-                Create VPC2:
-                20.0.0.0/16
-                enable domain hostname for both VPC.  
-
-      Step2:   (Subnets) 
-                Create two subnets named First-Subnet and Second-Subnet:
-                First-Subnet---> 10.0.0.0/16 ---->It means it allocated 255 ips 
-                Second-Subnet---> 20.0.0.0/16
-                Enable auto-assign public IPv4 addresses for both subnets.
-
-      Step3:   (IGW -->Internet Gateway):          
-                Create two IGWs named First IGW and Second IGW.
-                It is used to connect to the first-->First-VPC and Second-->Second-Vpc
-                & attach to the VPC.
-
-      Step4:   (Route Table)
-                Create a Route table called Routing-Server.
-                Choose VPC
-                first
-                and in the route allow 0.0.0.0/0 IGW to connect first-subnet.
-                then for second subnet as well.
-      Step5:
-                Create a Vpc-Peering two VPCS first to second.
-                then accept the request.
-      Step6:
-                Then go to the Route table gives an alternate to connect the peer:
-                for  first-routing connect--->20.0.0.0/16 the next box choose peering and connect.
-                For second-routing connect--->10.0.0.0/16 the next box choose peering and connect
-                
-     Step7:   (EC2-Instance)
-                Create two instances named:
-                1.first-Ec2 -->Attach VPC & first subnet to first Ec2.
-                2.Second-Ec2 -->Attach VPC & first subnet to Second Ec2
-                3. Then MobaXterm to connect the server.
-                4. chown 400 shashikey.pem
-                5. Connect the private server using ssh.
-                
+            Step1:  (VPC)
+                      Create a VPC1:
+                      10.0.0.0/16
+                      Create VPC2:
+                      20.0.0.0/16
+                      enable domain hostname for both VPC.  
+      
+            Step2:   (Subnets) 
+                      Create two subnets named First-Subnet and Second-Subnet:
+                      First-Subnet---> 10.0.0.0/16 ---->It means it allocated 255 ips 
+                      Second-Subnet---> 20.0.0.0/16
+                      Enable auto-assign public IPv4 addresses for both subnets.
+      
+            Step3:   (IGW -->Internet Gateway):          
+                      Create two IGWs named First IGW and Second IGW.
+                      It is used to connect to the first-->First-VPC and Second-->Second-Vpc
+                      & attach to the VPC.
+      
+            Step4:   (Route Table)
+                      Create a Route table called Routing-Server.
+                      Choose VPC
+                      first
+                      and in the route allow 0.0.0.0/0 IGW to connect first-subnet.
+                      then for second subnet as well.
+            Step5:
+                      Create a Vpc-Peering two VPCS first to second.
+                      then accept the request.
+            Step6:
+                      Then go to the Route table gives an alternate to connect the peer:
+                      for  first-routing connect--->20.0.0.0/16 the next box choose peering and connect.
+                      For second-routing connect--->10.0.0.0/16 the next box choose peering and connect
+                      
+           Step7:   (EC2-Instance)
+                      Create two instances named:
+                      1.first-Ec2 -->Attach VPC & first subnet to first Ec2.
+                      2.Second-Ec2 -->Attach VPC & first subnet to Second Ec2
+                      3. Then MobaXterm to connect the server.
+                      4. chown 400 shashikey.pem
+                      5. Connect the private server using ssh.
+                      
 ### VPC connection between two regions:
 
 
-  Step1:  (VPC)
-            Create a VPC1 in the Mumbai region:
-            10.0.0.0/16
-            Create VPC2 the Tokyo region :
-            20.0.0.0/16
-            enable domain hostname for both VPCs.  
-
-  Step2:   (Subnets) 
-            Create subnet named First-Subnet in the Mumbai Vpc region and Second-Subnet in the Tokyo Vpc region:
-            First-Subnet---> 10.0.0.0/16 ---->It means it allocated 255 ips 
-            Second-Subnet---> 20.0.0.0/16
-            Enable auto-assign public IPv4 addresses for both subnets.
-
-  Step3:   (IGW -->Internet Gateway):          
-            Create two IGWs named First IGW in the Mumbai Vpc region and Second IGW Tokyo Vpc region.
-            It is used to connect to the first-->First-VPC and Second-->Second-Vpc
-            & attach to the VPC.
-
-  Step4:   (Route Table)
-            Create a Route table called Routing-Server.
-            Choose VPC  in the Mumbai Vpc region and Second-Route in Tokyo Vpc region.
-            and in the route allow 0.0.0.0/0 IGW to connect first-subnet.
-            then for second subnet as well. 
-  Step5:
-            Create a peering connection from Mumbai to the Tokyo region.
-                First step choose Mumbai in peering to different region selections and then select Tokyo region.
-                Connection accepts in the second region.
-                Connect alternatives to each other in the route table.
- Step6:
-      Create instances in each region using their own Vpc's.
-                then connect it using ssh.
-Vpc Endpoint:
-            Vpc Endpoints enable private connections between your Vpc and supported AWS services.
-
-            Types of Endpoints:
-            1. Interface Endpoints---->It supports 86 services.
-            2. Gateway Endpoints----->It supports only s3 & Dynamo DB.
-            3. Gateway Load Balancer.
+              Step1:  (VPC)
+                        Create a VPC1 in the Mumbai region:
+                        10.0.0.0/16
+                        Create VPC2 the Tokyo region :
+                        20.0.0.0/16
+                        enable domain hostname for both VPCs.  
+            
+              Step2:   (Subnets) 
+                        Create subnet named First-Subnet in the Mumbai Vpc region and Second-Subnet in the Tokyo Vpc region:
+                        First-Subnet---> 10.0.0.0/16 ---->It means it allocated 255 ips 
+                        Second-Subnet---> 20.0.0.0/16
+                        Enable auto-assign public IPv4 addresses for both subnets.
+            
+              Step3:   (IGW -->Internet Gateway):          
+                        Create two IGWs named First IGW in the Mumbai Vpc region and Second IGW Tokyo Vpc region.
+                        It is used to connect to the first-->First-VPC and Second-->Second-Vpc
+                        & attach to the VPC.
+            
+              Step4:   (Route Table)
+                        Create a Route table called Routing-Server.
+                        Choose VPC  in the Mumbai Vpc region and Second-Route in Tokyo Vpc region.
+                        and in the route allow 0.0.0.0/0 IGW to connect first-subnet.
+                        then for second subnet as well. 
+              Step5:
+                        Create a peering connection from Mumbai to the Tokyo region.
+                            First step choose Mumbai in peering to different region selections and then select Tokyo region.
+                            Connection accepts in the second region.
+                            Connect alternatives to each other in the route table.
+             Step6:
+                  Create instances in each region using their own Vpc's.
+                            then connect it using ssh.
+            Vpc Endpoint:
+                        Vpc Endpoints enable private connections between your Vpc and supported AWS services.
+            
+                        Types of Endpoints:
+                        1. Interface Endpoints---->It supports 86 services.
+                        2. Gateway Endpoints----->It supports only s3 & Dynamo DB.
+                        3. Gateway Load Balancer.
             
 ### Vpc Endpoint Hands-on:
 
