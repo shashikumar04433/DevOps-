@@ -1,14 +1,14 @@
 # Azure Basics:
 
-            Compute ---> Virtual Machines.
+           1. Compute ---> Virtual Machines.
             
-            Storage ---> Managed Disks, Storage Accounts, Unmanaged Disks.
+           2. Storage ---> Managed Disks, Storage Accounts, Unmanaged Disks.
             
-            Network ---> Virtual Network, Subnets, Virtual Network Gateway, Traffic Manager.
+           3.  Network ---> Virtual Network, Subnets, Virtual Network Gateway, Traffic Manager.
             
-            Firewall ---> Azure Firewall, Network Security Group.
+           4. Firewall ---> Azure Firewall, Network Security Group.
             
-            Access Manager ---> IAM.
+           5. Access Manager ---> IAM.
             
             
             
