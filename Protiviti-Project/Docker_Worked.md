@@ -1,12 +1,22 @@
 # Docker Image commands worked.
 
       Step1:
-           git pull ubuntu: latest
-           docker build -t example_image.
+            Dockerfile:
+                  FROM nginx
+                  RUN echo "hello"
+
+            
+           git pull myapp: latest
+           docker build -t myapp .
+           
            1 . docker run -d -it <docker img name> 
+           
            2.  docker login
-           3.   docker tag example_image:latest shashikumar023/example_image:latest
-           4.  docker push shashikumar023/example_image:latest
+           
+           3. docker tag myapp:latest shashikumar023/myapp:latest
+           
+           4 docker push shashikumar023/myapp:latest
+           
            5. docker images
 
     Step2:
