@@ -3,7 +3,7 @@
       Step1:
            git pull ubuntu: latest
            docker build -t example_image.
-           1 . docker run -it --name example_app example_image
+           1 . docker run -d -it <docker img name> 
            2.  docker login
            3.   docker tag example_image:latest shashikumar023/example_image:latest
            4.  docker push shashikumar023/example_image:latest
