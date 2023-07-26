@@ -1,7 +1,7 @@
 # Docker Image commands worked.
 
       Step1:
-      
+           git pull ubuntu: latest
            docker build -t example_image.
            1 . docker run -it --name example_app example_image
            2.  docker login
