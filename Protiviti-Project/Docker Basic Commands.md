@@ -1,7 +1,8 @@
 # Docker
 
-
-
+  https://www.pluralsight.com/guides/create-docker-images-docker-hub 
+  Docker image create and push to docker hub reference.
+  
   ## Docker Installation in Ubuntu:
         Sudo apt-get update
         Sudo apt-get install docker.io
