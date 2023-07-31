@@ -132,3 +132,6 @@
             9.sudo docker exec -it <id>bash.
             10.cd var/www/html.
             11.Echo $name.
+
+
+                 
