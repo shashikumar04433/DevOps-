@@ -1,0 +1,82 @@
+﻿@model ProtivitiTaskManagement.Models.Taask
+
+@{
+    ViewData["Title"] = "AddTask";
+}
+
+<h1>AddTask</h1>
+
+<h4>Task</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddTask">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TaskTitle" class="control-label">Task Title: <span style="color:red;">*</span></label>
+                <input asp-for="TaskTitle" class="form-control" />
+                <span asp-validation-for="TaskTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaskType" class="control-label">Task Type: <span style="color:red;">*</span></label>
+                <input asp-for="TaskType" class="form-control" />
+                <span asp-validation-for="TaskType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaskDescription" class="control-label">Description: </label>
+                <input asp-for="TaskDescription" class="form-control" />
+                <span asp-validation-for="TaskDescription" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="TaskAssignee" class="control-label">Assignee: <span style="color:red;">*</span></label>
+                @*<input asp-for="TaskAssignee" class="form-control" />*@
+                <select id="UserRole" name="UserRole">
+                    <option value="">Select a Assignee:</option>
+                    <option value="Assignee">Assignee</option>
+                    <option value="Creator">Creator</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Approver">Approver</option>
+                </select>
+                <span asp-validation-for="TaskAssignee" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="TaskCountry" class="control-label">Country: <span style="color:red;">*</span></label>
+                <input asp-for="TaskCountry" class="form-control" />
+                <span asp-validation-for="TaskCountry" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="TaskCustomer" class="control-label">Customer: <span style="color:red;">*</span></label>
+                @*<input asp-for="TaskCustomer" class="form-control" />*@
+                <select id="UserRole" name="UserRole">
+                    <option value="">Select a Customer:</option>
+                    <option value="Assignee">Assignee</option>
+                    <option value="Creator">Creator</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Approver">Approver</option>
+                </select>
+                <span asp-validation-for="TaskCustomer" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="TaskStatus" class="control-label">Status: <span style="color:red;">*</span></label>
+                @*<input asp-for="TaskStatus" class="form-control" />*@
+                <input type="checkbox" id="TaskStatus" name="TaskStatus" value="Yes">
+                <span asp-validation-for="TaskStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

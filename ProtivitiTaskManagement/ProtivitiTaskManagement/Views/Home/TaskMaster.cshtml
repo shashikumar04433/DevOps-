@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ProtivitiTaskManagement.Models.Taask>
+
+@{
+    ViewData["Title"] = "TaskMaster";
+}
+
+<h1>TaskMaster</h1>
+
+<p>
+    @*<a asp-action="Create">Create New</a>*@
+    <a href="https://localhost:7001/home/AddTask"><button>Add</button></a>
+</p>
+<table class="table table-dark table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskAssignee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskCountry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskCustomer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskAssignee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskCountry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskCustomer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskStatus)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TaskId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TaskId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TaskId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
