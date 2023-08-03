@@ -24,6 +24,9 @@
             * Then create a task in ECS with Fargate and attach the docker <ocker.io/shashikumar023/myapp:latest>image path to that in the container path.
             * Then create the cluster and under that in the below Tasks attach the run the task.
             * Then check the logs and also the cloud watch.
+
+
+
             
             
   
