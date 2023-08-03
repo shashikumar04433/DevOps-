@@ -26,6 +26,13 @@
             * Then check the logs and also the cloud watch.
 
 
+ ## When you creating the custom docker images with docker file commands need to use:
+            
+            docker login
+            docker tag ef5b41ff4ae4 shashikumar023/protivititaskmanagement:latest
+            docker push shashikumar023/protivititaskmanagement:latest
+
+
 
             
             
