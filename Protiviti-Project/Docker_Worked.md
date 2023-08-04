@@ -32,9 +32,16 @@
             docker tag ef5b41ff4ae4 shashikumar023/protivititaskmanagement:latest
             docker push shashikumar023/protivititaskmanagement:latest
 
-
-
+## To connect to sql rds server :
+            "DefaultConnection": "Server=database-1.cvdr8z18g9n4.ap-southeast- 
+            2.rds.amazonaws.com;Database=FCRA;UID=admin;PWD=vWQTWrETc1mJV5jbswer;"
             
+            ---> where default connection=Domain name (endpoint below you can see in rds).
+            ---> Database=Name of Database in sql.
+            ---> UID= username of rds .
+            ---> PWD= Password of the rds.
+            
+                        
             
   
 
