@@ -40,7 +40,7 @@
             ---> Database=Name of Database in sql.
             ---> UID= username of rds .
             ---> PWD= Password of the rds.
-            ----> In the Dotnet project .json file you shoul  giv
+            ----> In the Dotnet project .json file you should give the details of the rds server and user and passwd .
                         
             
   
