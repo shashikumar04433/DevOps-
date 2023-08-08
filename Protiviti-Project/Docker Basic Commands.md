@@ -135,13 +135,13 @@
 
 # Four basic Docker CLI comes into action:
 
-              The <b>docker export<b> - Export a container’s filesystem as a tar archive.
+              Docker export - Export a container’s filesystem as a tar archive.
               
-              The <b>docker import<b> - Import the contents from a tarball to create a filesystem image.
+              Docker import<b> - Import the contents from a tarball to create a filesystem image.
               
-              The docker save - Save one or more images to a tar archive (streamed to STDOUT by default).
+              Docker save - Save one or more images to a tar archive (streamed to STDOUT by default).
               
-              The docker load - Load an image from a tar archive or STDIN.
+              Docker load - Load an image from a tar archive or STDIN.
 
 
                  
