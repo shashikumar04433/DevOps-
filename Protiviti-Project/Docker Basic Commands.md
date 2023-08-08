@@ -175,7 +175,34 @@
 
                           Step8:
                                 docker load < mynginx1.tar
-                          
+
+# Installation of docker on RHEL:
+
+                          Step1:
+                                yum install -y yum-utils
+
+                          Step2:
+                                yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+
+                          Step3:
+                                yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+                          Step4:
+                                systemctl start docker
+
+                          Step5:
+                                systemctl enable docker
+
+                          Step6:
+                                Docker pull centos
+
+                          Step7:
+                                docker run -d -it centos /bin/bash
+
+                          Step8:
+                                docker push shashikumar023/centos
+                                
+                                
                           
                                 
                           
