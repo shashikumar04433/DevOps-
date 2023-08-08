@@ -155,6 +155,19 @@
                                 docker ps -a
 
                           Step4:  
+                                where below df2 is container first three letters
+                                docker export df2 > nginx.tar
+
+                          Step5:
+                                docker import - mynginx < nginx.tar
+                                You could upload the tar file on a web server(docker hub) and let your collaborator download it and use 
+the import command on his Docker hub.
+
+                          Step6:
+                                docker rmi mynginx
+                                and now try to load the image to get back that image.
+                                
+                          
                                 
                           
                   
