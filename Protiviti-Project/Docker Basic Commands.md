@@ -96,6 +96,7 @@
  ### Command to delete all the images at once:
             docker rmi -f $(docker images -aq)
             
+            
 ## Steps To Install Apache in Docker:
 
             1. Sudo docker run -it -d ubuntu.
