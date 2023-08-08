@@ -6,7 +6,7 @@
   ## Docker Installation in Ubuntu:
         Sudo apt-get update
         Sudo apt-get install docker.io
-  
+        
   ## Docker Commands:
 
       attach      Attach local standard input, output, and error streams to a running container.
@@ -175,7 +175,6 @@
 
                           Step8:
                                 docker load < mynginx1.tar
-
                           
                           
                                 
