@@ -137,7 +137,7 @@
 
               Docker export - Export a container’s filesystem as a tar archive.
               
-              Docker import<b> - Import the contents from a tarball to create a filesystem image.
+              Docker import - Import the contents from a tarball to create a filesystem image.
               
               Docker save - Save one or more images to a tar archive (streamed to STDOUT by default).
               
