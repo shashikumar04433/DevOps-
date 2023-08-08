@@ -144,4 +144,19 @@
               Docker load - Load an image from a tar archive or STDIN.
 
 
+                Example :
+                          Step1:
+                                Docker pull nginx
+
+                          Step2:
+                                docker run -d -p 80:80 nginx
+
+                          Step3:
+                                docker ps -a
+
+                          Step4:  
+                                
+                          
+                  
+
                  
