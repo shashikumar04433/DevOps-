@@ -167,9 +167,16 @@
                                 the import command on his Docker hub.
 
                           Step6:
+                                docker save -o mynginx1.tar nginx
+
+                          Step7:
                                 docker rmi mynginx
                                 and now try to load the image to get back that image.
-                                
+
+                          Step8:
+                                docker load < mynginx1.tar
+
+                          
                           
                                 
                           
