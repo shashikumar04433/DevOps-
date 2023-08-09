@@ -29,7 +29,7 @@
                 * sudo chmod 755 /usr/local/bin/minikube
                 * minikube version
 
-## Installation of Kubelet on Ubuntu:
+## Installation of Master node in Kubelet on Ubuntu:
 
                     1  apt-get upgrade
                     2  sudo apt install docker.io
@@ -61,8 +61,22 @@
                    28  kubectl apply -f app-deployment.yaml
                    29  sudo kubeadm init
                    30  kubectl get nodes
-
-                
+                   
+## Requirements to be installed in Slave node:
+                    1  apt-get update -y
+                    2  sudo apt install docker.io
+                    3  sudo systemctl start docker
+                    4  sudo systemctl enable docker
+                    5  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmour -o                     
+                        /etc/apt/trusted.gpg.d/kubernetes-xenial.gpg
+                    6  sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+                    8  sudo apt-update
+                    9  sudo apt-get upgrade -y
+                   10  sudo apt install kubeadm kubelet kubectl
+                   11  kubeadm join 172.31.41.211:6443 --token dzdiyw.2q65onstsgav2ofp --discovery-token-ca-cert-hash             
+                       sha256:159e08be212bf469933ca36485374e55dbca9a3a3ae78924d7ef959b89c0afc1
+  
+    
 
                 
                 
