@@ -8,8 +8,7 @@
       * Key Components of K8s are:
 
                 Containers >> Pods >> Clusters >> Servcies.
-                
-                
+                               
 ## Installation steps of MiniKube on ubuntu:
 
         Step1:(Pre-requirements)
@@ -28,7 +27,7 @@
                 * sudo chmod 755 /usr/local/bin/minikube
                 * minikube version
 
-## Installation of Kubelet 
+## Installation of Kubelet:
                 
 
                 
