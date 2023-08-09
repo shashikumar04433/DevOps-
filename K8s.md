@@ -50,17 +50,12 @@
                    17  mkdir -p $HOME/.kube
                    18  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
                    19  sudo chown $(id -u):$(id -g) $HOME/.kube/config
-                   20  kubectl apply -f app-deployment.yaml
-                   21  touch app-deployment.yaml
-                   22  ls
-                   23  vi app-deployment.yaml
-                   24  kubectl apply -f app-deployment.yaml
-                   25  apt install firewalld
-                   26  sudo firewall-cmd --add-port=6443/tcp --permanent
-                   27  sudo firewall-cmd --reload
-                   28  kubectl apply -f app-deployment.yaml
-                   29  sudo kubeadm init
-                   30  kubectl get nodes
+                   20  apt install firewalld
+                   21  sudo firewall-cmd --add-port=6443/tcp --permanent
+                   22  sudo firewall-cmd --reload
+                   23  kubectl apply -f app-deployment.yaml
+                   24  sudo kubeadm init
+                   25  kubectl get nodes
                    
 ## Requirements to be installed in Slave node:
                     1  apt-get update -y
