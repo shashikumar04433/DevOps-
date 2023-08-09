@@ -33,7 +33,25 @@
 
                 * curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-                    release/release/stable.txt`/bin/linux/amd64/kubectl
                 * chmod +x ./kubectl
-                * 
+                * mv ./kubectl /usr/local/bin/kubectl
+                * kubectl version -o json
+                * before running minikube exit as root and run as ubuntu user
+                * minikube start
+                * or if you want to run as root then ---> minikube start --force 
+                * kubectl config view
+                * kubectl config-info
+                * kubectl get nodes
+                * kubectl get pod 
+                * minikube ssh
+                * exit
+                * minikube stop 
+                * minikube status
+                * minikube delete
+                *  minikube addons list
+                * minikube dashboard
+                * minikube dashboard --url
+                * Enter the ip in the browser to access the Kubernetes dashboard.
+                
 
                 
                 
