@@ -29,28 +29,39 @@
                 * sudo chmod 755 /usr/local/bin/minikube
                 * minikube version
 
-## Installation of Kubelet:
+## Installation of Kubelet on Ubuntu:
 
-                * curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-                    release/release/stable.txt`/bin/linux/amd64/kubectl
-                * chmod +x ./kubectl
-                * mv ./kubectl /usr/local/bin/kubectl
-                * kubectl version -o json
-                * before running minikube exit as root and run as ubuntu user
-                * minikube start
-                * or if you want to run as root then ---> minikube start --force 
-                * kubectl config view
-                * kubectl config-info
-                * kubectl get nodes
-                * kubectl get pod 
-                * minikube ssh
-                * exit
-                * minikube stop 
-                * minikube status
-                * minikube delete
-                *  minikube addons list
-                * minikube dashboard
-                * minikube dashboard --url
-                * Enter the ip in the browser to access the Kubernetes dashboard.
+                    1  apt-get upgrade
+                    2  sudo apt install docker.io
+                    3  sudo systemctl start docker
+                    4  sudo systemctl enable docker
+                    5  sudo docker run hello-world
+                    6  docker images
+                    7  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmour -o                                                     /etc/apt/trusted.gpg.d/kubernetes-xenial.gpg
+                    8  sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+                    9  sudo apt update
+                   10  apt-get upgrade -y
+                   11  sudo apt install kubeadm kubelet kubectl
+                   12  ls
+                   13  sudo apt-mark hold kubelet kubeadm kubectl
+                   14  sudo swapoff -a
+                   15  sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+                   16  sudo kubeadm init
+                   17  mkdir -p $HOME/.kube
+                   18  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+                   19  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+                   20  kubectl apply -f app-deployment.yaml
+                   21  touch app-deployment.yaml
+                   22  ls
+                   23  vi app-deployment.yaml
+                   24  kubectl apply -f app-deployment.yaml
+                   25  apt install firewalld
+                   26  sudo firewall-cmd --add-port=6443/tcp --permanent
+                   27  sudo firewall-cmd --reload
+                   28  kubectl apply -f app-deployment.yaml
+                   29  sudo kubeadm init
+                   30  kubectl get nodes
+
                 
 
                 
