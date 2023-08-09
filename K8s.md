@@ -10,3 +10,13 @@
                 Containers >> Pods >> Clusters >> Servcies.
                 
                 
+# Installation steps of MiniKube on ubuntu:
+
+        Step1:
+                * apt-get update -y
+                * apt-get upgrade -y
+                * apt install docker.io
+
+        Step2:
+                
+                
