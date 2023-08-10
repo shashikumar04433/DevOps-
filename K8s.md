@@ -45,7 +45,15 @@
                     10  sudo apt-get update
                     11  sudo apt-get install -y kubelet kubeadm kubectl
                     12  sudo apt-mark hold kubelet kubeadm kubectl
-                    13  
+                    13  sudo apt-get install firewalld
+                    14  sudo firewall-cmd --add-port=6443/tcp --permanent
+                    15  sudo firewall-cmd --reload
+                    16  sudo kubeadm init
+                    17  mkdir -p $HOME/.kube
+                    18  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+                    19  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+                    20  export KUBECONFIG=/etc/kubernetes/admin.conf
+                    21  kubectl get nodes
                    
 ## Requirements to be installed in Slave node:
                     1  apt-get update -y
