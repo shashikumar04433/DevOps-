@@ -49,6 +49,9 @@
                     14  sudo firewall-cmd --add-port=6443/tcp --permanent
                     15  sudo firewall-cmd --reload
                     16  sudo kubeadm init
+                    (you get the kubeadm code to join slave take that and paste in slave server ex:
+                    kubeadm join 172.31.32.194:6443 --token 3dfp1h.munabpkjvqcikkzs \
+                    --discovery-token-ca-cert-hash sha256:39f2f072c276614e2cdf9ace6366c7cdc5e40a7080684fbe01fb7e72dcbdb168)
                     17  mkdir -p $HOME/.kube
                     18  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
                     19  sudo chown $(id -u):$(id -g) $HOME/.kube/config
@@ -56,18 +59,23 @@
                     21  kubectl get nodes
                    
 ## Requirements to be installed in Slave node:
-                    1  apt-get update -y
+                    1  apt-get upgrade
                     2  sudo apt install docker.io
                     3  sudo systemctl start docker
                     4  sudo systemctl enable docker
-                    5  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmour -o                     
-                        /etc/apt/trusted.gpg.d/kubernetes-xenial.gpg
-                    6  sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
-                    8  sudo apt-update
-                    9  sudo apt-get upgrade -y
-                   10  sudo apt install kubeadm kubelet kubectl
-                   11  kubeadm join 172.31.41.211:6443 --token dzdiyw.2q65onstsgav2ofp --discovery-token-ca-cert-hash             
-                       sha256:159e08be212bf469933ca36485374e55dbca9a3a3ae78924d7ef959b89c0afc1
+                    5  sudo docker run hello-world
+                    6  docker images
+                    7  sudo apt-get install -y apt-transport-https ca-certificates curl
+                    8  curl -fsSL https://dl.k8s.io/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-                             keyring.gpg
+                    9  echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-                              xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+                    10  sudo apt-get update
+                    11  sudo apt-get install -y kubelet kubeadm kubectl
+                    12  sudo apt-mark hold kubelet kubeadm kubectl
+                    13  sudo apt-get install firewalld
+                    14  sudo firewall-cmd --add-port=6443/tcp --permanent
+                    15  sudo firewall-cmd --reload
+                    16  kubeadm join 172.31.32.194:6443 --token 3dfp1h.munabpkjvqcikkzs \
+                    --discovery-token-ca-cert-hash sha256:39f2f072c276614e2cdf9ace6366c7cdc5e40a7080684fbe01fb7e72dcbdb168
   
     
 
