@@ -31,31 +31,17 @@
 
 ## Installation of Master node in Kubelet on Ubuntu:
 
+                    https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+                    
                     1  apt-get upgrade
                     2  sudo apt install docker.io
                     3  sudo systemctl start docker
                     4  sudo systemctl enable docker
                     5  sudo docker run hello-world
                     6  docker images
-                    7  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmour -o                                                     /etc/apt/trusted.gpg.d/kubernetes-xenial.gpg
-                    8  sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
-                    9  sudo apt update
-                   10  apt-get upgrade -y
-                   11  sudo apt install kubeadm kubelet kubectl
-                   12  ls
-                   13  sudo apt-mark hold kubelet kubeadm kubectl
-                   14  sudo swapoff -a
-                   15  sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
-                   16  sudo kubeadm init
-                   17  mkdir -p $HOME/.kube
-                   18  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-                   19  sudo chown $(id -u):$(id -g) $HOME/.kube/config
-                   20  apt install firewalld
-                   21  sudo firewall-cmd --add-port=6443/tcp --permanent
-                   22  sudo firewall-cmd --reload
-                   23  kubectl apply -f app-deployment.yaml
-                   24  sudo kubeadm init
-                   25  kubectl get nodes
+                    7  sudo apt-get install -y apt-transport-https ca-certificates curl
+                    8  curl -fsSL https://dl.k8s.io/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-                             keyring.gpg
+                    9  echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-                              xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
                    
 ## Requirements to be installed in Slave node:
                     1  apt-get update -y
