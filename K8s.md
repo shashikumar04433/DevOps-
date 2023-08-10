@@ -42,6 +42,10 @@
                     7  sudo apt-get install -y apt-transport-https ca-certificates curl
                     8  curl -fsSL https://dl.k8s.io/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-                             keyring.gpg
                     9  echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-                              xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+                    10  sudo apt-get update
+                    11  sudo apt-get install -y kubelet kubeadm kubectl
+                    12  sudo apt-mark hold kubelet kubeadm kubectl
+                    13  
                    
 ## Requirements to be installed in Slave node:
                     1  apt-get update -y
