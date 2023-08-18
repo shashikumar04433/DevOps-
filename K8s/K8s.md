@@ -1,5 +1,12 @@
 # Kubernetes (K8s)
 
+   ######## Common Kubeadm :
+    
+            1. kubeadm init to bootstrap the initial Kubernetes control-plane node.
+            2. kubeadm join to bootstrap a Kubernetes worker node or an additional control plane node, and join it to the cluster.
+            3. kubeadm upgrade to upgrade a Kubernetes cluster to a newer version.
+            4. kubeadm reset to revert any changes made to this host by kubeadm init or kubeadm join.
+    
      * What is Kubernetes and what is the use of it?
 
                Kubernetes also known as K8s ,and it is a open source container orchestration platform designed to automate the deployment                   scaling,and management of containerized applications.
