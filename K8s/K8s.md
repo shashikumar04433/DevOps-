@@ -48,12 +48,12 @@
                     13  sudo apt-get install firewalld
                     14  sudo firewall-cmd --add-port=6443/tcp --permanent
                     15  sudo firewall-cmd --reload
+                    16  sudo kubeadm init
                     16  mkdir -p $HOME/.kube
                     17  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
                     18  sudo chown $(id -u):$(id -g) $HOME/.kube/config
                     19  export KUBECONFIG=/etc/kubernetes/admin.conf
-                    20  sudo kubeadm init
-                                (you get the kubeadm code to join slave take that and paste in slave server ex:
+                    20  (you get the kubeadm code to join slave take that and paste in slave server ex:
                                 kubeadm join 172.31.32.194:6443 --token 3dfp1h.munabpkjvqcikkzs \
                                 --discovery-token-ca-cert-hash sha256:39f2f072c276614e2cdf9ace6366c7cdc5e40a7080684fbe01fb7e72dcbdb168)
                     21  kubectl get nodes
