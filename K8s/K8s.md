@@ -48,15 +48,20 @@
                     13  sudo apt-get install firewalld
                     14  sudo firewall-cmd --add-port=6443/tcp --permanent
                     15  sudo firewall-cmd --reload
-                    16  sudo kubeadm init
-                    16  mkdir -p $HOME/.kube
-                    17  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-                    18  sudo chown $(id -u):$(id -g) $HOME/.kube/config
                     19  export KUBECONFIG=/etc/kubernetes/admin.conf
+                    19  sudo kubeadm init --pod-network-cidr=192.168.0.0/16
                     20  (you get the kubeadm code to join slave take that and paste in slave server ex:
                                 kubeadm join 172.31.32.194:6443 --token 3dfp1h.munabpkjvqcikkzs \
                                 --discovery-token-ca-cert-hash sha256:39f2f072c276614e2cdf9ace6366c7cdc5e40a7080684fbe01fb7e72dcbdb168)
                     21  kubectl get nodes
+                    22  mkdir -p $HOME/.kube
+                    23  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+                    24  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+                    25  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.1/manifests/tigera-operator.yaml
+                    26  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.1/manifests/custom-resources.yaml
+                    27  watch kubectl get pods -n calico-system 
+                    (check this link for reference:
+                        https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart)
                    
 ## Requirements to be installed in Slave node:
                     1  apt-get upgrade
