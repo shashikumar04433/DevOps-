@@ -1,6 +1,6 @@
 # Kubernetes (K8s)
 
-   #### Common Kubeadm :
+   ### Common Kubeadm :
     
             1. kubeadm init to bootstrap the initial Kubernetes control-plane node.
             2. kubeadm join to bootstrap a Kubernetes worker node or an additional control plane node, and join it to the cluster.
