@@ -88,10 +88,7 @@
                     15  sudo firewall-cmd --reload
                     16  kubeadm join 172.31.32.194:6443 --token 3dfp1h.munabpkjvqcikkzs \
                     --discovery-token-ca-cert-hash sha256:39f2f072c276614e2cdf9ace6366c7cdc5e40a7080684fbe01fb7e72dcbdb168
-  
 
-
-    
 
                 
                 
