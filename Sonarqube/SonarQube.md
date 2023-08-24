@@ -20,6 +20,7 @@
       
       step1:
             Install java
+            sudo apt-get install openjdk-11-jdk
             sudo java-11-openjdk-devel wget unzip -y
        step2:
             Go to SonarQube Downloads:
