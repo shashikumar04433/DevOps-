@@ -10,7 +10,9 @@ wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.75/bin/apache-tomcat-9.0.75.t
 tar -xvf apache-tomcat-9.0.75.tar.gz
 cp -pr apache-tomcat-9.0.75 tomcat1
 cp -pr apache-tomcat-9.0.75 tomcat2
+remove the context in the context.xml file on webapps META-INF
 https://crunchify.com/how-to-run-multiple-tomcat-instances-on-one-server/
+
 
 step3:
 sudo vi /etc/httpd/conf.d/proxy.conf
