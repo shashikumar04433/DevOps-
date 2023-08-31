@@ -12,7 +12,7 @@
         
 ###  Add required dependencies for the jenkins package:
 
-
+   Step3:
         sudo dnf install java-17-openjdk
         sudo dnf install jenkins
         sudo systemctl daemon-reload
