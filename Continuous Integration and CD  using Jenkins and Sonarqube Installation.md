@@ -18,6 +18,7 @@
           cd /opt/
           cd /home/ec2-user/
  Step3:
+ 
         sudo su - sonar
         chown -R sonar:sonar /opt/sonar/
         sudo su - sonar
