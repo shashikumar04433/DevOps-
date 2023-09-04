@@ -3,9 +3,8 @@
 
     Step1:
        sudo yum update
-       sudo yum install java-11-openjdk-devel
+       sudo yum install java-11-openjdk-devel unzip vim wget -y
        yum update
-       yum install unzip vim
        
     Step2:
           Stable version 
