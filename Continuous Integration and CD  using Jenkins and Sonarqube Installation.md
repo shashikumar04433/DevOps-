@@ -31,4 +31,5 @@
          yum install jenkins
 
 ## Setup of Sonar integration in jenkins:
-        To do that
+        To do that first create a token in Sonarqube
+        
