@@ -39,5 +39,6 @@
         * In the executive shell write a command:
             mvn clean
             mvn package sonar:sonar
+        * Then Build now.
         
         
