@@ -29,3 +29,6 @@
          sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
          yum install fontconfig java-11-openjdk
          yum install jenkins
+
+## Setup of Sonar integration in jenkins:
+        To do that
