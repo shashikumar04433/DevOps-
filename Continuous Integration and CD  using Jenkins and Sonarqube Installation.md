@@ -31,6 +31,9 @@
          yum install jenkins
 
 ## Setup of Sonar integration in jenkins:
-        To do that first create a token in Sonarqube
-        Then goto the jenkins system and update it there with the credentials and link eg http://3.1.206.171:9000 
+        * Install Sonarqube Scanner and Deploy to Container to work Ci/CD in Jenkins.
+        * Go to plugin and install that both above plugins.
+        * To do that first create a token in Sonarqube
+        * Then goto the jenkins system and update it there with the credentials and link eg http://3.1.206.171:9000 
+        
         
