@@ -32,4 +32,5 @@
 
 ## Setup of Sonar integration in jenkins:
         To do that first create a token in Sonarqube
+        Then goto the jenkins system and update it there with the credentials and link eg http://3.1.206.171:9000 
         
