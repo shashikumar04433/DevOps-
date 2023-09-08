@@ -8,7 +8,6 @@
             
            4. Firewall ---> Azure Firewall, Network Security Group.
             
-           5. Access Manager ---> IAM...
-            
-            
+           5. Access Manager ---> IAM.
+             
             
