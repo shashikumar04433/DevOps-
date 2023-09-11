@@ -281,7 +281,7 @@
                         
 ## Kubernetes Feature:
 
-                  * Installation of Kubernetes steps mentioned above in the word file please go though that.
+                  * Installation of Kubernetes steps mentioned above in the word file please go though that .
 ### Features of Kubernetes:
 
                   * Service Discovery and Load Balancing.
