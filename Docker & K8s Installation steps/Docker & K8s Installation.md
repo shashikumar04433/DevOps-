@@ -333,8 +333,9 @@
             </VirtualHost>
 
             * service httpd restart
-            * change the name in Ui tomcat1:
+            * To change the  in Ui tomcat1:
 		 Webapps>root>index.js.
+   		
 		 
 			
 			 
