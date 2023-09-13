@@ -15,16 +15,16 @@ yum list installed | grep "java"
 
 java -version
 
-'cd /opt/'
+cd /opt/
 
-'curl -O  http://mirrors.estointernet.in/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.tar.gz' 
+curl -O  http://mirrors.estointernet.in/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.tar.gz
 
-'tar zxf apache-maven-3.6.2-bin.tar.gz'
+tar zxf apache-maven-3.6.2-bin.tar.gz
 
-'cd apache-maven-3.6.2'
+cd apache-maven-3.6.2
 
-'cd bin/'
+cd bin/
 
-'./mvn -version'
+./mvn -version
 
-'export PATH=$PATH:/opt/apache-maven-3.6.2/bin' 
+export PATH=$PATH:/opt/apache-maven-3.6.2/bin
