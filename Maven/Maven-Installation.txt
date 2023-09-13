@@ -7,13 +7,13 @@ put Ec2-user as the login.
 
 put 'sudo su' to get root access
 
-'yum install -y java-1.8.0-openjdk-devel'
+yum install -y java-1.8.0-openjdk-devel
 
-'which java' => /bin/java 
+which java' => /bin/java 
 
-'yum list installed | grep "java"'
+yum list installed | grep "java"
 
-'java -version'
+java -version
 
 'cd /opt/'
 
