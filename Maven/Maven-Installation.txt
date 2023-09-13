@@ -3,7 +3,7 @@
 
 Launch a RedHat Instance
 
-put 'ec2-user' as the login.
+put Ec2-user as the login.
 
 put 'sudo su' to get root access
 
