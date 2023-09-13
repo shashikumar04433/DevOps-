@@ -13,7 +13,8 @@
             
             Step3:
             Create a ecr private repository and then click on push commands.
-            *  aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 377349541097.dkr.ecr.ap-                    south-1.amazonaws.com
+            *  aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 377349541097.dkr.ecr.
+            ap-south-1.amazonaws.com
             
             Step4:
             example:
