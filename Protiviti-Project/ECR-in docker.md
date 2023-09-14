@@ -6,6 +6,7 @@
             Step2:
             Create a role in aws with the access of ec2 repository and admin access and create access key and store it somewhere 
             for forther requirements example below.
+            * Install-Module -Name AWSPowerShell -Force -AllowClobber
             * aws configure
             * Access key - AKIA43MM3UB4BSMWHP7D
             *  Secret access key - vOWVw00aqv9Kca4G8NkQiWaEyim/Yd5H47XQ9GzX
