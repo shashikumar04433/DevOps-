@@ -28,7 +28,6 @@
             Create a ecs cluster then task definition and service and after if the task are running take the public 
             ip and paste in the browser.
             
-            
             END 
 
 # Creating the Elastic container repository in Linux:
