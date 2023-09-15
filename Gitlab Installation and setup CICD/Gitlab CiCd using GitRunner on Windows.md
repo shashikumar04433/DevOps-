@@ -19,6 +19,16 @@
                 * gitlab-runner.exe --version
                 * gitlab-runner.exe start 
                 * gitlab-runner.exe run
+
+                Step5:
+                Then go into gitlab.com and there go into ci/cd then runner generate token
+                * gitlab-runner.exe register
+                * https://gitlab.com
+                * then enter the token in gitlab one which u creted for gitlab runner
+                * name any 
+                * gitlab-runner.exe start 
+                
+                
                 
               
             
