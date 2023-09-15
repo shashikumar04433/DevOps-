@@ -16,6 +16,9 @@
         
                 Step4:
                 * gitlab-runner.exe install
-                * gitlab-runner.exe run
                 * gitlab-runner.exe --version
+                * gitlab-runner.exe start 
+                * gitlab-runner.exe run
+                
+              
             
