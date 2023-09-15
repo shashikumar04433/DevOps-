@@ -3,17 +3,19 @@
 #### Pre-Requirements:
 
                 Step1:
-                Install the Gitlab runner in windows using following link <https://docs.gitlab.com/runner/install/windows.html>
+                *  Install the Gitlab runner in windows using following link <https://docs.gitlab.com/runner/install/windows.html>
         
         
                 Step2:
-                Change the name of the folder as <gitlab-runner.exe>
+                * Change the name of the folder as <gitlab-runner.exe>
         
         
                 Step3:
-                Then run cmd as Administartor and copy the path of the gitlab runner and paste in cmd.
+                * Then run cmd as Administartor and copy the path of the gitlab runner and paste in cmd.
         
         
                 Step4:
-                gitlab-runner.exe run
+                * gitlab-runner.exe install
+                * gitlab-runner.exe run
+                * gitlab-runner.exe --version
             
