@@ -27,6 +27,7 @@
                 * then enter the token in gitlab one which u creted for gitlab runner
                 * name any 
                 * gitlab-runner.exe start 
+
                 
                 
                 
