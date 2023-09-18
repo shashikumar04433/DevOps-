@@ -11,7 +11,7 @@
         
         
                 Step3:
-                * Then run cmd as Administartor and copy the path of the gitlab runner and paste in cmd.
+                * Then run cmd as Administartor and copy the path of the <gitlab runner of your local where gitlab runner downloaded> and                    paste in cmd.
         
         
                 Step4:
