@@ -39,6 +39,41 @@
             token which you have under ci/cd
             shell
        9.   sudo gitlab-runner status 
+       10. then add .gitlab-ci.yml
+            and write the build and deploy script.
+
+               image: openjdk:11
+               
+               stages:
+                 - build
+                 - deploy
+                
+               
+               before_script:
+                 - chmod +x gradlew  
+                 # Name of the deployable artifact
+               
+               
+               
+               build:
+                 stage: build
+                 script:
+                   - echo "Building the web application"
+                   - ./gradlew build
+                 artifacts:
+                   paths:
+                     - ./build/libs/
+               
+               deploy:
+                 stage: deploy
+                 script:
+                 - ./gradlew build
+                 - ls -l build/libs/   # List files in the build/libs directory for 
+                 - cp -r ./build/libs/*.jar guptamanish2110/ManishKhardProject/zyx
+                 only:
+                   - main  # Deploy only on the 'main' branch
+
+       
                
              
 
