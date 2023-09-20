@@ -31,8 +31,15 @@
        6. start the GitLab runner using the below command:
                sudo gitlab-runner start
        7. Now, You can check the your runner status
-                sudo gitlab-runner status
+                sudo gitlab-runner status 
 
+       8.  Add a register :
+            gitlab-runner register
+            add <https://gitlab.com>
+            token which you have under ci/cd
+            shell
+       9.   sudo gitlab-runner status 
+               
              
 
         
