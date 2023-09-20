@@ -28,6 +28,10 @@
        5. As we above created a user whose name is “gitlab-runner” should have permission to execute the command in your server.
               vi /etc/sudoers
               gitlab-runner ALL=(ALL:ALL) NOPASSWD: ALL
+       6. start the GitLab runner using the below command:
+               sudo gitlab-runner start
+       7. Now, You can check the your runner status
+                sudo gitlab-runner status
 
              
 
