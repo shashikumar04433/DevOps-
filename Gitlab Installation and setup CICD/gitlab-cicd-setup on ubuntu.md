@@ -25,6 +25,10 @@
              sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash
        4. Install And Run As A Service:
               sudo gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
+       5. As we above created a user whose name is “gitlab-runner” should have permission to execute the command in your server.
+              vi /etc/sudoers
+              gitlab-runner ALL=(ALL:ALL) NOPASSWD: ALL
+
              
 
         
