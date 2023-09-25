@@ -31,6 +31,35 @@
                 Step6:
                  Write a Yaml file for the project which you wanna perform Ci/Cd:
                  Eg:
+                     image: openjdk:11
+                     
+                        stages:
+                          - build
+                          - deploy
+                         
+                        
+                        before_script:
+                          - chmod +x gradlew  
+                          # Name of the deployable artifact
+         
+                        build:
+                          stage: build
+                          script:
+                            - echo "Building the web application"
+                            - ./gradlew build
+                          artifacts:
+                            paths:
+                              - ./build/libs/
+                        
+                        deploy:
+                          stage: deploy
+                          script:
+                          - ./gradlew build
+                          - ls -l build/libs/   # List files in the build/libs directory for 
+                          - cp -r ./build/libs/*.jar guptamanish2110/ManishKhardProject/zyx
+                          only:
+                            - main
+
                      
 
                  
