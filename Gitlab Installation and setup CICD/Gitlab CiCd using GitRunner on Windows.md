@@ -28,6 +28,9 @@
                 * name any 
                 * gitlab-runner.exe start 
 
+                Step6:
+                 Write a yaml file for the project which you wanna perform ci/cd :
+
                 
                 
                 
