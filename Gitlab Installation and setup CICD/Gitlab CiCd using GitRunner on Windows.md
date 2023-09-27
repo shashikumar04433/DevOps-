@@ -66,30 +66,31 @@
                           Yaml file eg for Java and Maven project:
 
                           # Specify the GitLab Runner image to use
-image: maven:latest
-
-# Define stages for the CI/CD pipeline
-stages:
-  - build
-  - deploy
-
-# Define jobs for each stage
-build:
-  stage: build
-  script:
-    - mvn clean install
-  artifacts:
-    paths:
-      - target/*.jar
-
-deploy:
-  stage: deploy
-  script:
-    - echo "Deploying..."
-    - scp -P 22 -r target/*.jar shashi.reddy@10.76.150.183:\C:\Users\shashi.reddy\Downloads\javaapp
-  only:
-    - main
-                     
+                          
+                          image: maven:latest
+                          
+                          # Define stages for the CI/CD pipeline
+                          stages:
+                            - build
+                            - deploy
+                          
+                          # Define jobs for each stage
+                          build:
+                            stage: build
+                            script:
+                              - mvn clean install
+                            artifacts:
+                              paths:
+                                - target/*.jar
+                          
+                          deploy:
+                            stage: deploy
+                            script:
+                              - echo "Deploying..."
+                              - scp -P 22 -r target/*.jar shashi.reddy@10.76.150.183:\C:\Users\shashi.reddy\Downloads\javaapp
+                            only:
+                              - main
+                                               
 
                  
                  
