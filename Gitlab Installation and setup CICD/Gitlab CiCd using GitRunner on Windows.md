@@ -65,16 +65,16 @@
 
                           Yaml file eg for Java and Maven project:
 
-                          # Specify the GitLab Runner image to use
+                       # Specify the GitLab Runner image to use
                           
                           image: maven:latest
                           
-                          # Define stages for the CI/CD pipeline
+                       # Define stages for the CI/CD pipeline
                           stages:
                             - build
                             - deploy
                           
-                          # Define jobs for each stage
+                        # Define jobs for each stage
                           build:
                             stage: build
                             script:
