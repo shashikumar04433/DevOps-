@@ -60,6 +60,10 @@
                           only:
                             - main
 
+
+                    Step7:
+
+                          Yaml file eg for Java and Maven project:
                      
 
                  
