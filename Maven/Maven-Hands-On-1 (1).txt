@@ -1,6 +1,6 @@
 ================< Maven Hands ON >================
 
-'mvn archetype:generate' 
+mvn archetype:generate
 
 => id : 'Enter the default value' 
 
@@ -52,11 +52,11 @@ goto browser -> search  'apache tomcat' -> go to their official website -> goto 
 
 'tar zxf apache-tomcat-9.0.24.tar.gz'
 
-'cd bin/'
+cd bin/
 
-'./startup.sh'
+./startup.sh
 
-'<ip address>:8080' 
+<ip address>:8080 
 
 'cd /opt/PetClinic/target'
 
