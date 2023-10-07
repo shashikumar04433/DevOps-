@@ -23,7 +23,7 @@
                             present username: username (eg: root)
                             then set passwd 
                 
- ### Create the Gitlab Account on Redhat using below command:
+ ### Commands to Create the Gitlab on Redhat using below command:
                     https://medium.com/devops-world/installing-gitlab-on-centos7-8d4230cb145a (link for steps of installtion)
                      Step 1: 
                             yum -y install postfix  (Postfix is an email service tool or Mail Transfer Agent)
