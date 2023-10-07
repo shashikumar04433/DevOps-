@@ -1,4 +1,4 @@
-# JBoss Installation:
+# JBoss Installation Ubuntu & Redhat:
         Step1:
         
             To install the tar or zip file :
