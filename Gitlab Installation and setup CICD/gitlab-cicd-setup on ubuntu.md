@@ -71,7 +71,7 @@
                  - ls -l build/libs/   # List files in the build/libs directory for 
                  - cp -r ./build/libs/*.jar guptamanish2110/ManishKhardProject/zyx
                  only:
-                   - main  # Deploy only on the 'main' branch
+                   - main  # Deploy only on the ' main ' branch
 
        
                
