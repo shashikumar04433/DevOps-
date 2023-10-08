@@ -1,6 +1,6 @@
 ## gitlab-cicd-setup on ubuntu
 
-### Maven Installation steps
+### Maven Installation steps:
      1. apt-get update
      2. sudo apt install maven
      3. mvn -version
