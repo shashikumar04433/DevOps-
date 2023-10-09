@@ -7,7 +7,7 @@
         
         
                 Step2:
-                * Change the name of the folder as <gitlab-runner>
+                * Change the name of the folder as <gitlab runner>
         
         
                 Step3:
