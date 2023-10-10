@@ -57,7 +57,7 @@
   		yum install fontconfig java-11-openjdk
 		yum install jenkins
  		systemctl status jenkins
-  		systemctl enable jenkins
+  		systemctl enable jenkins .
 
 
 
