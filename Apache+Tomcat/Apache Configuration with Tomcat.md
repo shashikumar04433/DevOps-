@@ -56,7 +56,7 @@
 		sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
   		yum install fontconfig java-11-openjdk
 		yum install jenkins
- 		systemctl status jenkins
+ 		systemctl status jenkins .
   		systemctl enable jenkins .
 
 
