@@ -36,6 +36,11 @@
     2. Cost effective
     3. Scalability
     4. Security
+
+### Aws Global Infrastructure:
+
+    1. Availability Zone
+    2. Regions --> with many availability zones.
     
     
 
