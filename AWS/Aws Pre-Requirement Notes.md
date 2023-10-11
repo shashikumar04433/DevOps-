@@ -29,6 +29,14 @@
     15.DevOps on Aws
     16.Aws Codepipeline
     17.Kubernetes on Aws 
+
+### Features of Aws:
+
+    1. Flexibility
+    2. Cost effective
+    3. Scalability
+    4. Security
+    
     
 
           
