@@ -43,5 +43,10 @@
     2. Regions --> with many availability zones.
     
     
+### Types of Instances:
 
-          
+    1. On-Demand 
+    2. Dedicated
+    3. On spot
+    4. Reserved
+    
