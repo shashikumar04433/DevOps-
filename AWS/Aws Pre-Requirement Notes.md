@@ -40,7 +40,7 @@
 ### Aws Global Infrastructure:
 
     1. Availability Zone
-    2. Regions --> with many availability zones.
+    2. Regions --> with many availability zones
     
     
 ### Types of Instances:
@@ -48,5 +48,4 @@
     1. On-Demand 
     2. Dedicated
     3. On spot
-    4. Reserved .
-    
+    4. Reserved 
