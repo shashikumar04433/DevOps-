@@ -48,5 +48,5 @@
     1. On-Demand 
     2. Dedicated
     3. On spot
-    4. Reserved
+    4. Reserved .
     
