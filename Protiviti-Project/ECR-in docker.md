@@ -14,9 +14,13 @@
             
             Step3:
             Create a ecr private repository and then click on push commands.
-            *  aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 377349541097.dkr.ecr.
-            ap-south-1.amazonaws.com
             
+             Get-ExecutionPolicy 
+             Set-ExecutionPolicy RemoteSigned 
+             Get-ExecutionPolicy
+             Import-Module AWSPowerShell
+             (Get-ECRLoginCommand).Password | docker login --username AWS --password-stdin 687014092223.dkr.ecr.ap-south-1.amazonaws.com
+             
             Step4:
             example:
             docker tag coretry:dev 883448062072.dkr.ecr.ap-northeast-1.amazonaws.com/worktasknew:latest
