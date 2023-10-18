@@ -6,7 +6,7 @@
     2. Migration
     3. Security & Compliance .
     4. Storage
-    5. Networking
+    5. Networking .
     6. Messaging
     7. Database
     8. Management Tools
