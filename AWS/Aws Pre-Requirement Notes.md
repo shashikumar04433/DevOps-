@@ -4,7 +4,7 @@
 
     1. Compute .
     2. Migration
-    3. Security & Compliance
+    3. Security & Compliance .
     4. Storage
     5. Networking
     6. Messaging
