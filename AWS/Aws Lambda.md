@@ -7,7 +7,7 @@
         * No maintainance 
         * Pay as you go
         * High Availability
-        * Automation Trigger kind.
+        * Automation Trigger 
         
         
 
