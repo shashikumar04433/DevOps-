@@ -6,6 +6,6 @@
             
            3.  Network ---> Virtual Network, Subnets, Virtual Network Gateway, Traffic Manager.
             
-           4. Firewall ---> Azure Firewall, Network Security Group.
+           
            
             
