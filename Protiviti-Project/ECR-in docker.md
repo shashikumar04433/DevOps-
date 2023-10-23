@@ -15,10 +15,10 @@
             Step3:
             Create a ecr private repository and then click on push commands.
             
-             Get-ExecutionPolicy 
-             Set-ExecutionPolicy RemoteSigned 
-             Get-ExecutionPolicy
-             Import-Module AWSPowerShell
+             * Get-ExecutionPolicy 
+             * Set-ExecutionPolicy RemoteSigned 
+             * Get-ExecutionPolicy
+             * Import-Module AWSPowerShell
              (Get-ECRLoginCommand).Password | docker login --username AWS --password-stdin 687014092223.dkr.ecr.ap-south-1.amazonaws.com
              
             Step4:
