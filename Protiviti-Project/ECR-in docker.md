@@ -1,7 +1,7 @@
 # Creating the Elastic container repository in Windows:
 
             Step1:
-            Install aws cli ,Powershell (with black label icon).
+            Install aws cli ,Powershell (with black label icon).  
             
             Step2:
             Create a role in aws with the access of ec2 repository and admin access and create access key and store it somewhere 
