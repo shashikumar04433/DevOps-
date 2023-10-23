@@ -59,7 +59,7 @@
                         * docker push 883448062072.dkr.ecr.ap-southeast-1.amazonaws.com/fcra:latest
                         * docker images
             Step4:
-                        Create a ECS and attach the docker ECR image url .
+                        Create a ECS and attach the docker ECR image url 
                         
 
            
