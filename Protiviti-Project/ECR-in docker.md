@@ -19,11 +19,11 @@
              * Set-ExecutionPolicy RemoteSigned 
              * Get-ExecutionPolicy
              * Import-Module AWSPowerShell
-             (Get-ECRLoginCommand).Password | docker login --username AWS --password-stdin 687014092223.dkr.ecr.ap-south-1.amazonaws.com
+             * (Get-ECRLoginCommand).Password | docker login --username AWS --password-stdin 687014092223.dkr.ecr.ap-south-1.amazonaws.com
              
             Step4:
             example:
-            docker tag coretry:dev 883448062072.dkr.ecr.ap-northeast-1.amazonaws.com/worktasknew:latest
+            * docker tag coretry:dev 883448062072.dkr.ecr.ap-northeast-1.amazonaws.com/worktasknew:latest
             change the local docker image name in the starting.
             
             Step5:
