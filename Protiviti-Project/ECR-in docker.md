@@ -23,7 +23,9 @@
              
             Step4:
             example:
+            
             * docker tag coretry:dev 883448062072.dkr.ecr.ap-northeast-1.amazonaws.com/worktasknew:latest
+            
             change the local docker image name in the starting.
             
             Step5:
