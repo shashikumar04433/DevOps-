@@ -51,7 +51,7 @@
                          * git clone https://github.com/shashikumar04433/FCRAnew.git
                          
                          * create a docker file with the name Docker file .
-                         .
+                         * Then check the syntax and check docker file is outside the .web file.
 
             Step3:
                         Create a ECR named Docker-ECR and then click on push commands and choose linux:
