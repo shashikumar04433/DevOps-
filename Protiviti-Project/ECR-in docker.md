@@ -49,6 +49,7 @@
                          * aws configure
             Step2:
                          * git clone https://github.com/shashikumar04433/FCRAnew.git
+                         
                          * create a docker file.
 
             Step3:
