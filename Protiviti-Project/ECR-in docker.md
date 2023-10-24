@@ -50,7 +50,8 @@
             Step2:
                          * git clone https://github.com/shashikumar04433/FCRAnew.git
                          
-                         * create a docker file.
+                         * create a docker file with the name Docker file 
+                         .
 
             Step3:
                         Create a ECR named Docker-ECR and then click on push commands and choose linux:
