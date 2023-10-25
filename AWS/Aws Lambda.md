@@ -7,6 +7,7 @@
         * No maintainance 
         * Pay as you go
         * High Availability
+        * Built in security
         
         
         
