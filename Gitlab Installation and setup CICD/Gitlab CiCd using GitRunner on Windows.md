@@ -29,7 +29,7 @@
                 * gitlab-runner.exe start 
 
                 Step6:
-                 Write a Yaml file for the project which you wanna perform Ci/Cd:
+                 Write a Yaml file for java-gradle project which you wanna perform Ci/Cd:
                  Eg:
                      image: openjdk:11
                      
