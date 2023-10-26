@@ -90,7 +90,7 @@
                               - scp -P 22 -r target/*.jar shashi.reddy@10.76.150.183:\C:\Users\shashi.reddy\Downloads\javaapp
                             only:
                               - main
-                                               
+                                         
 
                  
                  
