@@ -2,7 +2,7 @@
 ## There are 3 steps of Git push :
       1.WorkPlace.
       2.Staging.
-      3.Commit changes.
+      3.Commit changes
 
 ## Commands of the git are:
       git clone ""path of the file which copied in the github code part"
