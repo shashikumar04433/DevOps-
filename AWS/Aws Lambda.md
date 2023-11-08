@@ -11,7 +11,7 @@
         * Easy Integration 
         
         * Eg:
-               **S3** Bucket: Execute a Lambda function when a new file is uploaded to an S3 bucket. Useful for processing and analyzing data,such as image resizing or data transformation.
+               * S3 Bucket: Execute a Lambda function when a new file is uploaded to an S3 bucket. Useful for processing and analyzing data,such as image resizing or data transformation.
         
         
         
