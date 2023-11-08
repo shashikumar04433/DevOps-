@@ -31,7 +31,8 @@
                * Aliases
                * Versions
                
-        * Lambda is works on .json format
+        * Lambda is works on .json format.
+        
         * Imp : Before creating the lambda trigger check the right Iam Permissions assigned or not.
         
         
