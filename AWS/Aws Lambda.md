@@ -31,9 +31,16 @@
                * Aliases
                * Versions
                
-        * Lambda is works on .json format.
-        
-        * Imp : Before creating the lambda trigger check the right Iam Permissions assigned or not.
+               * Lambda is works on .json format.
+               
+               * Imp : Before creating the lambda trigger check the right Iam Permissions assigned or not.
+               
+       * Aws Layers:
+              * A function can include a common or shared resource called Layers.
+                     Eg :
+                     Aws layers are where u store the packages or files.
+              
+       
         
         
 
