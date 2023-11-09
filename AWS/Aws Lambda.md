@@ -40,6 +40,9 @@
                      Eg :
                      Aws layers are where u store the packages or files.
               
+       * Api Gateway Integration using Lambda:
+              * Api gateway integration using lambda allows used to create a rest api that invoke your lambda functions.
+                 This is powerful and flexible way to build scalable and powerful applications.
        
         
         
