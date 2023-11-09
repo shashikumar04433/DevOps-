@@ -51,7 +51,9 @@
                      2.invoke (It trigger the function after initalization).
                      3.shutdown.
                      
-              Note: Latency will be more for java projects compare to other programming languages.
+              Note: 
+                     * Latency will be more for java projects compare to other programming languages.
+                     * To avoid the cold start problem you can use the snapstart for avoiding the latency .
                      
                      
               
