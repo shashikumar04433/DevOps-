@@ -46,7 +46,7 @@
 
        * Lambda Snapshot:
               * Cold Start
-              ** Aws lambda has three stages to start:(Cold Start it has init and have latency): 
+              * Aws lambda has three stages to start:(Cold Start it has init and have latency): 
                      1.init (it loads the runtime).
                      2.invoke (It trigger the function after initalization).
                      3.shutdown.
