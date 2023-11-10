@@ -55,7 +55,7 @@
                      * Latency will be more for java projects compare to other programming languages.
                      * To avoid the cold start problem you can use the snapstart for avoiding the latency .
                      * Snapstart is only available for Java Language and available for the versions above java-11 and beyond.
-                     ** Advantage of using snapstart:
+                     ** Advantage of using snapstart is:
                             
                      
                      
