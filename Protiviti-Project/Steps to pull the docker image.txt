@@ -1,0 +1,13 @@
+Step1: Install docker desktop 
+https://docs.docker.com/desktop/install/windows-install/
+ 
+Step2:Install AWS CLI in command prompt (cmd)
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+
+Step3:(Open any cmd or Powershell and make aws configure with the below commands to pull the docker image)
+* aws configure 
+* Access id = XXXXXXXXXXXXXXXXXXXX
+* secret key = XXXXXXXXXXXXXXXXXXXXXXXX
+* aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 7054XXXXXXXXXXXX.dkr.ecr.ap-south-1.amazonaws.com
+* docker pull 7054XXXXXXXXXXXX.dkr.ecr.ap-south-1.amazonaws.com/fcra:latest
