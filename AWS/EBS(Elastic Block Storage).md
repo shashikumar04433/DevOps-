@@ -1,4 +1,4 @@
-# Elastic Block Storage (EBS)
+## Elastic Block Storage (EBS)
 
   ### Types of Storages:
 
