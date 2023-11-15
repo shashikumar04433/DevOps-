@@ -2,7 +2,7 @@
 
     1. Aws Lambda
     
-    2. Aws Elastic Block Store
+    2. Aws Elastic Block Storage
 
     3. Cloud Storage
 
