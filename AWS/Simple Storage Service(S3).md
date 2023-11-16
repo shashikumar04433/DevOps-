@@ -22,8 +22,17 @@
 
 ### Types of Storage Classes:
 
-   * Frequently.
-   * InFrequently.
-   * Archieved.
-   * Intelligently.
+   1. Frequently storage are:
+      * Standard Storage
+      * Reduce Redandant Storage
+         
+   2. InFrequently storage are:
+      * Standard-IA
+      * OneZone-IA
+        
+   3. Archieved.
+      * Glacier
+      * Glacier Deep Archival
+        
+   4. Intelligently.
          
