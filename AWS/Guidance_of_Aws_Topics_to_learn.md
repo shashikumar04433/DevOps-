@@ -50,8 +50,16 @@
 
 ### Developer Tools:
 
-       * AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline: 
+       * AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline
+
+### Containers:
+
+       * ECS (Elastic Container Service)
+       * EKS (Elastic Kubernetes Service)
        
+### Advanced Tools:
+
+       * CloudFormation:
        
         
      
