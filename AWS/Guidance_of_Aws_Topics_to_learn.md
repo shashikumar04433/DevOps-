@@ -60,6 +60,15 @@
 ### Advanced Tools:
 
        * CloudFormation.
+       * Elastic Beanstalk.
+       * CloudFront
+
+### Migration and Transfer:
+
+       * Server Migration Service (SMS).
+       
+       
+       
        
         
      
