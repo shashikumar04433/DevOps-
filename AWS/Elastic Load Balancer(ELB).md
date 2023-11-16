@@ -8,4 +8,12 @@
   * Load balancing.
   * Health Check.
   * SSL-Encryption/Decription.
-    
+
+## ELB targets:
+
+    * EC2.
+    * ECS.
+    * Ip(From other on premises).
+    * Lambda.
+
+###
