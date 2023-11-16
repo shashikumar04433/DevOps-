@@ -9,6 +9,7 @@
 
 ### Real Time Task (Uploading the Static Project and accessing in web using s3 link):
 
+
    Step1: Download this static project using this url <https://www.free-css.com/free-css-templates/page296/inance> and unzip.
 
    Step2: Create a s3 bucket name as staticnewwebsite while launching it unable as public and Acl enable.
