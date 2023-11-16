@@ -18,6 +18,41 @@
 ### Networking:
 
         * VPC (Virtual Private Cloud):
+        * Route 53: 
+
+### Databases:
+
+       * RDS (Relational Database Service):
+       * DynamoDB:
+
+### Identity and Access Management (IAM):
+
+       * IAM rules
+       
+### Security:
+
+        * Key Management Service (KMS)
+        * Identity and Access Management (IAM) Policies:
+
+### Monitoring and Management:
+
+       * Amazon CloudWatch:
+       * AWS CloudTrail:
+
+### Application Integration:
+
+       * SQS (Simple Queue Service):
+       * SNS (Simple Notification Service):
+       
+### Serverless Computing:
+
+       * AWS Lambda: 
+
+### Developer Tools:
+
+       * AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline: 
+       
+       
         
      
 
