@@ -1,35 +1,23 @@
 ## Topics of Aws to learn in order:
 
-    1. Aws Lambda
-    
-    2. Aws Elastic Block Storage
+### AWS Fundamentals:
 
-    3. Cloud Storage
+        * Introduction of Cloud Computing
+        * Overview of Aws.
+        
+### Compute Services:
 
-    4. Aws S3
+        * Elastic Cloud Compute(EC2)
+        * LightSail
+        
+### Storage Services:
 
-    5. Aws Networking Fundamentals
+        * S3 (Simple Storage Service)
+        * EBS (Elastic Block Store)
 
-    6. Aws Cloudfront
+### Networking:
 
-    7. Amazon Cloud Watch
+        * VPC (Virtual Private Cloud):
+        
+     
 
-    8. Aws Cloudformation
-
-    9. AutoScaling & Load Balancer
-
-    10. Cloud Security
-
-    11. IAM (Identity and access management)
-
-    12. Red Shift
-
-    13. Aws Kinesis, Gateway, SES Services
-
-    14. Aws Iot, Amazon Polly, Aws Rekognition
-
-    15. Devops on Aws
-
-    16. Aws codepipeline
-
-    17. Kubernetes on Aws
