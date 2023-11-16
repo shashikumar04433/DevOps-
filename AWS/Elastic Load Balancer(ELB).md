@@ -14,6 +14,12 @@
     * EC2.
     * ECS.
     * Ip(From other on premises).
-    * Lambda.
+    * Lambda.(It support only in Application Load Balancer)
 
-###
+### Types of ELB:
+
+    1. Classic Load Balancer.
+    2. Application Load Balancer.
+    3. Network Load Balancer.
+    4. Gateway Load Balancer.
+    
