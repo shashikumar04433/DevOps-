@@ -2,28 +2,28 @@
 
 ### AWS Fundamentals:
 
-        * Introduction of Cloud Computing
+        * Introduction of Cloud Computing.
         * Overview of Aws.
         
 ### Compute Services:
 
-        * Elastic Cloud Compute(EC2)
-        * LightSail
+        * Elastic Cloud Compute(EC2).
+        * LightSail.
         
 ### Storage Services:
 
-        * S3 (Simple Storage Service)
-        * EBS (Elastic Block Store)
+        * S3 (Simple Storage Service).
+        * EBS (Elastic Block Store).
 
 ### Networking:
 
-        * VPC (Virtual Private Cloud):
-        * Route 53: 
+        * VPC (Virtual Private Cloud).
+        * Route 53.
 
 ### Databases:
 
-       * RDS (Relational Database Service):
-       * DynamoDB:
+       * RDS (Relational Database Service).
+       * DynamoDB
 
 ### Identity and Access Management (IAM):
 
@@ -32,34 +32,34 @@
 ### Security:
 
         * Key Management Service (KMS)
-        * Identity and Access Management (IAM) Policies:
+        * Identity and Access Management (IAM) Policies.
 
 ### Monitoring and Management:
 
-       * Amazon CloudWatch:
-       * AWS CloudTrail:
+       * Amazon CloudWatch.
+       * AWS CloudTrail.
 
 ### Application Integration:
 
-       * SQS (Simple Queue Service):
-       * SNS (Simple Notification Service):
+       * SQS (Simple Queue Service).
+       * SNS (Simple Notification Service).
        
 ### Serverless Computing:
 
-       * AWS Lambda: 
+       * AWS Lambda.
 
 ### Developer Tools:
 
-       * AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline
+       * AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline.
 
 ### Containers:
 
-       * ECS (Elastic Container Service)
-       * EKS (Elastic Kubernetes Service)
+       * ECS (Elastic Container Service).
+       * EKS (Elastic Kubernetes Service).
        
 ### Advanced Tools:
 
-       * CloudFormation:
+       * CloudFormation.
        
         
      
