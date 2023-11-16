@@ -19,4 +19,11 @@
    Step4: Choose all web files and make then in actions as make public.
 
    Step5: Access the website using url (Thank you).
+
+### Types of Storage Classes:
+
+   * Frequently.
+   * InFrequently.
+   * Archieved.
+   * Intelligently.
          
