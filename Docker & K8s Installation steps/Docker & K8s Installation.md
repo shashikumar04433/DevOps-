@@ -1,6 +1,6 @@
 # Docker 
 
-## Docker Installation in Ubuntu:
+## Docker Installation in Ubuntu: 
       sudo apt-get update
       sudo apt-get install docker.io
 
