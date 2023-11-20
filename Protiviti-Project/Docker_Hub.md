@@ -1,4 +1,4 @@
-# Docker Image commands worked.
+# Docker Image building and pusing to DockerHub .
 
       Step1:
             Dockerfile:
