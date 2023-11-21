@@ -37,6 +37,5 @@
             terraform destroy (for deleting the server)
       
 
-      
-      
+
   
