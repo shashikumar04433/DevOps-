@@ -11,7 +11,7 @@
 
 
 ###  Creating server with terraform script:
-eg:It will create the server with t2.miro in mumbai region.
+    Eg:It will create the server with t2.miro in mumbai region.
 
             provider "aws" {
           region = "ap-south-1"
