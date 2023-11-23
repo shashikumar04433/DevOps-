@@ -80,7 +80,8 @@
 
 ## Create a DynamoDB Table for State Locking:
 
-     aws dynamodb create-table --table-name your-dynamodb-table --attribute-definitions AttributeName=LockID,AttributeType=S --key-schema AttributeName=LockID,KeyType=HASH --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
+     aws dynamodb create-table --table-name your-dynamodb-table --attribute-definitions AttributeName=LockID,AttributeType=S --key-schema 
+     AttributeName=LockID,KeyType=HASH --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
      Replace "your-dynamodb-table" with the desired DynamoDB table name.
 
 ## Configure the DynamoDB table name in your Terraform backend configuration, as shown in step 1.
