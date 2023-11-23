@@ -35,4 +35,5 @@
 
           * ingress --->Inbound 
           * egress --->Outbound
-       
+### Command to login into server without .pem file if its configured in terraform file:
+          * ssh -i ~/.ssh/id_rsa ubuntu@54.86.201.62
