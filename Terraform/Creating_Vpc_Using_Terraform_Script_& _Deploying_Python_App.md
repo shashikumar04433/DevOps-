@@ -87,7 +87,7 @@
             private_key = file("~/.ssh/id_rsa")  # Replace with the path to your private key
             host        = self.public_ip
           }       
-### File provisioner to copy a file from local to the remote EC2 instance
+    # File provisioner to copy a file from local to the remote EC2 instance
           provisioner "file" {
             source      = "app.py"  # Replace with the path to your local file
             destination = "/home/ubuntu/app.py"  # Replace with the path on the remote instance
