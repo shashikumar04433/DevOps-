@@ -1,12 +1,15 @@
 
 ### Overcoming Disadvantages with Remote Backends (e.g., S3):
 
-          A remote backend stores the Terraform state file outside of your local file system and version control. Using S3 as a remote backend is a popular choice due to its reliability and scalability. Here's how to set it up:
+          * A remote backend stores the Terraform state file outside of your local file system and version control.
+            Using S3 as a remote backend is a popular choice due to its reliability and scalability. Here's how to set it up:
      
-     Create an S3 Bucket: Create an S3 bucket in your AWS account to store the Terraform state. Ensure that the appropriate IAM permissions are set up.
+          * Create an S3 Bucket: Create an S3 bucket in your AWS account to store the Terraform state. 
+            Ensure that the appropriate IAM permissions are set up.
 
-### Configure Remote Backend in Terraform:
-## In your Terraform configuration file (e.g., main.tf), define the remote backend.
+## Configure Remote Backend in Terraform:
+
+   In your Terraform configuration file (e.g., main.tf), define the remote backend.
 
           terraform {
             backend "s3" {
