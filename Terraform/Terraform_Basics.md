@@ -30,5 +30,9 @@
         * Security Risks
         * Versioning Complexity
         * To overcome this disadvantages please follow StateFile_Configuring_S3_with.md
-        
+
+### Names of Security Groups in TerraForm:
+
+          * ingress --->Inbound 
+          * egress --->Outbound
        
