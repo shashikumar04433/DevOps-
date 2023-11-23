@@ -18,3 +18,17 @@
         -->terraform.tfstate 
        * file is the heart of TerraForm (Do not make it public so that it could be secure and doesnt lead to go out the ensitive                     information)
        
+### Advantages of Terraform:
+
+       * Resource Tracking
+       * concurrency control
+       * Plan Calculation
+       * Resource Planing
+       
+### Disadvantages of Terraform:
+
+        * Security Risks
+        * Versioning Complexity
+        * To overcome this disadvantages please follow StateFile_Configuring_S3_with.md
+        
+       
