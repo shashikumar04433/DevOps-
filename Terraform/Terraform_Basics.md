@@ -1,6 +1,11 @@
 ## TerraForm Basic Commands:
-
-      * Automatic migration of the state follow below command:
-          terraform init -migrate-state
-
-      * 
+     
+      * terraform init
+      * terraform plan
+      * terraform validate
+      * terraform apply
+      * terraform destroy
+      
+      * If you wish to attempt automatic migration of the state, use "terraform init -migrate-state".
+      
+      * If you wish to store the current configuration with no changes to the state, use "terraform init -reconfigure".
