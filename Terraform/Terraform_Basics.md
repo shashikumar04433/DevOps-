@@ -8,6 +8,7 @@
       * terraform init -migrate-state
       * terraform init -reconfigure
       * terraform.tfstate
+      * terraform 
       
       * If you wish to attempt automatic migration of the state, use :
         --> terraform init -migrate-state
