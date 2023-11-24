@@ -9,6 +9,9 @@
       * terraform init -reconfigure
       * terraform.tfstate
       * terraform destroy --target aws_instance.name_of that  
+      * terraform workspace new <followed by name >
+      * terraform workspace select <dev name of the environment you want to shift>
+      * terraform workspace list <to check the list of workspaces>
       
       * If you wish to attempt automatic migration of the state, use :
         --> terraform init -migrate-state
