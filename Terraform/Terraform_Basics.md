@@ -8,7 +8,7 @@
       * terraform init -migrate-state
       * terraform init -reconfigure
       * terraform.tfstate
-      * terraform 
+      * terraform destroy
       
       * If you wish to attempt automatic migration of the state, use :
         --> terraform init -migrate-state
