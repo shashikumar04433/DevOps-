@@ -1,1 +1,1 @@
-# EKS (Elastic Kubernetes
+# EKS (Elastic Kubernetes Servic
