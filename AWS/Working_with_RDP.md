@@ -20,7 +20,7 @@
 
   10. Then create a elastic ips ofr creating two different public ips and two private ips .
   
-  11. Remember there should be two network interfaces for that (imp).
+  11. Remember there should be two network interfaces for that  & in network interface add new ip address (auto assign) (imp).
   
   12. Then create a target group and load balancer and attch the 3389 port .
   
