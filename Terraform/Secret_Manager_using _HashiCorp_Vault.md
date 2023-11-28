@@ -1,5 +1,5 @@
-## Secret Management using hashicore valut or aws secret manager:
+## Secret Management using hashicorp valut or aws secret manager:
 
-    Steps for set-up the hashicore-vault:
+    Steps for set-up the hashicorp-vault:
 
     
