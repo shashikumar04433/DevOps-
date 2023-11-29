@@ -81,19 +81,25 @@ To enable the AppRole authentication method in Vault, you need to use the Vault 
 
 Run the following command to enable the AppRole authentication method:
 
-```bash
-vault auth enable approle
-```
-
 This command tells Vault to enable the AppRole authentication method.
 
 2. **Create an AppRole**:
 
 We need to create policy first,
 
+**Using Vault CLI**:
+
+Run the following command to enable the AppRole authentication method:
+
 ```
 export VAULT_ADDR="HTTP://0.0.0.0:8200"
 ```
+This command tells Vault to enable the AppRole authentication method.
+
+```bash
+vault auth enable approle
+```
+
 
 ```
 vault policy write terraform - <<EOF
