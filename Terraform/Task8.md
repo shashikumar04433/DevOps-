@@ -22,5 +22,6 @@ storing the end-to-end details of instance in generated_resource.tf
 ```
 * Steps for make more security for manual changes :
 * Make cron jobs runs for every hour or every 24 hrs .
-* Make terraform refresh
+* Check Audit Logs using lamda or functions and can use notifiers.
+* Make terraform refresh .
 ```
