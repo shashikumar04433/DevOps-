@@ -7,7 +7,7 @@
   4. Groups
   ```
 
-** Identity**
+** Identity **
 
 * Users
 * Roles
