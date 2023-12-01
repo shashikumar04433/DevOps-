@@ -11,4 +11,5 @@
         to=aws_instance.example
       }
     
-    
+    * terraform init
+    * terraform plan -generate-config-out=generated_resource.tf
