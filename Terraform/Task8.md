@@ -13,3 +13,5 @@
     
     * terraform init
     * terraform plan -generate-config-out=generated_resource.tf
+
+    terraform plan -generate-config-out=generated_resource.tf this command explains storing the end-to-end details of instance in generated_resource.tf
