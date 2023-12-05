@@ -19,4 +19,38 @@
 14.WORKDIR
 ```
  **FROM**
+
+ **ADD**
+
+ **RUN**
+
+ **CMD**
+
+ **ENTRYPOINT**
+
+ **ENV**
+
+ **MAINTAINER**
+
+ **COPY**
+
+ **EXPOSE**
+
+ **LABEL**
+
+ **VOLUME**
+
+ **USER**
+
+ **ARG**
+
+ **HEALTH**
+
+ **WORKDIR**
+
+ 
+ 
+ 
+ 
+
  
