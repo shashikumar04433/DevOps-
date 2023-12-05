@@ -9,5 +9,14 @@
 5. ENTRYPOINT ---> 
 6. ENV ----> 
 7. MAINTAINER ---> It a Keyword and its just used to mention email id.
-
-```    
+8. COPY
+9. EXPOSE
+10.LABEL
+11.VOLUME
+12.USER
+13.ARG
+14.HEALTH
+14.WORKDIR
+```
+ **FROM**
+ 
