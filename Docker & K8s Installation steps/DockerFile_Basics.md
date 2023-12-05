@@ -19,10 +19,10 @@
 14.WORKDIR
 ```
  **FROM**
- 
+ ```
   * Specifies the base image for your Docker image. It's the starting point for your image.
   * Example: FROM ubuntu:18.04
-
+```
  **ADD**
  
 
