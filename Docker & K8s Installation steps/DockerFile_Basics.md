@@ -27,8 +27,16 @@
  
 
  **RUN**
+ ```
+  * Executes commands during the build process. These commands are run in a new layer on top of the current image.
+  * Example: RUN apt-get update && apt-get install -y package-name
+ ```
 
  **CMD**
+ ```
+  * Provides default values for the ENTRYPOINT instruction. These values are used when the container is run without specifying a command.
+  * Example: CMD ["executable", "param1", "param2"]
+ ```
 
  **ENTRYPOINT**
 
