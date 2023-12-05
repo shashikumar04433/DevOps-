@@ -45,10 +45,17 @@
  **MAINTAINER**
 
  **COPY**
+ ```
   * Copies files or directories from the build context (the local filesystem where the docker build command is run) into the image.
   * Example: COPY . /app
+ ```
 
  **EXPOSE**
+ 
+ ```
+  * Informs Docker that the container listens on the specified network ports at runtime.
+  * Example: EXPOSE 80
+ ```
 
  **LABEL**
 
