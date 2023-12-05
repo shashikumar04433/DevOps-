@@ -41,6 +41,10 @@
  **ENTRYPOINT**
 
  **ENV**
+ ```
+  * Sets environment variables in the image. These variables persist when a container is run from the image.
+  * Example: ENV MY_VAR=value
+  ```
 
  **MAINTAINER**
 
@@ -51,13 +55,16 @@
  ```
 
  **EXPOSE**
- 
  ```
   * Informs Docker that the container listens on the specified network ports at runtime.
   * Example: EXPOSE 80
  ```
 
  **LABEL**
+ ```
+  * Adds metadata to the image in the form of key-value pairs.
+  * Example: LABEL version="1.0" maintainer="yourname@example.com"
+ ```
 
  **VOLUME**
 
@@ -68,8 +75,10 @@
  **HEALTH**
 
  **WORKDIR**
+ ```
   * Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it.
   * Example: WORKDIR /app
+ ```
 
  
  
