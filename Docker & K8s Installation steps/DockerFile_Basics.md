@@ -23,8 +23,12 @@
   * Specifies the base image for your Docker image. It's the starting point for your image.
   * Example: FROM ubuntu:18.04
 ```
+
  **ADD**
- 
+ ```
+  * Copy the current directory contents into the container at /app
+  * ADD . /app
+ ```
 
  **RUN**
  ```
@@ -39,6 +43,10 @@
  ```
 
  **ENTRYPOINT**
+ ```
+  * Configures the container to run as an executable. It allows you to set a default application to run when the container starts.
+  * Example: ENTRYPOINT ["executable", "param1", "param2"]
+ ```
 
  **ENV**
  ```
@@ -47,6 +55,9 @@
   ```
 
  **MAINTAINER**
+ ```
+  * Its a Keyword and just mention with the email id.
+  * Example: shashi.reddy@gmail.com
 
  **COPY**
  ```
@@ -67,18 +78,39 @@
  ```
 
  **VOLUME**
+ ```
+  * Creates a mount point and/or assigns a volume to the container. Used for persisting data outside the container.
+  * Example: VOLUME /data
+ ```
 
  **USER**
+ ```
+  * Sets the user or UID to use when running the image.
+  * Example: USER username
+ ```
 
  **ARG**
+ ```
+  * Defines variables that users can pass at build-time to the builder with the docker build command.
+  * Example: ARG version=latest
+ ```
 
  **HEALTH**
+ ```
+  * Tells Docker how to test a container to check that it is still working.
+  * Example: HEALTHCHECK CMD curl --fail http://localhost/ || exit 1
 
  **WORKDIR**
  ```
   * Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it.
   * Example: WORKDIR /app
  ```
+
+**FROM SCRATCH**
+```
+  * Indicates that the image will be built from scratch, with no pre-existing layers.
+  * Example: FROM scratch
+ 
 
  
  
