@@ -2,13 +2,13 @@
 
 ### Pillars of Docker image :
 ```
-1. FROM ---> It have to start with FROM which base image your from.
-2. ADD ----> 
-3. RUN ----> To update the Os of the image when even tou get updates.
-4. CMD ----> It is used for displaying the content.
-5. ENTRYPOINT ---> 
-6. ENV ----> 
-7. MAINTAINER ---> It a Keyword and its just used to mention email id.
+1. FROM 
+2. ADD
+3. RUN 
+4. CMD 
+5. ENTRYPOINT 
+6. ENV  
+7. MAINTAINER
 8. COPY
 9. EXPOSE
 10.LABEL
@@ -18,6 +18,7 @@
 14.HEALTH
 14.WORKDIR
 ```
+
  **FROM**
  ```
   * Specifies the base image for your Docker image. It's the starting point for your image.
@@ -100,6 +101,7 @@
  ```
   * Tells Docker how to test a container to check that it is still working.
   * Example: HEALTHCHECK CMD curl --fail http://localhost/ || exit 1
+ ```
 
  **WORKDIR**
  ```
