@@ -19,8 +19,11 @@
 14.WORKDIR
 ```
  **FROM**
+  * Specifies the base image for your Docker image. It's the starting point for your image.
+  * Example: FROM ubuntu:18.04
 
  **ADD**
+ 
 
  **RUN**
 
@@ -33,6 +36,8 @@
  **MAINTAINER**
 
  **COPY**
+  * Copies files or directories from the build context (the local filesystem where the docker build command is run) into the image.
+  * Example: COPY . /app
 
  **EXPOSE**
 
@@ -47,6 +52,8 @@
  **HEALTH**
 
  **WORKDIR**
+  * Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it.
+  * Example: WORKDIR /app
 
  
  
