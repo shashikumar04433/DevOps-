@@ -113,8 +113,16 @@
 ```
   * Indicates that the image will be built from scratch, with no pre-existing layers.
   * Example: FROM scratch
- 
+```
 
+ **Docker Volume**
+ ```
+    Docker volume is used to persist and store the data .Volumes provide a way to share data between Docker containers, and they are also used to persist data even if the associated container is removed or replaced.
+
+    * Docker Volume create <volume name>
+    * Docker run -d --name name_of_the_volume -v volume:/path
+    * docker volume ls
+ ```
  
  
  
