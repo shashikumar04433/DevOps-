@@ -1,3 +1,5 @@
 ## Multi-Stage DockerFile
+```
+FROM ubuntu as build
 
-FROM ubuntu as build 
+```
