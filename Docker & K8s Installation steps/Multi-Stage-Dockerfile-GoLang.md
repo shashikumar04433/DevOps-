@@ -7,6 +7,7 @@ COPY . .
 RUN CGO_ENABLED=0 go build -o /app .
 
 ##### Stage 2 #######
+
 FROM Scratch
 COPY --from=build /app/app
 ENTRYPOINT["/app"]
