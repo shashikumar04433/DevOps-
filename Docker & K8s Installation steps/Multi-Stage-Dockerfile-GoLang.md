@@ -1,4 +1,5 @@
 ## Multi-Stage DockerFile
+Multi-Staged docker files helps to reduce the size of the docker file and makes light weight.
 ```
 FROM ubuntu as build
 RUN apt-get update && apt-get install -y golang-go
