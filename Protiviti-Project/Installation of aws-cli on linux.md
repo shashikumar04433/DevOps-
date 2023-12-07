@@ -12,6 +12,7 @@ AWS IAM user access key and secret key with permission to access AWS services. I
               unzip awscliv2.zip 
      Step 3:
             sudo ./aws/install
+            
 
   ## If above commads does'nt work please follow below commands to install aws-cli in Redhat:
   
