@@ -12,7 +12,5 @@
 12.echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >> ~/.bash_profile
 13.echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >> ~/.bashrc
 14.source ~/.bashrc
-
-
-17.apt install sqlcmd
+15.apt install sqlcmd
 18.sqlcmd -S localhost -U sa -P Admin@123
