@@ -126,6 +126,10 @@
  ```
     * Types of Networking in Docker :
 
+       1. Bridge Networking.
+       2. Host Networking.
+       3. Overlay Networking.
+
  
  
  
