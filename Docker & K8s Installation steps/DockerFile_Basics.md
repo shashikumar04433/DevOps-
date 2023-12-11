@@ -124,9 +124,8 @@
     * docker volume ls
  ```
  ```
-    1. Bridge Networking
-    2. 
-    * Types of Networking in Docker 
+    * Types of Networking in Docker :
+
  
  
  
