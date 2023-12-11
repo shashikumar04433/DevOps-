@@ -1,0 +1,37 @@
+Recruitment Process:
+
+Online Assessment
+Telephonic Interviews (2 rounds)
+On-site Interviews (4-5 rounds)
+Googliness interview
+
+* Online Assessment
+	
+        2-3 coding questions on Data Structures and Algorithms of Medium – Hard level
+	Important topics: Graphs, Trees, Arrays, Strings, Recursion, Dynamic Programming, Math, Trie, Greedy, Bit 	Manipulation, Linked List
+
+* Telephonic Interviews (2 rounds) (1-2Q, 45M-60M)
+	
+	Well-versed with data structures and algorithms.
+	Easy-Medium level coding questions.
+	Get the best possible optimized solution taking into consideration corner and edge cases.
+
+* Onsite Interviews (4-5 Rounds, 45-60M)
+
+	Strong knowledge of data structures and algorithms for solving medium-hard level coding questions.
+	Well-versed with system design questions and computer science concepts.
+	Well-versed with projects, internships, or training mentioned in the resume.
+	Good with solving some common aptitude and reasoning questions.
+
+* Googliness Interview
+	Check for cultural compatibility with the company.
+	Primarily a behavioral interview to check the adaptability of a candidate to the diverse cultural environment of 	the company.
+	Check your personality and attitude, soft skills, etc.
+
+Your preparation strategy for 5 Din, Google In: 
+
+Day 1, 2, 3 & 4: 
+Attempt the Coding section & get access to the 12 latest problem statements curated by experts after carefully accessing Google’s recruitment process.
+
+Day 5: 
+You’ll receive a set of tips that will help you prepare for the interview round and voila, you’re ready to ace the placement game.
