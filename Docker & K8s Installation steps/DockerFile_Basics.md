@@ -123,7 +123,9 @@
     * Docker run -d --name name_of_the_volume -v volume:/path
     * docker volume ls
  ```
- 
+
+ ```
+    * Types of Networking in Docker 
  
  
  
