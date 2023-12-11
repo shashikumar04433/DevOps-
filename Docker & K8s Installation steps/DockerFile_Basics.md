@@ -123,8 +123,9 @@
     * Docker run -d --name name_of_the_volume -v volume:/path
     * docker volume ls
  ```
-
  ```
+    1. Bridge Networking
+    2. 
     * Types of Networking in Docker 
  
  
