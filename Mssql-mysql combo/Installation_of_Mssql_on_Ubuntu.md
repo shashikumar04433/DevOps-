@@ -1,5 +1,5 @@
 ## Installation of Mssql on Ubuntu:
-
+```
 1.sudo apt install mysql-server -y
 2.sudo /opt/mssql/bin/mssql-conf setup
 3.sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/20.04/mssql-server-2022.list)"
@@ -16,4 +16,4 @@
 14.source ~/.bashrc
 15.apt install sqlcmd
 16.sqlcmd -S localhost -U sa -P Admin@123
-
+```
