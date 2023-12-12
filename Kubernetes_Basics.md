@@ -13,7 +13,7 @@ Kubernetes Helps in automating the below methods:
   3. Auto Scaling --> Controles the damage and fix it.
   4. Enterprises --> It supports the enterprise editions where docker doesn't.
 ```
-## Difference between Master Node and Slave Node:
+## Difference between Master Node container and Slave Node container:
 
 ### Master Node
 ```
