@@ -1,7 +1,6 @@
 ## Kubernetes Basics 
 
 ## Core Concepts:
-```
 **1.Containers**:
 * Docker basics (containerization)
   
@@ -23,7 +22,6 @@
   
 **6ConfigMaps and Secrets**:
 * Managing configuration data and sensitive information
-```
   
 ## Configuration and Deployment:
 **1.Deployments**:
@@ -60,7 +58,6 @@ Logging:
 
 Fluentd, Elasticsearch, Kibana (EFK stack)
 Loki, Grafana (Grafana Labs stack)
-```
 ```
 Kubernetes is an open-source container orchestration platform designed to automate the deployment,
 scaling, and management of containerized applications. Containers are lightweight, portable,
