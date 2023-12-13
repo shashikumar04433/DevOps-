@@ -23,6 +23,7 @@
   
 **6ConfigMaps and Secrets**:
 * Managing configuration data and sensitive information
+```
   
 ## Configuration and Deployment:
 **1.Deployments**:
