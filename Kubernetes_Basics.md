@@ -12,12 +12,12 @@
 * Pod lifecycle
 * Multi-container pods
   
-**4Services**:
+**4.Services**:
 * ClusterIP, NodePort, LoadBalancer, ExternalName
 * Service discovery and DNS
 * Volumes and Persistent Volumes:
 
-**5Different types of volumes**:
+**5.Different types of volumes**:
 * Persistent Volume (PV) and Persistent Volume Claim (PVC)
   
 **6ConfigMaps and Secrets**:
@@ -34,10 +34,10 @@
 **3.DaemonSets**:
 * Running a copy of a pod on every node
 
-**4Jobs and CronJobs**:
+**4.Jobs and CronJobs**:
 * Running tasks and scheduled jobs
   
-**5Helm**:
+**5.Helm**:
 * Package manager for Kubernetes
 * 
 ## Networking:
@@ -46,11 +46,10 @@
 * Routing external traffic to services
 * Ingress controllers
   
-**2Network Policies**:
-
-Controlling pod-to-pod communication
-Monitoring and Logging:
-Metrics and Monitoring:
+**2.Network Policies**:
+* Controlling pod-to-pod communication
+* Monitoring and Logging:
+## Metrics and Monitoring:
 
 Prometheus, Grafana
 Kubernetes Dashboard
