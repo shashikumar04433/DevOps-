@@ -7,7 +7,7 @@
   **List the API versions that are available.**
    * kubectl api-versions
 
-  **Apply a configuration change to a resource from a file or stdin.**
+  **Apply a configuration change to a resource from a file or create a pod.**
    * kubectl apply -f pod.yml
      
   **Attach to a running container either to view the output stream or interact with the container (stdin).**
