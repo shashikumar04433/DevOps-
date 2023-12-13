@@ -5,11 +5,10 @@
 **2.Nodes**
                 
 **3.Control Plane(Master)**-->
-
-  1.Api Server
-  2.Etcd
-  3.Controller Manager 
-  4.Scheduler
+  1.Api Server 
+  2.Etcd 
+  3.Controller Manager  
+  4.Scheduler 
                             
  **4.Node**-->
  1.Kubelet 
