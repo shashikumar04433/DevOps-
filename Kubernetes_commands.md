@@ -1,6 +1,12 @@
 ## Kubernetes Commands :
   **List the API resources that are available.**
    * kubectl api-resources
+     
+  **List the API versions that are available.**
+   * kubectl api-versions
+
+  **Apply a configuration change to a resource from a file or stdin.**
+   * kubectl apply -f pod.yml
   
 
 **Installation of Minikube and Kubectl in ubuntu**
