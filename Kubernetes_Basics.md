@@ -46,7 +46,7 @@
 * Routing external traffic to services
 * Ingress controllers
   
-**2Network Policies:
+**2Network Policies**:
 
 Controlling pod-to-pod communication
 Monitoring and Logging:
