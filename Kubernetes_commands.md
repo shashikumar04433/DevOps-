@@ -1,4 +1,6 @@
 ## Kubernetes Commands :
+    https://kubernetes.io/docs/reference/kubectl/
+    
   **List the API resources that are available.**
    * kubectl api-resources
      
@@ -7,6 +9,9 @@
 
   **Apply a configuration change to a resource from a file or stdin.**
    * kubectl apply -f pod.yml
+     
+  **Attach to a running container either to view the output stream or interact with the container (stdin).**
+   * kubectl attach POD -c CONTAINER [-i] [-t] [flags]
   
 
 **Installation of Minikube and Kubectl in ubuntu**
