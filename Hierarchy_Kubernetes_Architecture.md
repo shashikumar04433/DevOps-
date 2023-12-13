@@ -11,9 +11,9 @@
   4.Scheduler 
                             
  **4.Node**-->
- 1.Kubelet 
- 2.Kube_Proxy
- 3.Container_runtime
+ 1.Kubelet     
+ 2.Kube_Proxy      
+ 3.Container_runtime  
                                     
  **5.Pods**
                 
