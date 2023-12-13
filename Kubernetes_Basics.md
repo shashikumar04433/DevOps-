@@ -53,10 +53,11 @@
 **1.Metrics and Monitoring**:
 * Prometheus, Grafana
 * Kubernetes Dashboard
-Logging:
-
-Fluentd, Elasticsearch, Kibana (EFK stack)
-Loki, Grafana (Grafana Labs stack)
+  
+## Logging:
+* Fluentd, Elasticsearch, Kibana (EFK stack)
+* Loki, Grafana (Grafana Labs stack)
+  
 ```
 Kubernetes is an open-source container orchestration platform designed to automate the deployment,
 scaling, and management of containerized applications. Containers are lightweight, portable,
