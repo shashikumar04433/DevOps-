@@ -57,6 +57,9 @@
 ## Logging:
 * Fluentd, Elasticsearch, Kibana (EFK stack)
 * Loki, Grafana (Grafana Labs stack)
+
+
+
   
 ```
 Kubernetes is an open-source container orchestration platform designed to automate the deployment,
