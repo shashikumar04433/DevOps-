@@ -1,4 +1,7 @@
 ## Kubernetes Commands :
+  **List the API resources that are available.**
+   * kubectl api-resources
+  
 
 **Installation of Minikube and Kubectl in ubuntu**
 
