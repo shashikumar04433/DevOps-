@@ -20,7 +20,7 @@
 **5.Different types of volumes**:
 * Persistent Volume (PV) and Persistent Volume Claim (PVC)
   
-**6ConfigMaps and Secrets**:
+**6.ConfigMaps and Secrets**:
 * Managing configuration data and sensitive information
   
 ## Configuration and Deployment:
@@ -39,7 +39,7 @@
   
 **5.Helm**:
 * Package manager for Kubernetes
-* 
+  
 ## Networking:
 
 **1.Ingress**:
@@ -48,11 +48,11 @@
   
 **2.Network Policies**:
 * Controlling pod-to-pod communication
-* Monitoring and Logging:
-## Metrics and Monitoring:
 
-Prometheus, Grafana
-Kubernetes Dashboard
+## Monitoring and Logging:
+**1.Metrics and Monitoring**:
+* Prometheus, Grafana
+* Kubernetes Dashboard
 Logging:
 
 Fluentd, Elasticsearch, Kibana (EFK stack)
