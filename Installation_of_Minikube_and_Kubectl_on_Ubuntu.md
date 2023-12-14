@@ -2,7 +2,7 @@
 
 **Installing the minikube**
 
-  https://minikube.sigs.k8s.io/docs/start/
+  * https://minikube.sigs.k8s.io/docs/start/
 
 
 
