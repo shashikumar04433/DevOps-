@@ -1,4 +1,4 @@
-##S Steps for Installation of Minikube and Kubectl on Ubuntu:
+## Steps for Installation of Minikube and Kubectl on Ubuntu:
 
 
 
