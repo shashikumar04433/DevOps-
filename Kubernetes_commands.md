@@ -31,6 +31,7 @@
 * sudo apt-get install -y kubectl
 * kubectl version
 * minikube version
+* minikube start --memory=4096 --driver=docker
   
 * Vi pod.yaml
 * apiVersion: v1
