@@ -2,7 +2,7 @@
 
 **Install kubectl on Linux**
 ```
- sudo apt update
+   * sudo apt update
    1. sudo apt install docker.io -y
    2. sudo systemctl start docker
    3. sudo systemctl enable docker
@@ -22,6 +22,7 @@
    * minikube start
    * kubectl config use-context minikube
    * minikube version
+   * minikube start --memory=4096 --driver=docker
   ```
 
 
