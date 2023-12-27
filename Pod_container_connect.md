@@ -14,6 +14,6 @@
  
 # Start your application or shell
 
-sh
+	sh
 
-apk add --no-cache busybox-extras
+	apk add --no-cache busybox-extras
