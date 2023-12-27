@@ -6,14 +6,11 @@
 
 # Update the package index
 
-apk update
+	apk update
  
 # Install telnet
 
-apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ telnet
-
- 
-# Your additional commands go here...
+	apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ telnet
  
 # Start your application or shell
 
