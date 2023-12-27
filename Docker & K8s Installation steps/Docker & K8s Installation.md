@@ -90,7 +90,7 @@
  ### Command to delete the image in docker:
             sudo docker rmi<img id>
  ### Command to delete all containers at once:
-            c docker rm -f $(sudo docker ps -a -q)
+            docker rm -f $(sudo docker ps -a -q)
             
 ## Steps To Install Apache in Docker:
 
