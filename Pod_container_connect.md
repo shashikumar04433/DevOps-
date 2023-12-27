@@ -1,4 +1,4 @@
-* To get into container & install the telnet in container:
+##  To get into container & install the telnet in container:
 
 	kubectl exec -it <podid > -n namespacename /bin/sh
 	kubectl exec -it core-deployment-5446479b7f-dnrgm -n ingress-nginx /bin/sh
