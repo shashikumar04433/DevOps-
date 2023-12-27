@@ -8,7 +8,7 @@
 
 	apk update
  
-# Install telnet
+# Install telnet inside the container.
 
 	apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ telnet
  
