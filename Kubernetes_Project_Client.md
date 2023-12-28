@@ -48,6 +48,15 @@ mv ./kubectl ~/.local/bin/kubectl
 * Default region name [None]: ap-south-1
 * Default output format [None]:
 ```
+**Creating the ingress controller-nlb:**
+```
+ * kubectl create serviceaccount nginx-ingress-controller
+ * kubectl create clusterrolebinding nginx-ingress-controller --clusterrole=cluster-admin --serviceaccount=default:nginx-ingress-controller
+ * kubectl create namespace ingress-nginx
+ * mkdir nginx-ingress-controller
+ * helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+ * helm repo update
+ * helm install nginx-ingress ingress-nginx/ingress-nginx --namespace ingress-nginx --set controller.service.annotations."service\.beta\.kubernetes\.io/aws-load-balancer-type"=classic
 
 
       
