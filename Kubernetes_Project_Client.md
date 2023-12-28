@@ -34,7 +34,7 @@ mkdir -p ~/.local/bin
 mv ./kubectl ~/.local/bin/kubectl
 ```
 **Create a Cluster in Aws**
-
+```
 * go to aws console and create a cluster before that create a role anyone in the below mentioned.
 * 1. AWS Service: eks2.
 * 2. eks-cluster-role .
