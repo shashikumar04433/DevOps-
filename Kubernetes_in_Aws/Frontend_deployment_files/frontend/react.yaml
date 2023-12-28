@@ -1,0 +1,45 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: frontend
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-deployment
+  labels:
+    app: react-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: react-app
+  template:
+    metadata:
+      namespace: frontend
+      labels:
+        app: react-app
+    spec:
+      containers:
+        - name: react-app
+          image: 449629806828.dkr.ecr.me-central-1.amazonaws.com/react-admin-portal:latest
+          ports:
+            - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: frontend
+  name: react-service
+  labels:
+    app: react-app
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: /login
+spec:
+  type: LoadBalancer
+  selector:
+    app: react-app
+  ports:
+    - port: 3000
+      targetPort: 3000

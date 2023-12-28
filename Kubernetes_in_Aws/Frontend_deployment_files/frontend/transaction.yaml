@@ -1,0 +1,48 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: frontend
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transaction-deployment
+  namespace: frontendnew
+  labels:
+    app: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: transaction-service
+  template:
+    metadata:
+      labels:
+        app: transaction-service
+        tier: frontend
+    spec:
+      containers:
+        - name: transaction-service
+          image: 449629806828.dkr.ecr.me-central-1.amazonaws.com/transaction-core:latest
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: transaction-service
+  namespace: frontendnew
+  labels: 
+    app: transaction-service
+    tier: frontend
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: /ms-transaction-core-1-0/actuator/health
+spec:
+  type: LoadBalancer
+  selector:
+    app: transaction-service
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
