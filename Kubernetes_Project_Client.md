@@ -4,7 +4,7 @@ Step1:
 
       Install the Aws-Cli, Eksctl, Kubectl in the os.
       
- **Aws-cli Installation:**
+**Aws-cli Installation:**
       
     Install AWS CLI on Linux
     
@@ -24,7 +24,9 @@ Step1:
    * eksctl version
 
 
-Installation of Kubectl on Ubuntu:
+**Installation of Kubectl on Ubuntu:**
+
+
 
       
       
