@@ -1,6 +1,6 @@
 ## Kubernetes Project using EKS:
+**Pre-Requirements:**
 ```
-Pre-Requirements:
 Install the Aws-Cli, Eksctl, Kubectl in the os.
 ```      
 **Aws-cli Installation:**
