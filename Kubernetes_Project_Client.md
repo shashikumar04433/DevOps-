@@ -57,7 +57,88 @@ mv ./kubectl ~/.local/bin/kubectl
  * helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
  * helm repo update
  * helm install nginx-ingress ingress-nginx/ingress-nginx --namespace ingress-nginx --set controller.service.annotations."service\.beta\.kubernetes\.io/aws-load-balancer-type"=classic
+```
 
+**Nginx-ingress-controller.yaml file**
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backend-ingress
+  namespace: ingress-nginx
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    kubernetes.io/ingress.class: 'nginx'
+    nginx.ingress.kubernetes.io/use-regex: "true"
+
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /ms-auth-server-1-0
+            pathType: Prefix
+            backend:
+              service:
+                name: auth-service
+                port:
+                  number: 8201
+          - path: /ms-otp-service-1-0
+            pathType: Prefix
+            backend:
+              service:
+                name: otp-service
+                port:
+                  number: 8102
+          - path: /core-service-1-0
+            pathType: Prefix
+            backend:
+              service:
+                name: core-service
+                port:
+                  number: 9099
+          - path: /ms-portal-1-0
+            pathType: Prefix
+          backend:
+              service:
+                name: portal-service
+                port:
+                  number: 8008
+          - path: /dao-service-1-0
+            pathType: Prefix
+            backend:
+              service:
+                name: dao-service
+                port:
+                  number: 8100
+          - path: /cache-service-1-0
+            pathType: Prefix
+            backend:
+              service:
+                name: cache-service
+                port:
+                  number: 9098
+          - path: /kafka-service-1-0
+            pathType: Prefix
+            backend:
+              service:
+                name: kafka-service
+                port:
+                  number: 8105
+          - path: /pg-cron-1-0
+            pathType: Prefix
+            backend:
+              service:
+                name: pg-cron
+                port:
+                  number: 8104
+	  - path: /kafka-service(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kafka-service
+                port:
+                   number: 9092
+```
 
       
       
