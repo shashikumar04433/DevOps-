@@ -39,6 +39,15 @@ mv ./kubectl ~/.local/bin/kubectl
 * 1. AWS Service: eks2.
 * 2. eks-cluster-role .
 ```
+**Connect eks to kubectl:**
+
+* aws eks update-kubeconfig --name safexpay-new --region ap-south-1
+* aws configure:
+* AWS Access Key ID [None]: AKIAWRMAGMDWCO3JX3FK
+* AWS Secret Access Key [None]: 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
+* Default region name [None]: ap-south-1
+* Default output format [None]:
+
 
 
       
