@@ -1,9 +1,8 @@
 ## Kubernetes Project using EKS:
-
-Step1:
-
+```
+Pre-Requirements:
 Install the Aws-Cli, Eksctl, Kubectl in the os.
-      
+```      
 **Aws-cli Installation:**
     
     Install AWS CLI on Linux
