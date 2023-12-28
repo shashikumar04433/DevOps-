@@ -2,7 +2,7 @@
 
 Step1:
 
-      Install the Aws-Cli, Eksctl, Kubectl in the os.
+Install the Aws-Cli, Eksctl, Kubectl in the os.
       
 **Aws-cli Installation:**
 
