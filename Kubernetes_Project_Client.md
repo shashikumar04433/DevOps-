@@ -15,8 +15,8 @@ Install the Aws-Cli, Eksctl, Kubectl in the os.
               unzip awscliv2.zip 
      Step 3:
             sudo ./aws/install
-            
-     ```
+         
+     
 
 **Installation of eks:**
 ```
