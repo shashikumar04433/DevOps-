@@ -4,7 +4,7 @@
 	kubectl exec -it core-deployment-5446479b7f-dnrgm -n ingress-nginx /bin/sh
 
 
-# Update the package index
+# Update the package inside the container:
 
 	apk update
  
