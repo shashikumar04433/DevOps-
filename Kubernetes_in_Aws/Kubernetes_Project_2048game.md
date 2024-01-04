@@ -66,7 +66,11 @@ spec:
 ```
 kubectl apply -f deploy.yaml
 ```
+**Install using Fargate**
+```
+creating cluster and creating fargate:
 
+* eksctl create cluster --demo2 --region ap-south-1 --fargate
 
 
 
