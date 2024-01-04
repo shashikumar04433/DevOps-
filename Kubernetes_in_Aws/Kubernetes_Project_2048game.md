@@ -71,8 +71,10 @@ kubectl apply -f deploy.yaml
 ```
 * eksctl create cluster --demo2 --region ap-south-1 --fargate
 ```
-
-
+**command to delete the cluster**
+```
+* eksctl delete cluster --name demo1 --region ap-south-1
+```
   
 
 
