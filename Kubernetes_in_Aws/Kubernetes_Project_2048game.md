@@ -75,7 +75,7 @@ kubectl apply -f deploy.yaml
 ```
 * eksctl delete cluster --name demo1 --region ap-south-1
 ```
-  
+**Create Fargate profile:**  
 
 
 
