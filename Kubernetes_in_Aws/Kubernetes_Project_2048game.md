@@ -43,6 +43,10 @@ spec:
       nodeSelector:
     kubernetes.io/os: linux
 ```
+**deploy the yaml file using below command**
+```
+kubectl apply -f deploy.yaml
+```
 
 
 
