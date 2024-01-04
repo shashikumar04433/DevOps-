@@ -1,4 +1,5 @@
 ## Kubernetes Project using eks with 2048-game :
+```
 
 **Pre-Requirements:**
 
