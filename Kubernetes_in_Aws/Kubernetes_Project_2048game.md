@@ -64,7 +64,7 @@ spec:
 ```
 **Deploy the service**
 ```
-kubectl apply -f deploy.yaml
+kubectl apply -f service.yaml
 ```
 **Install using Fargate**
 **creating cluster and creating fargate:**
