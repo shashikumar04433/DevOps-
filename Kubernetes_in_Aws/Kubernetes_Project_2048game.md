@@ -137,7 +137,13 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   --set region=<region> \
   --set vpcId=<your-vpc-id>
 ```
-
+**Verify that the deployments are running.**
+```
+* kubectl get deployment -n kube-system aws-load-balancer-controller
+* kubectl get pods -n game-2048
+* kubectl get ingress -n game-2048
+**Wait till the alb create and then you can find the ingress loadbalancer link paste that in google then you can 2048 game.THANK YOU**
+```
 
 
 
