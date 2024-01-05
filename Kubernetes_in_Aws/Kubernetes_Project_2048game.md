@@ -82,7 +82,8 @@ eksctl create fargateprofile \
     --region ap-south-1 \
     --name alb-sample-app \
     --namespace game-2048
-
+```
+**
 
 
 
