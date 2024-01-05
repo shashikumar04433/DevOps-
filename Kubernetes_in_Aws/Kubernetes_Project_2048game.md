@@ -91,7 +91,11 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-load-bala
 ```
 eksctl utils associate-iam-oidc-provider --cluster demo2 --approve
 ```
-
+**Commands to setup alb add on to your cluster**
+Download IAM policy by below command
+```
+curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/install/iam_policy.json
+```
 
   
 
