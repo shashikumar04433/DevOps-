@@ -77,6 +77,11 @@ kubectl apply -f deploy.yaml
 ```
 **Create Fargate profile:**  
 ```
+eksctl create fargateprofile \
+    --cluster demo2 \
+    --region ap-south-1 \
+    --name alb-sample-app \
+    --namespace game-2048
 
 
 
