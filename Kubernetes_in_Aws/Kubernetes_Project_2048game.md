@@ -75,6 +75,10 @@ kubectl apply -f service.yaml
 ```
 * eksctl delete cluster --name demo1 --region ap-south-1
 ```
+**Command to update the cluster which you want to work on**
+```
+aws eks update-kubeconfig --name demo2 --region ap-south-1
+```
 **Create Fargate profile:**  
 ```
 eksctl create fargateprofile \
@@ -103,6 +107,8 @@ aws iam create-policy \
     --policy-name AWSLoadBalancerControllerIAMPolicy \
     --policy-document file://iam_policy.json
 ```
+**Command to create a IAM Role**
+
 
 
 
