@@ -108,6 +108,15 @@ aws iam create-policy \
     --policy-document file://iam_policy.json
 ```
 **Command to create a IAM Role**
+```
+eksctl create iamserviceaccount \
+  --cluster=<your-cluster-name> \
+  --namespace=kube-system \
+  --name=aws-load-balancer-controller \
+  --role-name AmazonEKSLoadBalancerControllerRole \
+  --attach-policy-arn=arn:aws:iam::<your-aws-account-id>:policy/AWSLoadBalancerControllerIAMPolicy \
+  --approve
+```
 
 
 
