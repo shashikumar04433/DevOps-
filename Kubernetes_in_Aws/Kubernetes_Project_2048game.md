@@ -87,7 +87,10 @@ eksctl create fargateprofile \
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/examples/2048/2048_full.yaml
 ```
-
+**commands to configure IAM OIDC provider**
+```
+eksctl utils associate-iam-oidc-provider --cluster demo2 --approve
+```
 
 
   
