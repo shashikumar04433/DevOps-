@@ -123,7 +123,6 @@ Kubernetes object used to maintain a stable set of replicated pods running withi
 1.ClusterIP
 2.NodePort
 3.LoadBalancer
-4.Ingress.
 
 * ClusterIP (default): Internal clients send requests to a stable internal IP address.
 
