@@ -109,4 +109,9 @@ Container is just a form of image of docker we can use the container in pods to 
 ```
 Pod is the smallest portion on the kubernetes where one or more container is attched to the kubernetes.
 ```
+**Deployment**
+```
+ How to create or modify instances of the pods that hold a containerized application and it helps to auto scaling and auto healing.
+```
+
 
