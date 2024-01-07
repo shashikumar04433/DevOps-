@@ -101,3 +101,9 @@ Kubernetes Helps in automating the below methods:
 8.NLB
 9.Ingress Controller
 ```
+**Container:**
+```
+Container is just a form of image of docker we can use the container in pods to perform multiple operations .
+```
+
+
