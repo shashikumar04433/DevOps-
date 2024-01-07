@@ -58,3 +58,5 @@ spec:
 * kubectl describe pod nginx
 * kubectl logs nginx
   
+### All the types used in the kubernetes:
+```
