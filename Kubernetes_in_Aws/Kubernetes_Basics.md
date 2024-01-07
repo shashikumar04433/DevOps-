@@ -113,5 +113,8 @@ Pod is the smallest portion on the kubernetes where one or more container is att
 ```
  How to create or modify instances of the pods that hold a containerized application and it helps to auto scaling and auto healing.
 ```
-
+**Replicaset**
+```
+Kubernetes object used to maintain a stable set of replicated pods running within a cluster at any given time.
+```
 
