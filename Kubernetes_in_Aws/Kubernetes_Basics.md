@@ -89,3 +89,15 @@ Kubernetes Helps in automating the below methods:
 2.Kube let
 3.Container runtime
 ```
+### Kuberntes services:
+```
+1.Container
+2.Pod
+3.Deployment
+4.Replicaset
+5.Service
+6.Namespace
+7.ALB
+8.NLB
+9.Ingress Controller
+```
