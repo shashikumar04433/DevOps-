@@ -122,7 +122,10 @@ Kubernetes object used to maintain a stable set of replicated pods running withi
 ```
 **Services**
 ```
-Services play a crucial role in the networking layer of a Kubernetes cluster, providing a stable endpoint for other services to connect to. They abstract away the details of the underlying pod instances, allowing for easier and more reliable communication between different components in a distributed application.
+Services play a crucial role in the networking layer of a Kubernetes cluster,
+providing a stable endpoint for other services to connect to.
+They abstract away the details of the underlying pod instances,
+allowing for easier and more reliable communication between different components in a distributed application.
 
 * There are four types of services that Kubernetes supports:
 1.ClusterIP
