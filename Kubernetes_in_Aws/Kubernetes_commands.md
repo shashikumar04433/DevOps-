@@ -60,3 +60,12 @@ spec:
   
 ### All the types used in the kubernetes:
 ```
+1.Container
+2.Pod
+3.Deployment
+4.Replicaset
+5.Service
+6.Namespace
+7.ALB
+8.NLB
+9.Ingress Controller
