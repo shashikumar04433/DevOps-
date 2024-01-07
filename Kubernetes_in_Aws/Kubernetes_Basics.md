@@ -105,5 +105,8 @@ Kubernetes Helps in automating the below methods:
 ```
 Container is just a form of image of docker we can use the container in pods to perform multiple operations .
 ```
-
+**Pod**
+```
+Pod is the smallest portion on the kubernetes where one or more container is attched to the kubernetes.
+```
 
