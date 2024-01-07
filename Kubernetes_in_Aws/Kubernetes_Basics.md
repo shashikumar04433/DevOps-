@@ -120,10 +120,14 @@ Kubernetes object used to maintain a stable set of replicated pods running withi
 **Services**
 ```
 * There are four types of services that Kubernetes supports:
-* **ClusterIP, NodePort, LoadBalancer, and Ingress.**
-*ClusterIP (default): Internal clients send requests to a stable internal IP address.
-NodePort: Clients send requests to the IP address of a node on one or more nodePort values that are specified by the Service.
-LoadBalancer: Clients send requests to the IP address of a network load balancer.
-* Each has their own set of requirements to enable them for your application,
- so you must understand which one you need before deploying.
+1.ClusterIP
+2.NodePort
+3.LoadBalancer
+4.Ingress.
+
+* ClusterIP (default): Internal clients send requests to a stable internal IP address.
+
+* NodePort: Clients send requests to the IP address of a node on one or more nodePort values that are specified by the Service.
+
+* LoadBalancer: Clients send requests to the IP address of a network load balancer.
 
