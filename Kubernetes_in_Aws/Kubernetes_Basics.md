@@ -138,4 +138,5 @@ allowing for easier and more reliable communication between different components
 
 * LoadBalancer: Clients send requests to the IP address of a network load balancer.
 
-* Services cluster ip will be changing when ever you apply for deployment so to over come that we use Selectors and Match Labels or Labels so that we can match the name and dont get any trouble in finding.
+* Services cluster ip will be changing when ever you apply for deployment so to over come that we use
+  Selectors and Match Labels or Labels so that we can match the name and dont get any trouble in finding.
