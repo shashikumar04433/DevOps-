@@ -5,8 +5,8 @@
 * Docker basics (containerization)
   
 **2.Kubernetes Architecture**:
-* Control Plane components (API server, controller manager, scheduler, etcd)
-* Node components (kubelet, kube-proxy, container runtime)
+**Control Plane components** (API server, controller manager, scheduler, etcd)
+**Node components** (kubelet, kube-proxy, container runtime)
 
 **3.Pods**:
 * Pod lifecycle
