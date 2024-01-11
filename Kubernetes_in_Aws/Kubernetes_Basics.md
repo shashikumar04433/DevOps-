@@ -148,3 +148,7 @@ allowing for easier and more reliable communication between different components
 1.ConfigMaps you can use as Environment Variables.
 2.You can use as Volumes.
 ```
+**Secrets**
+```
+* If you have a Sensitive information then save it in Secrets and it stores in ETCD folder where it will be encrypted so that your sensitive information will be safe.
+* Secrets-->Sensitive Data-->Rest-->Etcd.
