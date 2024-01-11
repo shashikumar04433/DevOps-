@@ -144,3 +144,6 @@ allowing for easier and more reliable communication between different components
   Selectors and Match Labels or Labels so that we can match the name and dont get any trouble in finding.
 ```
 **ConfigMaps & Secrets**
+```
+1.ConfigMaps you can use as Environment Variables.
+2.
