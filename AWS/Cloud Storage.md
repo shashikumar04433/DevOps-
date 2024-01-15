@@ -18,9 +18,9 @@
 
       1. DAS ---->Direct attched storage (eg:Pendrive)
       
-      2. NAS ----->Network attched storage(eg: Office local area network)
+      2. NAS ----->Network attched storage(eg: Office local area network).
       
-      3. SAN ----->Advanced version of NAS where they can connect multiple Lans.
+      3. SAN ----->Advanced version of NAS where they can connect multiple Lans .
       
       
       
