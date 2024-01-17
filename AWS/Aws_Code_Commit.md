@@ -20,4 +20,21 @@
 * git clone <link of repo>
 
 * Then add the user and password of the git credentials of which created.
+
+* git add .
+
+* git status
+
+* git commit -m "added"
+
+* git remote add https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/FCRA
+
+* git fetch
+
+* git remote add fcra https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/FCRA
+
+* git status
+
+* git push --set-upstream fcra master
+
 ```
