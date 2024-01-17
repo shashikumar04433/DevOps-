@@ -4,6 +4,6 @@
 
 * Managed git
 * Scalability
-
+* Reliability
 
 
