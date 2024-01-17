@@ -2,7 +2,8 @@
 
 **Advantages of Code Commit**
 
-* Managed git 
+* Managed git
+* Scalability
 
 
 
