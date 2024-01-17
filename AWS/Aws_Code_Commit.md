@@ -39,4 +39,8 @@
 
 ```
 **DisAdvantages of Code Commit**
-
+```
+* Features
+* Aws Restricted
+* Less Integration with services outside Aws.
+```
