@@ -2,5 +2,7 @@
 
 **Advantages of Code Commit**
 
+* Managed git 
+
 
 
