@@ -50,3 +50,7 @@ Azure Pipelines helps automate the release process and manage deployment pipelin
 In this phase, the application is deployed to target environments.Azure Pipelines provides deployment capabilities,
 and you can use services like Azure App Service, Azure Kubernetes Service, etc., for deploying applications.
 ```
+**Operate**
+```
+This phase focuses on monitoring and managing the application in production. It includes activities such as logging, performance monitoring, and ensuring the health of the application.
+```
