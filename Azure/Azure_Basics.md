@@ -45,3 +45,8 @@ and other types of testing. Azure Test Plans can be used for test case managemen
 The release phase involves deploying the application to various environments (e.g., staging, production).
 Azure Pipelines helps automate the release process and manage deployment pipelines.
 ```
+**Deploy**
+```
+In this phase, the application is deployed to target environments.Azure Pipelines provides deployment capabilities,
+and you can use services like Azure App Service, Azure Kubernetes Service, etc., for deploying applications.
+```
