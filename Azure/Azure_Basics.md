@@ -40,3 +40,8 @@ Azure Pipelines is often used to automate the build process.
 This phase is dedicated to testing the application. It includes unit tests, integration tests,
 and other types of testing. Azure Test Plans can be used for test case management and execution.
 ```
+**Release**
+```
+The release phase involves deploying the application to various environments (e.g., staging, production).
+Azure Pipelines helps automate the release process and manage deployment pipelines.
+```
