@@ -25,3 +25,8 @@
 This phase involves planning and tracking work items, managing backlog items,
 and defining the scope of the project. Azure Boards is commonly used for planning activities.
 ```
+**Code**
+```
+In this phase, developers write and review code. Azure Repos provides version control services,
+such as Git repositories, to manage and store source code.
+```
