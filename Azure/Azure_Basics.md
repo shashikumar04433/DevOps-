@@ -20,3 +20,8 @@
 7.Operate
 8.Monitor
 ```
+**Plan**
+```
+This phase involves planning and tracking work items, managing backlog items,
+and defining the scope of the project. Azure Boards is commonly used for planning activities.
+```
