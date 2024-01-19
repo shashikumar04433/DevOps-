@@ -52,5 +52,6 @@ and you can use services like Azure App Service, Azure Kubernetes Service, etc.,
 ```
 **Operate**
 ```
-This phase focuses on monitoring and managing the application in production. It includes activities such as logging, performance monitoring, and ensuring the health of the application.
+This phase focuses on monitoring and managing the application in production.
+It includes activities such as logging, performance monitoring, and ensuring the health of the application.
 ```
