@@ -30,3 +30,8 @@ and defining the scope of the project. Azure Boards is commonly used for plannin
 In this phase, developers write and review code. Azure Repos provides version control services,
 such as Git repositories, to manage and store source code.
 ```
+**Build**
+```
+The build phase involves compiling the source code, running tests, and generating artifacts.
+Azure Pipelines is often used to automate the build process.
+```
