@@ -9,3 +9,14 @@
 * Azure Artifacts
 ```
 
+**Azure DevOps Process of the Ci/Cd**
+```
+1.Plan
+2.Code
+3.Build
+4.Test
+5.Release
+6.Deploy
+7.Operate
+8.Monitor
+```
