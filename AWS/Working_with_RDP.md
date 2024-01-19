@@ -1,5 +1,5 @@
 ## Steps to allocate two public ips and two private ips using elastic Ips:
-
+```
   1. Launch a instance and save the .pem .
   
   2. Connect the rdp using windows+R (mstsc)
@@ -20,9 +20,8 @@
 
   10. Then create a elastic ips ofr creating two different public ips and two private ips .
   
-  11. Remember there should be two network interfaces for that one will be automatic when instance created & 2nd one should be created in network interface . (imp) then attch that network interface to the instance(ec2).
-  
+  11. Remember there should be two network interfaces for that one will be automatic when instance created & 2nd one should be created in network interface . (imp) then attch that network interface to the instance(ec2).``` 
   12. Then create a target group and load balancer and attch the 3389 port .
   
   13. A very imp step after doing this connect with dns name of load balancer <mylb-83e26b924f238e5f.elb.us-east-1.amazonaws.com>  and then add .\ <infornt of username> to avoid the conflicts.
-
+```
