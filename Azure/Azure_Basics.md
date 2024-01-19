@@ -35,3 +35,8 @@ such as Git repositories, to manage and store source code.
 The build phase involves compiling the source code, running tests, and generating artifacts.
 Azure Pipelines is often used to automate the build process.
 ```
+**Test**
+```
+This phase is dedicated to testing the application. It includes unit tests, integration tests,
+and other types of testing. Azure Test Plans can be used for test case management and execution.
+```
