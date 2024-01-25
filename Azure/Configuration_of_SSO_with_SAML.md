@@ -18,3 +18,4 @@
 * then add the EntraId and replyid or Redirection Url <same for both >(eg: https://localhost:7023)
 ```
 
+
