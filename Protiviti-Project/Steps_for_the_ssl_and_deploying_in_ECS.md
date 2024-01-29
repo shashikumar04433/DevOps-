@@ -54,6 +54,12 @@ COPY --from=publish /app/publish .
 COPY ewraprotiviti.pfx /https
 ENTRYPOINT ["dotnet", "FCRA.Web.dll"]
 ```
+```
+* docker build -t <nameof_dockerfile> .
+```
+```
+* docker build -t abcd .
+```
 
 
 
