@@ -91,5 +91,11 @@ docker run -d -p 80:80 -p 443:443 \
   -e IsEnvironmentVariableApplicable="Y" \
   abcd
 ```
-
+**Push the image into ECR with below commands**
+```
+* aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 240887461522.dkr.ecr.ap-south-1.amazonaws.com
+```
+```
+* docker tag abcd:latest 240887461522.dkr.ecr.ap-south-1.amazonaws.com/protiviti-ewra-with-sso:latest
+```
 
