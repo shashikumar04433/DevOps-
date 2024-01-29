@@ -60,7 +60,36 @@ ENTRYPOINT ["dotnet", "FCRA.Web.dll"]
 ```
 * docker build -t abcd .
 ```
-
-
+**Then run the application with environment variables in docker using below command**
+```
+docker run -d -p 80:80 -p 443:443 \
+  -e ASPNETCORE_URLS="https://+;http://+" \
+  -e ASPNETCORE_HTTPS_PORT=443 \
+  -e ASPNETCORE_Kestrel__Certificates__Default__Password="protiviti@123" \
+  -e ASPNETCORE_Kestrel__Certificates__Default__Path="/https/protiviti.pfx" \
+  -e MetadataAddress="https://login.microsoftonline.com/ba04dd9d-19c9-423e-85c1-63bc63f9ff4c/federationmetadata/2007-06/federationmetadata.xml?appid=d58bfe58-9cf7-4e27-84ec-39fd728ab156" \
+  -e username="sa" \
+  -e password="fcra@123" \
+  -e host="13.201.123.96" \
+  -e port="" \
+  -e bucketname="" \
+  -e AWSRegion="ap-south-1" \
+  -e dbInstanceIdentifier="RISKDBADCB" \
+  -e engine="" \
+  -e IsThroughSMTP="N" \
+  -e From="" \
+  -e SMTPUsername="" \
+  -e SMTPPassword="" \
+  -e SMTPHost="" \
+  -e SMTPPort="587" \
+  -e RealmUrl="https://ec2-3-6-40-111.ap-south-1.compute.amazonaws.com/" \
+  -e certificatepath="" \
+  -e certificatepassword="" \
+  -e httpport="" \
+  -e httpsport="" \
+  -e IsSSOApplicable="Y" \
+  -e IsEnvironmentVariableApplicable="Y" \
+  abcd
+```
 
 
