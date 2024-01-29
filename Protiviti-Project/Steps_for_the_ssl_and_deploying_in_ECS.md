@@ -1,11 +1,12 @@
 ## Steps_for_the_ssl_and_deploying_in_ECS:
 
-Step1:
+**Step1:**
 **Commands to generate the self-signed-certificates**
 ```
 * openssl req -newkey rsa:4096 -x509 -sha256 -days 3650 -nodes -out protiviti.crt -keyout protiviti.key
 * openssl pkcs12 -export -out protiviti.pfx -inkey protiviti.key -in protiviti.crt
 ```
+**Step2**
 **Then include in the certificate path in docker example below**
 ```
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine AS base
@@ -60,6 +61,7 @@ ENTRYPOINT ["dotnet", "FCRA.Web.dll"]
 ```
 * docker build -t abcd .
 ```
+**Step3**
 **Then run the application with environment variables in docker using below command**
 ```
 docker run -d -p 80:80 -p 443:443 \
@@ -91,6 +93,7 @@ docker run -d -p 80:80 -p 443:443 \
   -e IsEnvironmentVariableApplicable="Y" \
   abcd
 ```
+**Step4**
 **Push the image into ECR with below commands**
 ```
 * aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 240887461522.dkr.ecr.ap-south-1.amazonaws.com
@@ -101,3 +104,6 @@ docker run -d -p 80:80 -p 443:443 \
 ```
 * docker push 240887461522.dkr.ecr.ap-south-1.amazonaws.com/protiviti-ewra-with-sso:latest
 ```
+**Step5**
+**Then Create a task definition in AWS ECS and attach the environment variables with the values**
+* Create a cluster and attach that task to it.
