@@ -98,4 +98,6 @@ docker run -d -p 80:80 -p 443:443 \
 ```
 * docker tag abcd:latest 240887461522.dkr.ecr.ap-south-1.amazonaws.com/protiviti-ewra-with-sso:latest
 ```
-
+```
+* docker push 240887461522.dkr.ecr.ap-south-1.amazonaws.com/protiviti-ewra-with-sso:latest
+```
