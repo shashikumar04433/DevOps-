@@ -4,4 +4,7 @@
 ```
 It is used to get all information and to manage services in the system.
 ```
-
+**journalctl**
+```
+It is used to collect log information.
+```
