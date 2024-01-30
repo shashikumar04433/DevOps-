@@ -12,3 +12,7 @@ It is used to collect log information.
 ```
 It is used to get DNS server info
 ```
+**nslookup**
+```
+It is used to get DNS server information.
+```
