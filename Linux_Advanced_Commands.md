@@ -8,3 +8,7 @@ It is used to get all information and to manage services in the system.
 ```
 It is used to collect log information.
 ```
+**dig**
+```
+It is used to get DNS server info
+```
