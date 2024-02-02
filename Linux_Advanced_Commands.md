@@ -29,7 +29,7 @@ Eg:
 **finger**
 ```
 finger command is used to monitor the other user.
-** apt install finger
+* apt install finger
 * finger <username>
 ```
 **ufw**
