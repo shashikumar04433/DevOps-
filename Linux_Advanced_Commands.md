@@ -26,3 +26,9 @@ vim abc.txt
 shred abc.txt
 cat abc.txt
 ```
+**finger**
+```
+finger command is used to monitor the other user.
+apt install finger
+finger <username>
+```
