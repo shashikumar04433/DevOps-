@@ -16,3 +16,8 @@ It is used to get DNS server info
 ```
 It is used to get DNS server information.
 ```
+**shred**
+```
+It makes the text file to entripted form .
+Eg:
+vim abc.txt
