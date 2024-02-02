@@ -19,7 +19,9 @@ It is used to get DNS server information.
 **shred**
 ```
 It makes the text file to entripted form .
+
 Eg:
+
 vim abc.txt
 shred abc.txt
 cat abc.txt
