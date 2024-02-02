@@ -32,3 +32,10 @@ finger command is used to monitor the other user.
 apt install finger
 finger <username>
 ```
+**ufw**
+```
+This enables port mapping
+Eg:
+* ufw allow 80
+* ufw allow 443
+```
