@@ -34,7 +34,7 @@ finger command is used to monitor the other user.
 ```
 **ufw**
 ```
-This enables port mapping
+This enables port mapping directly
 Eg:
 
 * ufw allow 80
