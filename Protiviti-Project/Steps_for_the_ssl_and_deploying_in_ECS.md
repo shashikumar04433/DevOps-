@@ -6,6 +6,15 @@
 * openssl req -newkey rsa:4096 -x509 -sha256 -days 3650 -nodes -out protiviti.crt -keyout protiviti.key
 * openssl pkcs12 -export -out protiviti.pfx -inkey protiviti.key -in protiviti.crt
 ```
+* openssl req -newkey rsa:4096 \
+            -x509 \
+            -sha256 \
+            -days 3650 \
+            -nodes \
+            -out example.crt \
+            -keyout example.key
+ 
+openssl pkcs12 -export -out example.pfx -inkey example.key -in example.crt
 **Step2**
 **Then include in the certificate path in docker example below**
 ```
