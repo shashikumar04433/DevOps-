@@ -3,8 +3,8 @@
 **Step1:**
 **Commands to generate the self-signed-certificates**
 ```
-* openssl req -newkey rsa:4096 -x509 -sha256 -days 3650 -nodes -out protiviti.crt -keyout protiviti.key
-* openssl pkcs12 -export -out protiviti.pfx -inkey protiviti.key -in protiviti.crt
+* openssl req -newkey rsa:4096 -x509 -sha256 -days 3650 -nodes -out example.crt -keyout example.key
+* openssl pkcs12 -export -out protiviti.pfx -inkey example.key -in example.crt
 * openssl req -newkey rsa:4096 \
             -x509 \
             -sha256 \
