@@ -5,7 +5,6 @@
 ```
 * openssl req -newkey rsa:4096 -x509 -sha256 -days 3650 -nodes -out example.crt -keyout example.key
 * openssl pkcs12 -export -out example.pfx -inkey example.key -in example.crt
-* openssl pkcs12 -export -out example.pfx -inkey example.key -in example.crt
 ```
 **Step2**
 **Then include in the certificate path in docker example below**
