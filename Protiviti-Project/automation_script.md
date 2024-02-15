@@ -3,7 +3,6 @@
 **Install the js**
 * apt install js -y
 ```
-```
 * vi script.sh
 * chmod +x script.sh
 * ./script.sh
