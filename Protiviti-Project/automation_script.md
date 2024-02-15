@@ -1,8 +1,7 @@
 # Automation script for building Docker image and pushing into ECR:
 
-**Install the js**
-* apt install js -y
 ```
+* apt install js -y
 * vi script.sh
 * chmod +x script.sh
 * ./script.sh
