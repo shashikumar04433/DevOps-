@@ -1,0 +1,20 @@
+Creating the ingress controller-nlb:
+
+ kubectl create serviceaccount nginx-ingress-controller
+ kubectl create clusterrolebinding nginx-ingress-controller --clusterrole=cluster-admin --serviceaccount=default:nginx-ingress-controller
+ kubectl create namespace ingress-nginx
+ mkdir nginx-ingress-controller
+ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+ helm repo update
+ helm install nginx-ingress ingress-nginx/ingress-nginx --namespace ingress-nginx --set controller.service.annotations."service\.beta\.kubernetes\.io/aws-load-balancer-type"=classic
+
+
+http://a30b592b1f6b24aa8ab8dc53b4eec9cc-2012702273.ap-south-1.elb.amazonaws.com/ms-transaction-core-1-0/actuator/health
+http://a30b592b1f6b24aa8ab8dc53b4eec9cc-2012702273.ap-south-1.elb.amazonaws.com/dao-service-1-0/actuator/health
+http://a30b592b1f6b24aa8ab8dc53b4eec9cc-2012702273.ap-south-1.elb.amazonaws.com/core-service-1-0/actuator/health
+http://a30b592b1f6b24aa8ab8dc53b4eec9cc-2012702273.ap-south-1.elb.amazonaws.com/kafka-service-1-0/actuator/health
+http://a30b592b1f6b24aa8ab8dc53b4eec9cc-2012702273.ap-south-1.elb.amazonaws.com/ms-auth-server-1-0/actuator/health
+http://a30b592b1f6b24aa8ab8dc53b4eec9cc-2012702273.ap-south-1.elb.amazonaws.com/ms-otp-service-1-0/actuator/health
+http://a30b592b1f6b24aa8ab8dc53b4eec9cc-2012702273.ap-south-1.elb.amazonaws.com/ms-portal-1-0/actuator/health
+http://a30b592b1f6b24aa8ab8dc53b4eec9cc-2012702273.ap-south-1.elb.amazonaws.com/pg-cron-1-0/actuator/health
+http://a30b592b1f6b24aa8ab8dc53b4eec9cc-2012702273.ap-south-1.elb.amazonaws.com/cache-service-1-0/actuator/health

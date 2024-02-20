@@ -1,0 +1,9 @@
+aws configure
+
+aws_id:AKIATQFQC62JOE5LZZKP
+aws_key:c9yaZZvPvYKCwzogVzaiggQ9kxu+/coB+Rn+dfWQ
+region: ap-south-1
+
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 240887461522.dkr.ecr.ap-south-1.amazonaws.com
+
+docker pull 240887461522.dkr.ecr.ap-south-1.amazonaws.com/fcra_internal:latest

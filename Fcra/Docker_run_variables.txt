@@ -1,0 +1,22 @@
+docker run \
+    -e certificatepath="" \
+    -e certificatepassword="" \
+    -e httpport="" \
+    -e httpsport="" \
+    -e username="sa" \
+    -e password="fcra@123" \
+    -e host="13.201.123.96" \
+    -e port="" \
+    -e bucketname="" \
+    -e AWSRegion="ap-south-1" \
+    -e dbInstanceIdentifier="RISKDB_ADCBUAT" \
+    -e engine="" \
+    -e IsThroughSMTP="" \
+    -e From="" \
+    -e Username="" \
+    -e Password="" \
+    -e SMTPHost="" \
+    -e SMTPPort="" \
+    -e RealmUrl="https://ewraprotiviti.info" \
+    -e MetadataAddress="https://login.microsoftonline.com/ba04dd9d-19c9-423e-85c1-63bc63f9ff4c/federationmetadata/2007-06/federationmetadata.xml?appid=d58bfe58-9cf7-4e27-84ec-39fd728ab156" \ -d -p 443:80
+    fcra

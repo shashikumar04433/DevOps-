@@ -1,0 +1,11 @@
+Access key ID
+AKIATQFQC62JM7IBN3PR
+
+Secret access key
+1XcFlwwcOeEvh7rFtvVyCQrVL7knpP2hihesxOu+
+
+
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 240887461522.dkr.ecr.ap-south-1.amazonaws.com
+
+
+docker pull 240887461522.dkr.ecr.ap-south-1.amazonaws.com/fcraenvtest:latest
