@@ -14,8 +14,8 @@
   
 **Access** 
  * Policies
-   (You can attach the policies directly to the user to access particular service)
+   (You can attach the policies directly to the user to access particular service).
 **Management**
   * Groups
-    (If suppose you have different teams like DB, IT,Admin you can craete a different groups and attach one policy) 
+    (If suppose you have different teams like DB, IT,Admin you can craete a different groups and attach one policy) .
 
