@@ -8,8 +8,7 @@
       2.You can launch static and dynamic websites .
 ```
 ### Real Time Task (Uploading the Static Project and accessing in web using s3 link):
-
-
+```
    Step1: Download this static project using this url <https://www.free-css.com/free-css-templates/page296/inance> and unzip.
 
    Step2: Create a s3 bucket name as staticnewwebsite while launching it unable as public and Acl enable.
@@ -19,7 +18,7 @@
    Step4: Choose all web files and make then in actions as make public.
 
    Step5: Access the website using url (Thank you).
-
+```
 ### Types of Storage Classes:
 
    1. Frequently storage are:
