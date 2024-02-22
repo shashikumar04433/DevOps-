@@ -20,7 +20,7 @@
    Step5: Access the website using url (Thank you).
 ```
 ### Types of Storage Classes:
-
+```
    1. Frequently storage are:
       * Standard Storage
       * Reduce Redandant Storage
@@ -32,6 +32,8 @@
    3. Archieved.
       * Glacier
       * Glacier Deep Archival
-        
-   4. Intelligently.
-         
+```
+ **Command to push the files from local to s3:**
+ ```
+aws s3 cp "C:\Users\shashi.reddy\Downloads\CTP-Dashboard.rar" s3://colt-dev-support/
+```
