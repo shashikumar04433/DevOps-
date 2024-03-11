@@ -1,19 +1,19 @@
 * Online Test (5-6Q, 60/90M) 
-	Arrays
-	Strings
-	Single Linked List
-	Double Linked List
-	Hashing, Hash Map, Unordered Map
-	Other data structure like map, graph, etc.
+	* Arrays
+	* Strings
+	* Single Linked List
+	* Double Linked List
+	* Hashing, Hash Map, Unordered Map
+	* Other data structure like map, graph, etc.
 
 * Technical/Screening Interview (2-3Q, 30-45M)
 
-		 Well-versed in data structures and algorithms
+		 * Well-versed in data structures and algorithms
 
 * Onsite Interviews (3-4 Rounds, 60-90M)
-		Well-versed with projects, internships, or training mentioned in the CV.
-		Well-versed in course-related subjects like Data structures, Algorithms, Operating System, Networking, 			Database management, etc.
-		Mostly ask questions from arrays/strings/linked list problems.
-		Knowledge of system designing from domains like cloud computing and 
-		software like Microsoft Azure, Dropbox, Gmail, YouTube, 
-		Uber, and various Microsoft technology-driven engines.
+		* Well-versed with projects, internships, or training mentioned in the CV.
+		* Well-versed in course-related subjects like Data structures, Algorithms, Operating System, Networking, 			Database management, etc.
+		* Mostly ask questions from arrays/strings/linked list problems.
+		* Knowledge of system designing from domains like cloud computing and 
+		* software like Microsoft Azure, Dropbox, Gmail, YouTube, 
+		* Uber, and various Microsoft technology-driven engines.
