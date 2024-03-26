@@ -1,4 +1,6 @@
-## Elastic Block Storage (EBS)
+## Elastic Block Storage (EBS):
+```
+Amazon Elastic Storage(EBS)  is a storage 
 
   ### Types of Storages:
 
