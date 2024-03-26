@@ -1,6 +1,7 @@
 ## Linux_Commands:
 ```
-In Linux, permissions are represented by a set of three octal digits (ranging from 0 to 7), each digit representing the permission for a specific user category: owner, group, and others.
+In Linux, permissions are represented by a set of three octal digits (ranging from 0 to 7),
+each digit representing the permission for a specific user category: owner, group, and others.
 
 The permissions are typically represented as:
 
