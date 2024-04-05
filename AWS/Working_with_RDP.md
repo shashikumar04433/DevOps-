@@ -24,4 +24,5 @@
   12. Then create a target group and load balancer and attch the 3389 port .
   
   13. A very imp step after doing this connect with dns name of load balancer <mylb-83e26b924f238e5f.elb.us-east-1.amazonaws.com>  and then add .\ <infornt of username> to avoid the conflicts.
+
 ```
