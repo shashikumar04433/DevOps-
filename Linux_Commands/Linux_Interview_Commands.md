@@ -8,4 +8,7 @@
 ```
  
 **2.How to delete empty file in the linux**
+```
+find /home/ubuntu/ -type f -empty -delete
+```
 
