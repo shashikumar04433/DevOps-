@@ -7,4 +7,5 @@
 * ls-a to check the hidden files
 ```
  
+**2.How to delete empty file in the linux**
 
