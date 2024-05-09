@@ -12,8 +12,8 @@
 6. sudo passwd ubuntu
 7. reboot
 8. Connect the server ip using RDP(Remote Desktop Process)
-9.Enter the username and password which been setup the above.
-10.Go to the setting and make a app search and find terminal and execute the ubuntu commands.
+9. Enter the username and password which been setup the above.
+10. Go to the setting and make a app search and find.<https://docs.globaleaks.org/en/main/developer/Environment.html>
 
 
 
