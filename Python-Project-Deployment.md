@@ -4,6 +4,7 @@
 **Steps for the Deployment**
 ```
 * Launch the Server  and Then Install the ubuntu-Desktop in the server using the following commands:
+
 1. sudo apt-get update
 2. sudo apt install xrdp -y
 3. sudo systemctl enable xrdp
