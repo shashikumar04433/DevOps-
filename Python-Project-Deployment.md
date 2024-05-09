@@ -9,6 +9,14 @@
 3. sudo systemctl enable xrdp
 4. sudo add-apt-repository ppa:gnome3-team/gnome3
 5. sudo apt-get install gnome-shell ubuntu-gnome-desktop
+6. sudo passwd ubuntu
+7. reboot
+8. Connect the server ip using RDP(Remote Desktop Process)
+9.Enter the username and password which been setup the above.
+10.Go to the setting and make a app search and find terminal and execute the ubuntu commands.
+
+
+
 
 
 
