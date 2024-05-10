@@ -1,8 +1,10 @@
 
 ## Simple Storage Service (S3):
 ```
-    * Simple Storage Service (S3) is an object storage service that offers Industry-leading scalability,Data Availability
-      Security and Performance . You can you S3 to store and retrieve any amount of data at any time , from anywhere.
+    * Simple Storage Service (S3) is an object storage service that offers \
+      Industry-leading scalability,Data Availability
+      Security and Performance . You can you S3 to store and retrieve
+      any amount of data at any time , from anywhere.
 
       1.You can storage the data/files anything .
       2.You can launch static and dynamic websites .
