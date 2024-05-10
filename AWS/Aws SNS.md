@@ -6,4 +6,4 @@
         
         2. It is fully-managed subscribe messaging and mobile communication service.
         
-        3. It is automated automated services responding to triggers. 
+        3. It is automated automated services responding to triggers.
