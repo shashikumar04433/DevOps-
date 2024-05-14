@@ -67,3 +67,11 @@ Eg:
 
 Network Configuration & Trouble Shooting:
 ```
+The basic requirements for Networking are:
+```
+1.NIC(Network Interface Controller or Card).
+2.Media.
+3.Topology.
+4.Protocol.
+5.IP Addresses.
+```
