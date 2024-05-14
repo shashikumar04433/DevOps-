@@ -78,5 +78,4 @@ The basic requirements for Networking are:
 4.Protocol.
 
 5.IP Addresses.
-
 ```
