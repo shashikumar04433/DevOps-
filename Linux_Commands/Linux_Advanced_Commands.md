@@ -65,4 +65,5 @@ Eg:
 * ufw allow 443
 ```
 
-Network 
+Network Configuration & Trouble Shooting:
+```
