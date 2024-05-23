@@ -65,7 +65,7 @@ Eg:
 * ufw allow 443
 ```
 
-Network Configuration & Trouble Shooting:
+**Network Configuration & Trouble Shooting:**
 ```
 The basic requirements for Networking are:
 ```
