@@ -68,7 +68,7 @@ Eg:
 **Network Configuration & Trouble Shooting:**
 ```
 The basic requirements for Networking are:
-```
+
 1.NIC(Network Interface Controller or Card).
 
 2.Media.
