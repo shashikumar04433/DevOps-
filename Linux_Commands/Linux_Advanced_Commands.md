@@ -52,7 +52,7 @@ Eg:
 ```
 **finger**
 ```
-finger command is used to monitor the other user.
+* finger command is used to monitor the other user.
 * apt install finger
 * finger <username>
 ```
