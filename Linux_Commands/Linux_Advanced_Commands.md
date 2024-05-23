@@ -76,6 +76,4 @@ The basic requirements for Networking are:
 3.Topology.
 
 4.Protocol.
-
-5.IP Addresses.
 ```
