@@ -1,19 +1,10 @@
 # Shell_Script:
+
 **!# (Shebang)**
+The #!/bin/bash at the beginning of the script indicates that the script should be interpreted using the Bash shell.
 ```
 
-```
 
-**Types of Shells**
-
-```
-* /bin/sh
-* /bin/bash
-* /usr/bin/sh
-* /usr/bin/bash
-* /usr/bin/tmux
-* /usr/bin/screen
-```
 
 **Writing a shellscript in linux**
 ```
