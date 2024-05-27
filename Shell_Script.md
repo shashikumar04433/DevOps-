@@ -10,6 +10,7 @@
 * /usr/bin/screen
 ```
 **!# (Shebang)**
+```
 The #!/bin/bash at the beginning of the script indicates that the script should be interpreted using the Bash shell.
 ```
 
