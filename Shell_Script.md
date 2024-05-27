@@ -20,6 +20,10 @@ the script should be interpreted using the Bash shell.
 var1="shashi"
 var2=123
 ```
+**Executing the variables**
+```
+echo $var1 $var2
+```
 
 **Writing a shellscript in linux**
 ```
