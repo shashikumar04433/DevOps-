@@ -11,7 +11,8 @@
 ```
 **!# (Shebang)**
 ```
-The #!/bin/bash at the beginning of the script indicates that the script should be interpreted using the Bash shell.
+The #!/bin/bash at the beginning of the script indicates that
+the script should be interpreted using the Bash shell.
 ```
 
 
