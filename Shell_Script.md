@@ -2,7 +2,7 @@
 **!# (Shebang)**
 ```
 
-
+```
 
 **Types of Shells**
 
