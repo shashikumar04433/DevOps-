@@ -17,8 +17,8 @@ the script should be interpreted using the Bash shell.
 
 **Variables in Shell Script**
 ```
-abc="shashi"
-new=123
+var1="shashi"
+var2=123
 ```
 
 **Writing a shellscript in linux**
