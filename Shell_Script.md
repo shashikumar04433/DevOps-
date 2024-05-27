@@ -15,7 +15,11 @@ The #!/bin/bash at the beginning of the script indicates that
 the script should be interpreted using the Bash shell.
 ```
 
-
+**Variables in Shell Script**
+```
+abc="shashi"
+new=123
+```
 
 **Writing a shellscript in linux**
 ```
