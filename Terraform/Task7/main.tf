@@ -19,7 +19,6 @@ data "vault_kv_secret_v2" "example" {
   mount = "kv" 
   name  = "test-secret" 
 
-
 }
 resource "aws_instance" "my_instance" {
   ami     = "ami-0fc5d935ebf8bc3bc"
