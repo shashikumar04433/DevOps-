@@ -14,9 +14,7 @@ provider "vault" {
       secret_id = "6a05138d-9292-5bde-4e3f-2df2868e4a8e"
     }
   }
-
 }
-
 data "vault_kv_secret_v2" "example" {
   mount = "kv" 
   name  = "test-secret" 
