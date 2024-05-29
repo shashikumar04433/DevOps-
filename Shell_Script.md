@@ -34,5 +34,5 @@ echo our current working directory is $PWD
 name=Mask
 value=10
 echo the name is $name
-echi value $value
+echo value $value
 ```
