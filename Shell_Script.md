@@ -36,3 +36,5 @@ value=10
 echo the name is $name
 echo value $value
 ```
+**set -x #Debug mode**
+```
