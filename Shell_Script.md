@@ -54,5 +54,8 @@ Swap:              0           0           0
 ```
 **Basic Practises of the Shell Script**
 ```
+echo -x #Debug Mode
+echo -e #exit the script when there is an error
+echo -o pipefail
 ```
 
