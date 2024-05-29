@@ -36,7 +36,13 @@ value=10
 echo the name is $name
 echo value $value
 ```
-**set -x #Debug mode**
+**Input.sh file**
+```
+set -x #Debug mode
+free -g
+nproc
+```
+**Output file**
 ```
 + free -g
                total        used        free      shared  buff/cache   available
