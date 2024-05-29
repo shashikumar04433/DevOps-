@@ -38,3 +38,12 @@ echo value $value
 ```
 **set -x #Debug mode**
 ```
++ free -g
+               total        used        free      shared  buff/cache   available
+Mem:              31           1          13           0          16          29
+Swap:              0           0           0
+
++ nproc
+8
+```
+
