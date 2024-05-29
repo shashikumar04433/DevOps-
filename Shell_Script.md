@@ -52,4 +52,6 @@ Swap:              0           0           0
 + nproc
 8
 ```
-
+**Basic Practises of the Shell Script**
+```
+```
