@@ -59,3 +59,15 @@ echo -e #exit the script when there is an error
 echo -o pipefail
 ```
 
+**Example of if-else condition in Shell Script**
+```
+a=40
+b=100
+
+if [ $a -gt $b ];
+then
+    echo "a is greater than b"
+else
+    echo "a is not greater than b"
+fi
+```
