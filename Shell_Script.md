@@ -26,7 +26,8 @@ echo $var1 $var2
 ```
 **Execting or getting into different Shells**
 ```
-eg:
+Eg:
+
 tcsh
 sh
 ```
