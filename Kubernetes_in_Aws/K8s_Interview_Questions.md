@@ -20,7 +20,7 @@ Scheduler: Assigns workloads to nodes based on resource availability and other c
 ```
 Kubelet: An agent that runs on each node, ensuring containers are running in a Pod.
 Kube-proxy: Maintains network rules on nodes, allowing network communication to Pods.
-Container Runtime: The software that runs the containers (e.g., Docker, containerd).
+Container Runtime: The software that runs the containers (e.g., Docker, containerid).
 ```
 **Additional Components:**
 ```
