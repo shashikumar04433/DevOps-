@@ -59,3 +59,14 @@ Kubernetes handles container orchestration and scaling through several mechanism
 * Horizontal Pod Autoscaling (HPA): Automatically scales the number of Pods based on CPU utilization or other select metrics.
 * Vertical Pod Autoscaling (VPA): Adjusts the resource requests and limits of Pods based on actual usage.
 ```
+### How do you monitor and troubleshoot Kubernetes clusters?
+```
+Monitoring and troubleshooting Kubernetes clusters typically involve:
+
+* Metrics Collection: Using tools like Prometheus to collect and store metrics from various components.
+* Logging: Using centralized logging solutions like Elasticsearch, Fluentd, and Kibana (EFK) stack to aggregate and analyze logs.
+* Tracing: Implementing distributed tracing with tools like Jaeger to track the flow of requests across services.
+* Dashboards: Visualizing metrics and logs using dashboards provided by tools like Grafana.
+* kubectl Commands: Using kubectl to inspect resources, events, and logs (e.g., kubectl get pods, kubectl logs, kubectl describe pod).
+
+```
