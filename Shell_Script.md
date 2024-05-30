@@ -24,6 +24,12 @@ var2=123
 ```
 echo $var1 $var2
 ```
+**Execting or getting into different Shells**
+```
+eg:
+tcsh
+sh
+```
 
 **Writing a shellscript in linux**
 ```
