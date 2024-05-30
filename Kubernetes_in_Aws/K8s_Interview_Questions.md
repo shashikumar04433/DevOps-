@@ -49,3 +49,13 @@ A Kubernetes Deployment is a higher-level abstraction that defines the desired s
 * Automatically replacing or rescheduling Pods if they fail, become unresponsive, or are terminated.
 * Rolling out updates with zero downtime using rolling updates and rollbacks if necessary.
 ```
+
+### How does Kubernetes handle container orchestration and scaling?
+```
+Kubernetes handles container orchestration and scaling through several mechanisms:
+ 
+* Scheduling: The Kubernetes Scheduler assigns Pods to nodes based on resource requirements, policies, and constraints.
+* Replication: ReplicaSets and Deployments ensure that a specified number of Pod replicas are running at any time.
+* Horizontal Pod Autoscaling (HPA): Automatically scales the number of Pods based on CPU utilization or other select metrics.
+* Vertical Pod Autoscaling (VPA): Adjusts the resource requests and limits of Pods based on actual usage.
+```
