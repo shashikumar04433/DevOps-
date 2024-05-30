@@ -41,7 +41,8 @@ Services enable communication between different parts of an application and exte
 ```
 ### What is a Kubernetes Deployment and how does it ensure high availability?
 ```
-A Kubernetes Deployment is a higher-level abstraction that defines the desired state for a set of Pods and ReplicaSets. It manages the deployment and scaling of Pods and ensures high availability by:
+A Kubernetes Deployment is a higher-level abstraction that defines the desired state for a set of Pods and ReplicaSets.
+ It manages the deployment and scaling of Pods and ensures high availability by:
 ```
 ```
 * Creating and updating instances of applications (Pods).
