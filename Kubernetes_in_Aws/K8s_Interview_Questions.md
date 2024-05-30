@@ -31,6 +31,6 @@ ConfigMaps and Secrets: Manage configuration and sensitive information respectiv
 
 ### What is a Pod and how does it differ from a container?
 ```
-A Pod is the smallest deployable unit in Kubernetes and represents a single instance of a running process in your cluster.
-It can contain one or more containers that share the same network namespace and storage volumes.
+A Pod is the smallest deployable unit in Kubernetes and represents a single instance ofa running process
+in your cluster.It can contain one or more containers that share the same network namespace and storage volumes.
 ```
