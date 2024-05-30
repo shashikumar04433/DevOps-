@@ -34,3 +34,8 @@ ConfigMaps and Secrets: Manage configuration and sensitive information respectiv
 A Pod is the smallest deployable unit in Kubernetes and represents a single instance ofa running process
 in your cluster.It can contain one or more containers that share the same network namespace and storage volumes.
 ```
+### What is the purpose of a Kubernetes Service?
+```
+A Kubernetes Service provides a stable endpoint (IP address and DNS name) for accessing a set of Pods.
+Services enable communication between different parts of an application and external access to the application.
+```
