@@ -5,6 +5,7 @@
 Step1:
 ```
 Install Liferay bundle with Tomcat.
+
 <https://learn.liferay.com/w/dxp/installation-and-upgrades/reference/liferay-home>
 ```
 
