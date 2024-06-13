@@ -31,3 +31,24 @@ To do a reverse proxy:
 <IfModule dir_module>
     DirectoryIndex index.html
 </IfModule>
+
+
+# Proxy settings for Tomcat and Liferay
+
+Step5:
+ProxyRequests Off
+ProxyPreserveHost On
+<Proxy *>
+    Require all granted
+</Proxy>
+ProxyPass / http://localhost:8080/
+ProxyPassReverse / http://localhost:8080/
+
+Step6:
+Replace this in server.xml
+
+<Connector port="8080" protocol="HTTP/1.1"
+           connectionTimeout="20000"
+           redirectPort="8443"
+           proxyPort="80"
+           scheme="http" />
