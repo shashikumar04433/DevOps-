@@ -17,10 +17,11 @@ Install Apache and configure in the windows:
 ```
 Step3:
 ```
+
 Go to this folder
 C:\Users\shashi.reddy\Downloads\Apache24\Apache24\conf
-Change this 
 
+Change this 
 Define SRVROOT "c:/Apache24"
 ServerRoot "C:/Users/shashi.reddy/Downloads/Apache24/Apache24"
 ```
