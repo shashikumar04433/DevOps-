@@ -52,3 +52,5 @@ Replace this in server.xml
            redirectPort="8443"
            proxyPort="80"
            scheme="http" />
+Step7:
+Restart tomcat and then restart Apache
