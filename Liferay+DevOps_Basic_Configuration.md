@@ -17,4 +17,17 @@ C:\Users\shashi.reddy\Downloads\Apache24\Apache24\conf
 Change this 
 Define SRVROOT "c:/Apache24"
 ServerRoot "C:/Users/shashi.reddy/Downloads/Apache24/Apache24"
-```
+
+Step4:
+To do a reverse proxy:
+
+<Directory "C:/Users/shashi.reddy/Downloads/Apache24/Apache24/htdocs">
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+
+# Basic settings
+<IfModule dir_module>
+    DirectoryIndex index.html
+</IfModule>
