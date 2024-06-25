@@ -1,6 +1,5 @@
 # Installtion of Jenkins and Sonarqube on Redhat Linux:
 
-
     Step1:
        sudo yum update
        sudo yum install java-11-openjdk-devel unzip vim wget -y
