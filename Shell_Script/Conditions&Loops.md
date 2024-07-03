@@ -100,7 +100,7 @@ eg:if you want to filter only email or country name in the excel :
 command
 awk -F '{print $4}' filename.txt
 ```
-##Cut 
+## Cut 
 ```
 Cut command is used to write selected characters or fields in the file
 
