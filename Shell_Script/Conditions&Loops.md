@@ -1,19 +1,17 @@
-# If-Else condition
+# If-Else condition:
+```
 #!/bin/bash  ---------------->shebang
-
-
 num=5
 if[$num -gt 4];
 then
 echo "hello world"
 else
 echo "bye world"
-
+```
 
 ## elif-condition in If-Else
-
+```
 #!/bin/bash 
-
 num=5
 if[$num -gt 10];then
 echo "$num is gretaer then 10"
@@ -21,9 +19,10 @@ elif [$num -lt 5];y=then
 echo "$num is less then 5"
 else
 echo "both are the wrong statements"
-
+```
 
 ## For loops 
+```
 #basic syntax of for loop:
 for item in list
 do
@@ -60,10 +59,10 @@ for i in 1 2 3 4 5
 do
 echo $i
 done
-
+```
 
 ## Xargs :
-
+```
 It is a command to build and excute commands provided through standard input
 
 it takes input and then execute with the arguments.
@@ -78,11 +77,10 @@ xargs [][]
 ls *.text | xargs cat
 
 ls *.text | xargs rm
-
-
+```
 
 ## Sed (Streamline Editor):
-
+```
 Sed (It is a stream line editor where you can edit the file content with out entering in it using the below flags)
 
 -i --> It is use to edit or insert the content into file .
@@ -92,30 +90,30 @@ sed -i 's/hello/hey/' file.txt
 
 -n -e ---> It both works as same to print the illusionary output but the original file doesnt have any changes.
 
-
+```
 
 ## Awk ()
-
+```
 Awk command is used to filter the fielddata from the larger files.
 
 eg:if you want to filter only email or country name in the excel :
 command
 awk -F '{print $4}' filename.txt
-
+```
 ##Cut 
+```
 Cut command is used to write selected characters or fields in the file
 
 cut -b1-5 /etc/passwd ( it print the 5 characters)
 
 cut -c1-5 /etc/passwd
-
+```
 
 ## Practise of Conditions & Loops:
-
+```
 #!/bin/bash
 
 num=18
-
 if [ $num < 18 ]
 then
     echo "he is eligible for voting"
@@ -125,8 +123,10 @@ then
 else
     echo "he is  apply for voting"
 fi
+```
 
 ## Forloop 
+```
 #!/bin/bash
 for i in $(awk '{print $2}' hostname.txt)
 do
@@ -138,3 +138,4 @@ do
         echo "server is down"
     fi
 done
+```
