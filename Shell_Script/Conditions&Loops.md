@@ -139,3 +139,45 @@ do
     fi
 done
 ```
+```
+## While Loops:
+
+while (condition)
+do
+echo "print something"
+done
+
+#!/bin/bash
+count=1
+while[$count -le 5]
+do
+    echo "Count:$count"
+    ((count++))
+done
+
+```
+
+## Zip and Unzipping the directories and Files:
+```
+zip abcd.zip abc1.txt abc2.txt abc3.txt
+
+```
+## SoftLink 
+```
+It is a exact copy of file like a short cut.
+ln -s /path/of/directory/file
+```
+## Hardlink
+```
+It a exact copy if u delete the file the main file also deletes
+ln /path/of/directory/file
+```
+## Tar and UTar
+```
+Tar is Bundling multiple files into a single file without compression.
+Utar is Unbundling the files from a single file without compression.
+-c -->create a new zip or archive file.
+-x  -->extract file from archive file.
+-t -->list the contents of archive file.
+-f etc.
+```
