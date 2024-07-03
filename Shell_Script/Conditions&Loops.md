@@ -92,7 +92,7 @@ sed -i 's/hello/hey/' file.txt
 
 ```
 
-## Awk ()
+## Awk
 ```
 Awk command is used to filter the fielddata from the larger files.
 
