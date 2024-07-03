@@ -181,3 +181,38 @@ Utar is Unbundling the files from a single file without compression.
 -t -->list the contents of archive file.
 -f etc.
 ```
+
+## Senario Based Questions:
+
+1.Write a shell script to ping all the servers .If the server not able to to respond then
+display that $server ip is not connecting .Else able to connect it?
+
+```
+#!/bin/bash
+for i in $(awk '{print $2}' hostname.txt)
+do
+    if (ping -c 1 $i);
+    then
+        echo "server is up"
+        ssh -o StrictHostKeyChecking=no ubuntu@$i 'sudo df -h'
+    else
+        echo "server is down"
+    fi
+done
+
+```
+2.Install a apache server and check with shell scripting its starting 
+or not if it is not starting it should check and run automatically.
+```
+#!/bin/bash
+service="apache2"
+if (( $(ps -ef | grep -v grep | grep $service | wc -l) > 0 ))
+then
+    echo "$service is running!!!"
+else
+    echo "$service is not running!!!"
+    systemctl start apache2
+fi
+```
+
+
