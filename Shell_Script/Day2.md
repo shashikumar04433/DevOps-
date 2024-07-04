@@ -40,6 +40,13 @@
     nslookup google.com
     nslookup is used to get the ip address of the domain name
 ```
+### tcpdump
+```
+    tcpdump is used to capture the packets and capture the traffic and to network troubleshoot.
+    eg:
+    tcpdump port 53
+    tcpdump port 80
+```
 ### 3.User and Group Administrator:
 ```
     Three types of Users:
