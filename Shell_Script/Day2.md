@@ -47,6 +47,15 @@
     tcpdump port 53
     tcpdump port 80
 ```
+### Iproute
+```
+    ip route show
+    It shows the routing table details
+    ip link show
+    It shows the network interfaces details
+    ip addr show
+    It shows the ip address details
+```  
 ### 3.User and Group Administrator:
 ```
     Three types of Users:
