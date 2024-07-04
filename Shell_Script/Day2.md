@@ -60,6 +60,7 @@ eg:
 ```
 
 ### To set the password expiry:**
+```
     chage -M 90 username
 
 * To check the user password expiry date
@@ -67,15 +68,16 @@ eg:
 
 * To Lock the useraccount:
     passwd -l username
-
+```
 
 ### Mount
+```
     Adding extra volume to the server and attching the storage and using it .
-
+```
 step1:
-
+```
     add a extra ebs volume to the ec2 and attch that to the server.
-
+```
 step2:
 ```
     mount the volume present or attched in the server or not with the below command
