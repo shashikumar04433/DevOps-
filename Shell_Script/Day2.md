@@ -55,7 +55,23 @@
     It shows the network interfaces details
     ip addr show
     It shows the ip address details
-```  
+```
+### 2.Permissions
+```
+        adduser shashi
+        addgroup shashigroup
+        usermod -aG shashigroup shashi
+        usermod -aG sudo shashi
+    To remove the user from the groups use the below command:
+        usermod -G sudo newlp
+    chmod 777 file 
+        user group others
+    chmod 755 file   
+        user has r+w+x 
+        group has r+x 
+        others has r+x
+```
+
 ### 3.User and Group Administrator:
 ```
     Three types of Users:
