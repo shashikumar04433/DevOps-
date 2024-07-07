@@ -1,4 +1,4 @@
-## Day3
+# Day3
 
 1. Find
 2. Lsof
