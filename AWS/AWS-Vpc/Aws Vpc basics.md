@@ -32,10 +32,11 @@ Route table are used to route the traffic to the subnets.
 7.What is IGW?
 Internet gateway is used to provide the internet access to the vpc.
 
-       Peering connections:
+Peering connections:
 
-                Peering connections enable resources in different VPCs to communicate with each other as if they were on the same                         network.
-                
+ Peering connections enable resources in different VPCs to communicate with each other as if they were on the same                         network.
+
+```               
 ### VPC Practical Demo:
 
       Step1:  (VPC)
