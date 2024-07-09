@@ -1,5 +1,5 @@
 ## Day-4
-
+```
 1.VPC Peering 
 
 2.VPC Endpoints
@@ -7,67 +7,83 @@
 3.EBS and its Types
 
 4.Perform a vpc peering and get a snap shot of ebs and replicate in different region .
+```
 
-
-1.Whai is Vpc?
+### 1.Whai is Vpc?
+```
 VPC is a virtual private network which has isolated environment with the aws cloud.
-
-2.what is subnet?
+```
+### 2.what is subnet?
+```
 A subnet is  a range of IP addresses in your VPC.
-
-3.What is CIDR range?
+```
+### 3.What is CIDR range?
+```
 CIDR is a Class-Inter-Domain-Routing .It allocates the ip address range.
+```
 
-4.What is Nat Gateway?
+### 4.What is Nat Gateway?
+```
 Nat Network address translation used to provide the internet to the private network.
 where it works as only one way traffic from the private subnet.
+```
 
-5.What is Nacl?
+### 5.What is Nacl?
+```
 Network access control list it is similar to sg (security groups ) but in nacl you can deny the ip iddress.
+```
 
-6.What is Route Table?
+### 6.What is Route Table?
+```
 Route table are used to route the traffic to the subnets.
+```
 
-7.What is IGW?
+### 7.What is IGW?
+```
 Internet gateway is used to provide the internet access to the vpc.
+```
 
 
-
-# Vpc Endpoint:
-
+### Vpc Endpoint:
+```
 A VPC Endpoint in AWS allows you to privately connect your VPC.VPC endpoint services doesnt requiring an internet gateway, NAT device, VPN connection.
-
-They are two types of Vpc Endpoints:
-
+```
+**They are two types of Vpc Endpoints:**
+```
 1.Interface Endpoints:
  It operates the elastic network interface with in your vpc.
 
 2.Gateway Endpoints: 
 It operates the mainly route table, used for supported services such as S3 and DynamoDB.
+```
 
-# EBS (Elastic Block Storage)
-
+### EBS (Elastic Block Storage)
+```
 EBS is a block level storage it is used for store the persistent data.Where we attach the extra storage space to the ec2.
-
-Three types of EBS:
+```
+**Three types of EBS:**
+```
 1.SSD Volumes
 2.HDD Volumes
 3.Previous generation volumes
-
-* SSD Volumes:
+```
+**SSD Volumes:**
+```
     SSD volumes are used for high performance and low latency storage.
     Types are:
     1.General Perpose
     2.GP2 
     3.GP3
-* gp2 and gp3 are nothing but the versions.
+```
+**gp2 and gp3 are nothing but the versions.**
+```
     4.IO1   
     5.IO2
     6.IO3
-
+```
+```
 io1,io2 & io3 are also versions but iops is input output per second it is used for faster access it is used mainly when u have large applications.Common gp2 and gp3 is preferred.
-
-
+```
 
 ## To create a snapshot from the Ec2 and attach it to another vm or Ec2 follow the below Steps:
 ```
