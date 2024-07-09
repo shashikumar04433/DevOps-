@@ -33,7 +33,7 @@
         
    3. Archieved.
       * Glacier
-      * Glacier Deep Archival
+      * Glacier Deep Archival.
 ```
  **Command to push the files from local to s3:**
  ```

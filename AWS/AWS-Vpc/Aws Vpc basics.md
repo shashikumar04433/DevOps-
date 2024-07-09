@@ -9,34 +9,34 @@ Topics in VPC:
       5. Internet Connectivity.
       6. VPC Peering. 
       7. VPC Connection.
+```
+1.Whai is Vpc?
+VPC is a virtual private network which has isolated environment with the aws cloud.
 
-            IP Address Ranges: 
-            When you create a VPC, you specify an IP address range for the VPC. This range is defined using CIDR (Classless Inter-Domain             Routing) notation, such as 10.0.0.0/16. The CIDR block determines the total number of available IP addresses that can be                 used  within the VPC.
+2.what is subnet?
+A subnet is  a range of IP addresses in your VPC.
 
-      Subnets:
-             Subnets are logical divisions of an IP address range within a network, including a Virtual Private Cloud (VPC) in cloud                  computing. They enable you to segment and organize your network into smaller, more manageable networks. Each subnet has 
-             its unique CIDR (Classless Inter-Domain Routing) block, which defines the range of IP addresses assigned to resources 
-             within that subnet.
-      Routing:
-             A routing table is a key component of networking that is used to determine the path of network traffic between 
-             different networks or subnets. It is a data structure or a configuration file that resides on a router or a network 
-             device and contains a set of rules, called routes.
+3.What is CIDR range?
+CIDR is a Class-Inter-Domain-Routing .It allocates the ip address range.
 
-      Internet Connectivity:
+4.What is Nat Gateway?
+Nat Network address translation used to provide the internet to the private network.
+where it works as only one way traffic from the private subnet.
 
-              An Internet Gateway acts as a bridge between your VPC and the public Internet. It provides a target for internet-bound 
-              traffic from resources within the VPC and allows them to access the internet or be accessed by internet users.
+5.What is Nacl?
+Network access control list it is similar to sg (security groups ) but in nacl you can deny the ip iddress.
 
-       NAT (Network Address Translation):
+6.What is Route Table?
+Route table are used to route the traffic to the subnets.
 
-             Gateways are a managed network service provided by cloud service providers to enable outbound internet connectivity for 
-             private subnets within a Virtual Private Cloud (VPC) environment. NAT gateways allow resources in private subnets to 
-             communicate with the internet while hiding their private IP addresses.
+7.What is IGW?
+Internet gateway is used to provide the internet access to the vpc.
 
-       Peering connections:
+Peering connections:
 
-                Peering connections enable resources in different VPCs to communicate with each other as if they were on the same                         network.
-                
+ Peering connections enable resources in different VPCs to communicate with each other as if they were on the same                         network.
+
+```               
 ### VPC Practical Demo:
 
       Step1:  (VPC)
@@ -46,14 +46,14 @@ Topics in VPC:
 
       Step2:   (Subnets) 
                 Create two subnets named Public-Subnet and Private-Subnet:
-                Public-Subnet---> 10.0.0.0/16 ---->It means it allocated 255 ips 
-                Private-Subnet--> 10.0.1.0/16
+                Public-Subnet---> 10.0.0.0/24 ---->It means it allocated 255 ips 
+                Private-Subnet--> 10.0.1.0/24
                 eg :
-                10.0.2.0/16
-                10.0.3.0/16
-                10.0.4.0/16
+                10.0.2.0/24
+                10.0.3.0/24
+                10.0.4.0/24
                 .. 
-                10.0.255.0/16
+                10.0.255.0/24
                 Enable auto-assign public IPv4 addresses for both subnets.
 
       Step3:   (IGW -->Internet Gateway):          
