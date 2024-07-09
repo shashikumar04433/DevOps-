@@ -46,14 +46,14 @@ Peering connections:
 
       Step2:   (Subnets) 
                 Create two subnets named Public-Subnet and Private-Subnet:
-                Public-Subnet---> 10.0.0.0/16 ---->It means it allocated 255 ips 
-                Private-Subnet--> 10.0.1.0/16
+                Public-Subnet---> 10.0.0.0/24 ---->It means it allocated 255 ips 
+                Private-Subnet--> 10.0.1.0/24
                 eg :
-                10.0.2.0/16
-                10.0.3.0/16
-                10.0.4.0/16
+                10.0.2.0/24
+                10.0.3.0/24
+                10.0.4.0/24
                 .. 
-                10.0.255.0/16
+                10.0.255.0/24
                 Enable auto-assign public IPv4 addresses for both subnets.
 
       Step3:   (IGW -->Internet Gateway):          
