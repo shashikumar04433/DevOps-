@@ -146,7 +146,6 @@ step6:
     vi /etc/fstab
     df -h
     umount /shashifilestorage/
-
 ```
 
 
