@@ -90,7 +90,6 @@ Ingress controller is a component that manages the incoming traffic to the clust
 Egress controller is a component that manages the outgoing traffic from the cluster.
 ```
 
-```
 ### Jenkins
 ```
 1.How do you secure jenkins?
