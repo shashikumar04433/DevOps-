@@ -31,9 +31,10 @@ Types of services in k8s?
 - External Name --> (dns)It will expose the service to the outside world .
 ```
 
-What is Replicaset in k8's?
+**What is Replicaset in k8's?**
+```
 Replicaset is nothing but we mention in deployment.yaml  how many pods need to be created.
-
+```
 **What is Deployment in k8's?**
 ```
 Deployment is a way to manage the pods in k8s.Like rollback updates.
