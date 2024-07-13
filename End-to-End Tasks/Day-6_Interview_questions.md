@@ -63,24 +63,19 @@ Egress Controller?
 Egress controller is a component that manages the outgoing traffic from the cluster.
 
 
-
-
-
+```
 ### Jenkins
-
+```
 1.How do you secure jenkins?
 
 You can secure the jenkins using RBAC (Role Based Access)
 You can also use the jenkins credentials plugin to store the credentials securely in the jenkins server.
 And configuring the Https to the jenkins server .
 
-
 2.How do you configure jenkins to build a docker image?
 You can configure jenkins to build a docker image by using the docker plugin in jenkins.
 You can also use the jenkins pipeline to build the docker image.
 
-
-
-
+```
 
 
