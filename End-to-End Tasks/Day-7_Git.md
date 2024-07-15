@@ -211,6 +211,7 @@ eg:
 git commit --amend -m "the msg need to change"
 ```
 **Git Logs**
+```
 **Git log is used to view the history of the git repo.You can check all the commit histories.**
 - git log
 
@@ -227,7 +228,7 @@ git commit --amend -m "the msg need to change"
 
 **To display in the form of graph**
 - git log --graph
-
+```
 
 ### Cherry-Pick:
 **Cherry-pick is a feature that allow to retrive the specific version from the other branches**
