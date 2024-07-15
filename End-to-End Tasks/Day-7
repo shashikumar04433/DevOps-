@@ -1,0 +1,132 @@
+### Git
+
+1.Github vs Git
+2.Cvcs vs Dvcs
+3.Github complete flow
+4.Branching (Create/Delete/rename branch)
+5.Git Stash
+6.Merging(Conflicts,Branchmerging ,Rebase)
+7.Gitignore
+8.Gitflow
+9..git
+10.Cherry pick
+11.How to rewrite the commit message in git
+12.Git logs
+13.Ui(Administration, Branch Protect,Webhooks,Read.md)
+
+
+**Github:**
+Github is a website that allow devlopers to store and manage the code using git.
+
+**git:**
+It is a used to track changes & collaborate the teams using git.
+
+**What is Central version control System?**
+Central version control System where single server contains all the versions of file.
+* if the central repository goes down devlopers cannot commit changes.
+* need the internet to make changes and to connect the central version control system.
+
+**What is Distributed Version control System?**
+* Distributed Version control System where each devloper has a copy of the repository.
+* need not of the internet for changing the code .
+* if the  repository goes down devlopers can still commit changes.
+
+
+**Github Complete Flow**
+1. Create a repository
+2. Create a branch
+3. Make changes to the branch
+4. Commit the changes
+5. Push the changes to the remote repository
+6. Create a pull request
+7. Merge the pull request
+8. Delete the branch
+
+**EG:Basic Example:**
+First we have a cloned repo in the local.
+we have added the new code 
+1.touch newfile        
+                        
+2.git add newfile
+                                        
+3.git commit -m "added new file" 
+
+4.git push origin main
+
+**Git Workflow**
+
+1.working directory (local )
+                         git reset head
+                         to completely discard even with the files use 
+                         git reset --hard
+2.staging area  --------|
+                          to completely discard even with the files use after commit 
+                          git reset --hard head~1
+                          this below command is used for revert the changes and go back to staging area.
+                          git reset --soft head~1
+3.Remote Repository ------|
+
+**example**
+
+1. git add newfile
+to revert to working directory use below command
+- git reset head
+to completely discard even with the files use
+- git reset --hard
+2. git commit -m "added new file"
+to revert to staging area use below command
+- git reset --soft head~1
+(or) to discard all changes use below command
+- git reset --hard head~1
+
+
+**Branching Strategy**
+Branching strategy is used to fix the bugs and devlop on particular part without effecting to the main base code.
+
+Types of Branching:
+
+1. Master Branch
+2. Feature Branching
+3. Release Branching
+4. Hotfix Branching
+
+1.Master Branch  --> Its nothing but main code.
+
+2.Feature Branching --> Its nothing but the new feature code which is added to the main code. or When ever u are working on particular feature to devlop it will be developed on feature branch then it merges with master branch.
+
+3.Release Branching --> Its nothing but new version of the master branch code sent to release branch to go to the end user.
+
+4.Hotfix Branch --> Its nothing but when u have bugs in the production to solve that rapid fix they create a Hotfix Branch.
+
+**How to create a Branch**
+- git branch <branch_name>
+eg:
+- git branch feature_branch
+- git branch release_branch
+
+**How to delete a Branch**
+- git branch -d <branch_name>
+eg:
+git branch -d feature_branch
+git branch -d release_branch
+
+**How to rename a Branch**
+
+git branch -m <old branch> <new branch>
+eg:
+git branch -m shashi anand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
