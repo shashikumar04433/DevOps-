@@ -116,10 +116,85 @@ git branch -m <old branch> <new branch>
 eg:
 git branch -m shashi anand
 
+to directly push from the different branch command
+git push --set-upstream origin <branch_name>
+
+
+### What is Git Stash?
+- Git stash is a command that allows you to save your changes in a temporary place.
+- It is useful when you want to switch to another branch, and can keep the under construction work on temorary storage using git stash.
+
+- Git stash ---> It stash all the files and folder
+- git stash -- filename --> it allow one file to stash which you wanted too.
+- git stash pop --> it is used to remove the files from the stash or from the temporary storage.
+- git stash apply <id of stash> --> to bring back the apply id of file or directory to working directory.
+- git stash list --> It shows the list of stash files or directories.
+- git stash -m "msg" -- <filename> --> It will write the msg for the stashed specific file
+- git stash show <id> -->how many changes are included in file or directory.
+
+**Command to stash the untracked files**
+- git stash -u
+- git stash --include-untracked 
 
 
 
+### Merging(Conflicts,Branchmerging ,Rebase)
 
+**git merging**
+- It is nothing but the merging the changes from one branch to another
+main ---a b c 
+feature branch -- d e f
+- git merge feature_branch 
+output -a b c d e f m --> m consists of the merge history
+
+**git rebase**
+- It is nothing but moving the changes from one branch to another.
+
+main ---a b c 
+feature branch -- d e f
+- git rebase feature_branch 
+output -a b c d e f
+it doesnt have the history
+
+**git conflict**
+- It occurs when you make the changes in two files of same line or one person have deleted the file and another is modifing that file the error occurs.You need to solve manually only.
+- git status --> it shows the conflict files --you can check using git status.
+- git diff --> it shows the conflict files
+- git add <filename> --> it add the conflict file to staging area
+
+
+**.gitignore**
+- It is used to ignore the files or directories which we dont want to push to the remote repository
+
+**.git**
+It is used to track the changes in the source code
+It consists of the log folder ,remote repository branch ids and all the commit information
+
+
+
+**How to change the git commit message**
+- git commit --amend -m "new message"
+
+eg:
+git commit --amend -m "the msg need to change"
+
+**Git Logs**
+Git log is used to view the history of the git repo.You can check all the commit histories.
+- git log
+
+It displays one line summary of commits:
+- git log --oneline
+
+To display particular number of logs
+- git log -n 10
+To filter the logs with specified user:
+- git log --author="author name"
+
+To display the logs based on particular branch
+- git log branch_name
+
+To display in the form of graph
+- git log --graph
 
 
 
