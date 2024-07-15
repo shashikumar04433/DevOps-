@@ -194,8 +194,9 @@ it doesnt have the history
 ```
 
 **.gitignore**
+```
 - It is used to ignore the files or directories which we dont want to push to the remote repository
-
+```
 **.git**
 ```
 It is used to track the changes in the source code
