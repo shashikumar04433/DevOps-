@@ -1,22 +1,54 @@
-## IAM (Identity Access Management)
-  ```
-  1. Users
-  2. Roles
-  3. Policies
-  4. Groups
-  ```
+### IAM (Identity access Management)
 
-**Identity**
-* Users
-* Roles
-  * (User is static one where it allows to access in console and in cli )
-  * role is the temporary one to access 
-  
-**Access** 
+- IAM is a service that helps you securely control access to AWS resources.
+- IAM is a web service that enables you to manage users and user permissions across the AWS cloud.
+
+**Types in Identity Access Management:**
+- Users ----|Identity
+- Roles ----|Identity
+- Policies --|Access
+- Groups --- |Management
+
+
+
+### User 
+Create a User named s3 and choose password as custom password then save that credentials  and attach the s3 full access policy.
+
+- Open in incgnito window and and enter the iam username and password of above created.
+
+- You should be able to access only s3 not any other resource.
+
+
+### Policies
 ```
- * Policies: You can attach the policies directly to the user to access particular service
-``` 
-**Management**
+- Policies are documents that define one or more permissions.
 ```
-  * Groups: If suppose you have different teams like DB, IT,Admin you can craete a different groups and attach one policy.
+
+#### Three types of policies in aws:
+**Aws managed policies**
+```
+It managed by aws .
+```
+**Customer managed policies**
+```
+Policies should be written by you .
+```
+**Inline policies**
+```
+Policies are attached to the resource directly within that resource only.
+```
+## Roles:
+```
+- Roles are used to grant permissions to services, applications, and tools.
+- Roles are not associated with a specific user, but they can be assumed by a user.
+- Roles can be assumed by a user, a service, or an application.
+```
+
+## Groups:
+```
+- Groups are used to manage permissions for multiple users.
+- Groups can be used to assign permissions to multiple users at once.
+db team - 1 policy
+dev team - 1 policy
+
 ```
