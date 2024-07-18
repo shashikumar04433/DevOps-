@@ -12,13 +12,14 @@
 ```
 
 ### User 
+```
 Create a User named s3 and choose password as custom password then save that credentials  and attach the s3 full access policy.
 
 - Open in incgnito window and and enter the iam username and password of above created.
 
 - You should be able to access only s3 not any other resource.
 
-
+```
 ### Policies
 ```
 - Policies are documents that define one or more permissions.
