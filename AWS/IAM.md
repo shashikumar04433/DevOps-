@@ -1,15 +1,15 @@
 ### IAM (Identity access Management)
-
+```
 - IAM is a service that helps you securely control access to AWS resources.
 - IAM is a web service that enables you to manage users and user permissions across the AWS cloud.
-
+```
 **Types in Identity Access Management:**
+```
 - Users ----|Identity
 - Roles ----|Identity
 - Policies --|Access
 - Groups --- |Management
-
-
+```
 
 ### User 
 Create a User named s3 and choose password as custom password then save that credentials  and attach the s3 full access policy.
