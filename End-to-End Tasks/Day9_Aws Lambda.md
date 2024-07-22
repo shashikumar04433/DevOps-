@@ -85,3 +85,10 @@ def lambda_handler(event, context):
         'body': json.dumps(bucketlist)  # Convert to JSON string for HTTP response
     }
 ```
+
+### For triggering the s3 when the bucket created.
+```
+1. Create a lambda function
+2. Go to s3 in properties choose event notification then there below choose the lambda function.
+3. then upload a file on choosen bucket on lambda then check the logs the event is triggered or not.
+```
