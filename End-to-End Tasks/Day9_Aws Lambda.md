@@ -88,8 +88,10 @@ def lambda_handler(event, context):
 
 
 ## 1. Create s3 bucket and upload index.html and then configure this in cloud front and make use of aws lambda
+```
    Create a s3 bucket then upload index.html code and then enable the public block check box and then allow in properties in the end static web hosting enable that.
    Then in the permissions write the below policy:
+```
    ```
    {
     "Version": "2012-10-17",
