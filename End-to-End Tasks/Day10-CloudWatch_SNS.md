@@ -33,7 +33,8 @@ eg:
 
 **CloudWatch Alarms:**
 ```
-They are a feature of Amazon CloudWatch that allows you to monitor metrics and automatically perform actions based on pre-defined thresholds.
+They are a feature of Amazon CloudWatch that allows you to monitor metrics and
+automatically perform actions based on pre-defined thresholds.
 * monitoring the matrics 
 * time period 
 * Perform actions
@@ -54,11 +55,13 @@ The main features of cloud watch are:
 
 **2. How would you set up an alarm for an EC2 instance to monitor its CPU utilization?**
 ```
-* Go to the CloudWatch console, create an alarm, choose the EC2 metric for CPU utilization, set the threshold and period, and define actions such as sending a notification or executing an Auto Scaling policy.
+* Go to the CloudWatch console, create an alarm, choose the EC2 metric for CPU utilization,
+set the threshold and period, and define actions such as sending a notification or executing an Auto Scaling policy.
 ```
 **3. What is CloudWatch Logs, and how is it used?**
 ```
-* CloudWatch Logs helps you monitor, store, and access your log files from Amazon EC2 instances and it helps for troubleshooting the issues.
+* CloudWatch Logs helps you monitor, store, and access your log files from Amazon
+  EC2 instances and it helps for troubleshooting the issues.
 ```
 **4. How do you configure an EC2 instance to send logs to CloudWatch Logs?**
 ```
@@ -75,15 +78,18 @@ CloudWatch Logs Insights is a tool for searching and analyzing your log data.
 ```
 **7. What are cloud watch events?**
 ```
-CloudWatch Events provides real-time updates about changes in your AWS resources. It helps you react to these changes quickly.
+CloudWatch Events provides real-time updates about changes in your AWS resources.
+It helps you react to these changes quickly.
 ```
 **8. How does CloudWatch integrate with other AWS services?**
 ```
-CloudWatch integrates with various AWS services such as EC2, RDS, DynamoDB, and Lambda to provide comprehensive monitoring. It can trigger AWS Lambda functions, SNS notifications, and more.
+CloudWatch integrates with various AWS services such as EC2, RDS, DynamoDB,and Lambda
+to provide comprehensive monitoring. It can trigger AWS Lambda functions, SNS notifications, and more.
 ```
 **9. How do you use CloudWatch in a multi-account setup?**
 ```
-You can set up CloudWatch cross-account observability by sharing metrics, logs, and alarms across accounts using AWS Organizations and cross-account IAM roles.
+You can set up CloudWatch cross-account observability by sharing metrics, logs,
+ and alarms across accounts using AWS Organizations and cross-account IAM roles.
 ```
 **10. What are some best practices for using CloudWatch?**
 ```
@@ -122,5 +128,6 @@ choose the topic and enter the mail id of the client who want to recieve the mai
 
 **7. What is the difference between SNS and SQS?**
 ```
-sns is push based service and sqs is pull based aws service where sqs handles the incoming notifications to reach the sns in fifo order.
+sns is push based service and sqs is pull based aws service where sqs handles the
+incoming notifications to reach the sns in fifo order.
 ```
