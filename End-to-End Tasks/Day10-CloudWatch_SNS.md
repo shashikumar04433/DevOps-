@@ -1,38 +1,43 @@
 
 
 ### Cloud Watch
-
-CloudWatch enables you to monitor your complete stack such as applications, infrastructure, network, services and use alarms logs and events data to take automated actions and reduce mean time to resolution.
-
-
+```
+CloudWatch enables you to monitor your complete stack such as applications, infrastructure, network,
+ services and use alarms logs and events data to take automated actions and reduce mean time to resolution.
+```
+```
 1. Dashboards
  Two types of Dashboards:
  - Custom Dashboards
  - Automatic Dashboards
+```
+```
+ Custom Dashboards:Creating the custom dashboard and can view the metrics of all aws services
+ individually and can share that with the publically and as well as with the particular user with mail id.
 
- Custom Dashboards:Creating the custom dashboard and can view the metrics of all aws services individually and can share that with the publically and as well as with the particular user with mail id.
-
- Automatic Dashboards: Automatic Dashboards are nothing but built in dashboards or pre-defined dashboards.
-
+Automatic Dashboards: Automatic Dashboards are nothing but built in dashboards or pre-defined dashboards.
+```
+```
  Sharing the dashboard to public below are the steps:
 eg:
 1. Public share 
 2. Share with credentials
 3. Share with a SSO for the all the aws users in ur account.
-
+```
+```
 * After creating the dashboards choose the option to share the dash board in actions.
 * you will get a mail like this below and the user can access this with this userid adn password in aws account.
 * you need to copy  link in cloudwatch and paste it in browser then access with below details
 * Your username is shashikumarreddy023@gmail.com and temporary password is M3mZ90U%
+```
 
-
-CloudWatch Alarms:
-They are a feature of Amazon CloudWatch that allows you to monitor metrics and automatically perform actions based on pre-defined thresholds. 
-
-monitoring the matrics 
-time period 
-Perform actions
-
+**CloudWatch Alarms:**
+```
+They are a feature of Amazon CloudWatch that allows you to monitor metrics and automatically perform actions based on pre-defined thresholds.
+* monitoring the matrics 
+* time period 
+* Perform actions
+```
 
 ### Interview questions of cloud watch:
 
