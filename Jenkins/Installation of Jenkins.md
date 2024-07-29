@@ -35,6 +35,7 @@ https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
 /etc/apt/sources.list.d/jenkins.list > /dev/null
 ```
 Step3:
+```
       sudo apt update
       sudo apt install jenkins -y
 ```
