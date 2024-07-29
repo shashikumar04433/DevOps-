@@ -62,5 +62,27 @@ use myDb;
 show tables;
 select*from tablename;
 you can view the data;
+eg:
+select * from messages;
++----+-----------------------------------+
+| id | message                           |
++----+-----------------------------------+
+|  1 | hiiii                             |
+|  2 | how r u                           |
+|  3 |                                   |
+|  4 | how r u                           |
+|  5 |                                   |
+|  6 |                                   |
+|  7 |                                   |
+|  8 |                                   |
+|  9 |                                   |
+| 10 | hey there new db                  |
+| 11 |                                   |
+| 12 | new data                          |
+| 13 | hiii                              |
+| 14 | hey this code is stored in the db |
+| 15 | anand                             |
+| 16 | hey there                         |
+| 17 | hiiii  
 ```
 
