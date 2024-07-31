@@ -66,7 +66,8 @@ A special type of pipeline job that automatically creates a pipeline for each br
 
 4. Plugins - It has hundreds of pulgins to update the center of jenkins
 
-5. distributed - Jenkins can easily distribute work across multiple machines, helping drive builds, tests and deployments across multiple platforms faster.
+5. distributed - Jenkins can easily distribute work across multiple machines, helping drive builds,
+   tests and deployments across multiple platforms faster.
 ```
 
 #### Parameters:
@@ -116,7 +117,8 @@ run_job=1
 ```
 **2. Maven Build**
 ```
-    A build type that is used for building the java projects using apache maven .Jenkins integrates the maven to execute goals and build lifecycle phases.
+    A build type that is used for building the java projects using apache maven .
+    Jenkins integrates the maven to execute goals and build lifecycle phases.
 ```
 **3. Ant Build**
 ```
@@ -124,7 +126,8 @@ run_job=1
 ```
 **4. Jenkinsfile Build**
 ```
-    Jenkins Pipeline defined in a jenkinsfile which stores the project source code repository.The jenkins file defines the stages and steps of the application.
+    Jenkins Pipeline defined in a jenkinsfile which stores the project source code repository.
+    The jenkins file defines the stages and steps of the application.
 ```
 
 **5. Multi-branch Pipeline Build**
