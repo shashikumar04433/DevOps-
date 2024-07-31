@@ -56,8 +56,8 @@ Cons: Requires knowledge of Groovy, initial setup can be more complex.
 A special type of pipeline job that automatically creates a pipeline for each branch in a source code repository.
 ```
 
-The main features of jenkins are:
-
+**The main features of jenkins are:**
+```
 1. Continuous Integration and Continuous Delivery - extensible automation server, Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project. 
 
 2. Easy installation -jenkins is easy to install
@@ -67,8 +67,7 @@ The main features of jenkins are:
 4. Plugins - It has hundreds of pulgins to update the center of jenkins
 
 5. distributed - Jenkins can easily distribute work across multiple machines, helping drive builds, tests and deployments across multiple platforms faster.
-
-
+```
 
 #### Parameters:
 **String based parameter**
