@@ -185,7 +185,8 @@ sudo apt update
 
 ### Third Task:
 
-**Install apache2 server in all slave nodes then when ever index.html has changed automatically it should reflect in all machines**
+**Install apache2 server in all slave nodes then when ever index.html has changed automatically 
+  it should reflect in all machines**
 ```
 ---
 - name: Install Apache and deploy index file
