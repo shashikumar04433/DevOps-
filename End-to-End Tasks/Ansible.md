@@ -1,18 +1,22 @@
-
 ### Ansible:
+```
 Ansible is a configuration management tool that automates the deployment and management of IT resources. 
+```
 
 **Pre-Requisites**
+```
 ----------------
 On both Control node and manage node
 - Python 2.7 or 3.5 and above installed on your system.
 - Ansible installed on only control node.
+```
 
 **Feattures of Ansible are:**
+```
 Ansible is agent less.
 Ansible playbooks are written in .yaml files.
 Ansible is platform indepentent.
-
+```
 ### What can you do with Ansible
 ```
 * You can create Provising or infrastructure (same like terraform)
