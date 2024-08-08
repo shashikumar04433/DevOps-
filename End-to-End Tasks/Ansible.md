@@ -45,12 +45,13 @@ Ansible is platform indepentent.
 ```
 
 ### To ping the servers with ips:
+```
 * Create a inventory file in 
 * vi /etc/inventory.ini
 * insert the ips which u want to connect.
 * ansible -i inventory.ini -m ping all
 * ansible -i inventory.ini -m shell -a "apt install -y vim net-tools" all
-
+```
 ### If u want to create the groups 
 ```
 * vi /etc/inventory.ini
