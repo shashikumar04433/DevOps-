@@ -21,4 +21,5 @@ resource "aws_instance" "Example2" {
   key_name      = "terra"
 }
 
+
   
