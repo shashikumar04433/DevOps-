@@ -1,10 +1,10 @@
 ### Attaching the Volume and Portioning the Volumes:
 
-Step1:
+**Step1:**
 ```
 create a ebs and attach it to the ec2 instance.
 ```
-Step2:
+**Step2:**
 ```
 1. fdisk /dev/xvdk
 2. fdisk -l
