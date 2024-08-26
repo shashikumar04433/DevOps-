@@ -18,7 +18,7 @@ create a ebs and attach it to the ec2 instance.
 lv0 ---logical volume name and vg0 is volume group name -L is for dividing the 4gb and doing the partiotion to +3GB.
 10. lvdisplay
 
-11. mkdir.ext4 /dev/xvdk1
+11. mkfs ext4 /dev/xvdk1
 
 12. mkdir /data
 13. mount /dev/xvdk1 /data
