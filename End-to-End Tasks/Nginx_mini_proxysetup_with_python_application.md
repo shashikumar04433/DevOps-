@@ -79,7 +79,7 @@ if __name__ == '__main__':
 
 
 ## 3. Deploy the application using NGINX as a reverse proxy and if you got 404 error then it 
-##    should show or redirect to error.html page.
+should show or redirect to error.html page.
 
 ```
 server {
