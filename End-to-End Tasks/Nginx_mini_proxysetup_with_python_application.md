@@ -6,7 +6,8 @@
 2. Deploy the sample python application using flask (add simple apis)
    / , /home /login
 
- 3. Deploy the application using NGINX as a reverse proxy and if you got 404 error then it should show or redirect to error.html page.
+ 3. Deploy the application using NGINX as a reverse proxy and if you got 404 error
+    then it should show or redirect to error.html page.
 
  4. How can u set up nginx as load balancer.
 
@@ -27,7 +28,8 @@ A proxy is an intermediary server that acts as a gateway between a client (such 
 
  **Forward Proxy**
  ```
- A forward proxy is a server that sits between a client and the internet, forwarding client requests to the internet on behalf of the client.
+ A forward proxy is a server that sits between a client and the internet, forwarding client
+   requests to the internet on behalf of the client.
 
  Forward Proxy: Client → Nginx (forward proxy) → Internet
  Forward Proxy: Hides the client from the internet.
@@ -35,7 +37,8 @@ A proxy is an intermediary server that acts as a gateway between a client (such 
  ```
  **Reverse Proxy**
  ```
-  A reverse proxy is a server that sits in front of web servers and forwards client requests (usually from the internet) to those web servers. It hides the identity of the backend servers and presents itself as the actual server to the clients.
+  A reverse proxy is a server that sits in front of web servers and forwards client requests (usually from the internet)
+  to those web servers. It hides the identity of the backend servers and presents itself as the actual server to the clients.
 
   Reverse Proxy: Client → Nginx (reverse proxy) → Backend Servers
   Reverse Proxy: Hides the backend servers from the client.
@@ -75,7 +78,8 @@ if __name__ == '__main__':
 ```
 
 
-## 3. Deploy the application using NGINX as a reverse proxy and if you got 404 error then it should show or redirect to error.html page.
+## 3. Deploy the application using NGINX as a reverse proxy and if you got 404 error then it 
+##    should show or redirect to error.html page.
 
 ```
 server {
