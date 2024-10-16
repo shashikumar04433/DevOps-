@@ -27,7 +27,7 @@ b=sorted(a)
 print(sorted(a,reverse=True))
 ```
 
-## counting the days how may times it present or not?
+## Counting the days how may times it present or not?
 ```
 days=["wed","wed","tues","mon","thurs","sat","sun","mon"]
 for i in set(days):
