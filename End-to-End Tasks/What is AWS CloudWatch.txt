@@ -1,0 +1,60 @@
+What is AWS CloudWatch?
+
+AWS CloudWatch is a monitoring and management service that provides data and actionable insights for AWS resources, applications, and on-premises servers.
+How does CloudWatch differ from CloudTrail?
+
+CloudWatch focuses on monitoring performance and operational health, while CloudTrail tracks user activity and API usage for security and auditing purposes.
+What types of data can CloudWatch collect?
+
+CloudWatch can collect metrics, logs, events, and alarms data from AWS resources, applications, and custom sources.
+How can you send custom metrics to CloudWatch?
+
+You can send custom metrics to CloudWatch using the AWS SDK, CLI, or CloudWatch API with the put-metric-data command.
+What is a CloudWatch Alarm?
+
+A CloudWatch Alarm monitors a specific metric and triggers actions (such as sending notifications or executing Auto Scaling policies) when the metric breaches the defined threshold.
+What is a CloudWatch Log Group?
+
+A CloudWatch Log Group is a container for log streams, often representing a specific resource or application component.
+How can you filter CloudWatch Logs?
+
+You can filter CloudWatch Logs using metric filters, which can then create CloudWatch metrics from log data based on specified patterns.
+What is a CloudWatch Dashboard?
+
+A CloudWatch Dashboard is a customizable interface that provides a centralized view of CloudWatch metrics and alarms, often used for visualizing and monitoring resource performance.
+How do you set up a CloudWatch Alarm for an EC2 instance’s CPU utilization?
+
+Go to CloudWatch > Alarms > Create Alarm > Select Metric > EC2 > Per-Instance Metrics > CPUUtilization > Define Alarm Conditions > Configure Actions > Create Alarm.
+Can CloudWatch monitor on-premises servers?
+
+Yes, CloudWatch can monitor on-premises servers using the CloudWatch Agent or API to collect and send data.
+What is CloudWatch Events?
+
+CloudWatch Events (now part of EventBridge) enables you to respond to system events (e.g., state changes) by triggering actions like Lambda functions or SNS notifications.
+What are CloudWatch Metrics?
+
+CloudWatch Metrics are data points representing the performance of your AWS resources, collected at regular intervals.
+How can you create a CloudWatch Dashboard?
+
+In the CloudWatch console, navigate to Dashboards > Create Dashboard > Add Widgets > Select Metrics and configure widgets to visualize your data.
+What is the default retention period for CloudWatch Logs?
+
+The default retention period for CloudWatch Logs is indefinite, but you can configure the retention policy to retain logs for a specified duration.
+How can you automate CloudWatch alarm actions?
+
+You can automate CloudWatch alarm actions by configuring SNS notifications, Auto Scaling policies, or invoking Lambda functions upon alarm state changes.
+What are CloudWatch Insight Queries?
+
+CloudWatch Insight Queries allow you to interactively search and analyze log data using a query language.
+Can CloudWatch Alarms be created based on multiple metrics?
+
+Yes, you can create composite alarms in CloudWatch that combine multiple metric alarms into a single alarm state.
+How do you enable detailed monitoring for an EC2 instance?
+
+Detailed monitoring can be enabled during instance launch or by modifying the instance settings to enable detailed monitoring, which collects metrics at 1-minute intervals.
+What is CloudWatch Agent?
+
+CloudWatch Agent is a software package that collects more detailed and custom metrics and logs from Amazon EC2 instances and on-premises servers.
+How can you monitor and analyze VPC flow logs using CloudWatch?
+
+VPC flow logs can be delivered to CloudWatch Logs, where you can create metric filters, CloudWatch Alarms, and use Insights queries to monitor and analyze network traffic.

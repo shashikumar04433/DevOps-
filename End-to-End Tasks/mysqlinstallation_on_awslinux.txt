@@ -1,0 +1,20 @@
+sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+ls -lrt
+sudo dnf install mysql80-community-release-el9-1.noarch.rpm -y
+sudo dnf install mysql-community-server -y
+sudo systemctl start mysqld
+sudo vi /etc/my.cnf
+enter this 
+skip-grant-tables
+sudo vi /etc/my.cnf
+sudo systemctl restart mysqld
+mysql
+
+
+
+GRANT ALL PRIVILEGES ON shashi.* TO 'shashi'@'13.233.106.238';
+
+
+CREATE USER 'root'@'%' IDENTIFIED BY 'Shashi@123';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
+FLUSH PRIVILEGES;
