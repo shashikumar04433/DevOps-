@@ -3,10 +3,6 @@ provider "aws" {
   region = "ap-south-1" # Set your desired AWS region
 }
 
-provider "aws" {
-  alias  = "ap-northeast-3"
-  region = "ap-northeast-3" # Set your desired AWS region
-}
 
 resource "aws_instance" "Example" {
   ami           = "ami-02a2af70a66af6dfb" # Specify an appropriate AMI ID
@@ -20,5 +16,6 @@ resource "aws_instance" "Example2" {
   provider      = aws.ap-northeast-3
   key_name      = "terra"
 }
+
 
   

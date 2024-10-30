@@ -104,14 +104,18 @@ then create any two files it will help in snapshot and replicate in another serv
 touch abc1 abc2
 
 Step8:
+```
 create a snapshot of the volume in the console
 in that snapshot in actions create a new volume with that snapshot.
-
+```
 Step9:
+```
 create new instance ebs2
 attach the volume to the instance ebs2
-
+```
 Step10:
+
+```
 lsblk
 fdisk -l
 file -s /dev/path
@@ -119,8 +123,6 @@ it shows file sistem is not empty it means the snap shot is replicated from the 
 mkdir newfolder
 mount /dev/path /newfolder
 then the files created in  ebs1 instance should replicate in ebs2 instance.
-
-
 END
 
 
