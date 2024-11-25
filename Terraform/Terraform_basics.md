@@ -16,3 +16,16 @@ it stores the keys and pass securely runtime like tenant id ,sub id,client id,se
  passing that :
 terraform apply -var-file="filename.tfvars"
 ```
+### 3. Terraform state list 
+```
+To ensure Terraform is tracking all resources correctly. or It lists all the files
+```
+
+### 4. terraform refresh 
+```
+It update or refresh the state file.
+```
+### 5. terraform destory
+```
+Run terraform destroy to remove everything created by terraform.
+```
