@@ -1,6 +1,12 @@
 ### Login with Cli  and create a role with cli:
-
-
+```
+* az account clear
+* az config set core.enable_broker_on_windows=false
+* az login
+* az account show --output table
+* az account set --subscription "3f45d258-1749-49e4-9647-6d2b1e73599a"
+* az account list --output table
+```
 **1. Log Out and Clear Account Cache:**
 ```
 az account clear
