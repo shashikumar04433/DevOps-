@@ -27,4 +27,8 @@ az account list --output table
 ```
 az role assignment create --assignee "15d6340c-b236-401f-8499-4bf55b9e1bdf" --role "Contributor" --scope "/subscriptions/3f45d258-1749-49e4-9647-6d2b1e73599a"
 ```
+**6.Check the principal id access type**
+```
+az role assignment list --assignee "15d6340c-b236-401f-8499-4bf55b9e1bdf" --output table
+```
 
