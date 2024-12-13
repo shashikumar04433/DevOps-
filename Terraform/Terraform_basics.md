@@ -119,7 +119,7 @@ eg3:
 ```
   
 * tuple
-  ```
+```
   variable "instancetags"
   {
   type    = tuple([string,number])
