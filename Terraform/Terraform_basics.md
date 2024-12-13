@@ -158,7 +158,7 @@ output "outcomeis" {
 
 ```
 * object
-  ```
+```
   variable "object_understanding" {
   type = object({
     ami_id        = string
