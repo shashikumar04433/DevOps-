@@ -82,6 +82,7 @@ variable "instance_type" {
   type    = list(number)
   default = [ "1","2","3","4"]
 }
+
 output "outcomeis"{
   value= var.instance_type
 }
@@ -124,10 +125,11 @@ eg3:
 output "outcomeis"{
   value= var.instancetags
 }
-```
 
 ```
-Eg2:
+
+* Eg2:
+```
   variable "instancetagsone" {
   type    = tuple([number,number])
   default = ([1234,30])
@@ -136,6 +138,7 @@ output "outcomeis"{
   value= var.instancetagsone
 }
 ```
+
 * Eg3:
 ```
   variable "instancetagstwo" {
