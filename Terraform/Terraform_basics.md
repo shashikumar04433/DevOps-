@@ -159,6 +159,17 @@ output "outcomeis" {
 ```
 * object
 * set
+* Any
+  ```
+  
+variable "instancetags" {
+  type    = tuple([any,any,any])
+  default = ["shashi",30, true]
+}
+output "outcomeis"{
+  value= var.instancetags
+}
+```
 
 
 
