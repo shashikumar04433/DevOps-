@@ -57,6 +57,7 @@ variable "instance_type" {
 output "outcomeis"{
     instance_type = "t2.miro"
 }
+```
 * Number
 ```
 variable "number_of_instance" {
