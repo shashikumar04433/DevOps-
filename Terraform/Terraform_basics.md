@@ -77,7 +77,18 @@ variable "enable_feature" {
 Complex Data Types
 ---------------------
 * list
-* map 
+```
+variable "instance_type" {
+  type    = list(number)
+  default = [ "1","2","3","4"]
+}
+output "outcomeis"{
+  value= var.instance_type
+}
+```
+
+* map
+  
 * tuple
 * object
 * set
