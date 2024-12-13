@@ -158,6 +158,27 @@ output "outcomeis" {
 
 ```
 * object
+  ```
+  variable "object_understanding" {
+  type = object({
+    ami_id        = string
+    instance_type = map(string)
+  })
+
+  default = {
+    ami_id        = "ami-12345678"
+    instance_type = {
+      small  = "t2.small"
+      medium = "t2.medium"
+      large  = "t2.large"
+    }
+  }
+}
+
+output "outcomes" {
+  value = var.object_understanding
+}
+```
 * set
 * Any
 
