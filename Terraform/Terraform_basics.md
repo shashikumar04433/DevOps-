@@ -110,19 +110,23 @@ eg3:
 ```
   variable var_name3{
   type=map(number)
-  default={
+  default=
+{
   name =1234
   age = 20
   }
+
 ```
   
 * tuple
   ```
-  variable "instancetags" {
+  variable "instancetags"
+  {
   type    = tuple([string,number])
   default = (["shashi",30])
-}
-output "outcomeis"{
+ }
+output "outcomeis"
+{
   value= var.instancetags
 }
 
@@ -134,9 +138,11 @@ output "outcomeis"{
   type    = tuple([number,number])
   default = ([1234,30])
 }
-output "outcomeis"{
+output "outcomeis"
+{
   value= var.instancetagsone
 }
+
 ```
 
 * Eg3:
@@ -145,9 +151,11 @@ output "outcomeis"{
   type    = tuple([string,string])
   default = (["shashi",30])
 }
-output "outcomeis"{
+
+output "outcomeis" {
   value= var.instancetagstwo
 }
+
 ```
 * object
 * set
