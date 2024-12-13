@@ -88,8 +88,64 @@ output "outcomeis"{
 ```
 
 * map
+```
+  variable var_name{
+  type=map
+  default={
+  name ="shashi"
+  age = "20"
+  }
+  ```
+Eg2:
+```
+  variable var_name2{
+  type=map(string)
+  default={
+  name ="shashi"
+  age = 20
+  }
+  ```
+eg3:
+```
+  variable var_name3{
+  type=map(number)
+  default={
+  name =1234
+  age = 20
+  }
+  ```
   
 * tuple
+  ```
+  variable "instancetags" {
+  type    = tuple([string,number])
+  default = (["shashi",30])
+}
+output "outcomeis"{
+  value= var.instancetags
+}
+```
+
+```
+Eg2:
+  variable "instancetagsone" {
+  type    = tuple([number,number])
+  default = ([1234,30])
+}
+output "outcomeis"{
+  value= var.instancetagsone
+}
+```
+* Eg3:
+```
+  variable "instancetagstwo" {
+  type    = tuple([string,string])
+  default = (["shashi",30])
+}
+output "outcomeis"{
+  value= var.instancetagstwo
+}
+```
 * object
 * set
 
