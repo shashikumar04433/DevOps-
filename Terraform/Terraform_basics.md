@@ -179,9 +179,29 @@ output "outcomes" {
   value = var.object_understanding
 }
 ```
-* set
-* Any
+```
+List supports multiple data types  and where as map should be same data type with in the scope.
+```
+variable "object_with_map" {
+  type = object({
+    name       = string
+    age        = number
+    attributes = map(string)
+  })
 
+  default = {
+    name       = "shashi"
+    age        = 25
+    attributes = {
+      hobby     = "coding"
+      location  = "India"
+      language  = "Terraform"
+    }
+  }
+}
+```
+
+* Any
 ```  
 variable "instancetags" {
   type    = tuple([any,any,any])
