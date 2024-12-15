@@ -131,7 +131,6 @@ output "outcomeis"
 }
 
 ```
-
 * Eg2:
 ```
   variable "instancetagsone" {
