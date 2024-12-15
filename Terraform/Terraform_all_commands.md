@@ -31,7 +31,6 @@ The above command is used for forcely unlock the lock id
 It is used to download the provider and modules which ever required form the documntaion example.
 
 Eg:
-```
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   cidr   = "10.0.0.0/16"
