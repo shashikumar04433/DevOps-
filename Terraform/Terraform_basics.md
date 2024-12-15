@@ -178,8 +178,7 @@ output "outcomes" {
   value = var.object_understanding
 }
 ```
-```
-List supports multiple data types  and where as map should be same data type with in the scope.
+* List supports multiple data types  and where as map should be same data type with in the scope.
 ```
 variable "object_with_map" {
   type = object({
