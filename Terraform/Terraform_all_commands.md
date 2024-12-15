@@ -81,11 +81,25 @@ List all resources in the state file
 ```
 **terraform taint**
 ```
+terraform taint resourcename.resource variablename
+eg:
+terraform taint aws_instance.example
+```
+```
 Mark a resource as tainted, which means it will be recreated on the next apply.
 ```
 **terraform untaint**
 ```
+terraform untaint resourcename.resource variablename
+eg:
+terraform untaint aws_instance.example
+```
+```
 Mark a resource as untainted, which means it will not be recreated on the next apply.
+```
+**terraform replace**
+```
+terraform replace resource also works same as taint 
 ```
 **terraform Workspace**
 ```
