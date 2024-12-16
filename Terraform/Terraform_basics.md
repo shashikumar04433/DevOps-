@@ -210,7 +210,7 @@ output "outcomeis"{
 }
 ```
 * set
-  ```
+```
   variable "set_variable" {
     type = set(number)
     default = [ 0,3,2,4,7,6,5 ]
