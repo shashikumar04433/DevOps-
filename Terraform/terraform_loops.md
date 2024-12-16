@@ -30,3 +30,23 @@ output "outcomes" {
   
 }
 ```
+**For_Each**
+```
+variable "to_set_for_Each2" {
+  type = map(string)
+  default = {
+    web   = "ami-0c55b159cbfafe1f0"
+    db    = "ami-0d4c28fba74f72c63"
+    cache = "ami-0b0f5f94e9e623a1e"
+  }
+}
+resource "aws_instance" "count_example2" {
+  for_each      = var.to_set_for_Each2
+  ami           = each.value
+  instance_type = var.instance_type
+
+  tags = {
+    name = "Instance -${each.key}"
+  }
+}
+```
