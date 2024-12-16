@@ -209,7 +209,18 @@ output "outcomeis"{
   value= var.instancetags
 }
 ```
-
+* set
+  ```
+  variable "set_variable" {
+    type = set(number)
+    default = [ 0,3,2,4,7,6,5 ]
+  
+}
+output "outcomes" {
+    value = var.set_variable
+  
+}
+```
 
 
 
