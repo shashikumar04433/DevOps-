@@ -86,7 +86,7 @@ eg:
 terraform taint aws_instance.example
 ```
 ```
-Mark a resource as tainted, which means it will be recreated on the next apply.
+Mark a resource as tainted, which means it will be recreated on the every next apply.
 ```
 **terraform untaint**
 ```
@@ -95,7 +95,7 @@ eg:
 terraform untaint aws_instance.example
 ```
 ```
-Mark a resource as untainted, which means it will not be recreated on the next apply.
+Mark a resource as untainted, which means it will not be recreated on the every next apply.
 ```
 **terraform replace**
 ```
