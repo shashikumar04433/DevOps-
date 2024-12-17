@@ -30,6 +30,26 @@ output "outcomes" {
   
 }
 ```
+**Eg2**
+```
+variable "usersnew" {
+  type =list(string)
+  default = ["user1","user2","user3"]
+  
+
+}
+
+resource "aws_iam_user" "name" {
+  count = length(var.usersnew) 
+  name = var.usersnew[count.index] 
+
+}
+
+output "outcome" {
+  value = aws_iam_user.name
+  
+}
+```
 **For_Each**
 ```
 variable "to_set_for_Each2" {
