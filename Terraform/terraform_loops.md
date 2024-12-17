@@ -70,3 +70,25 @@ resource "aws_instance" "count_example2" {
   }
 }
 ```
+**Eg2**
+```
+variable "usersnew" {
+  type =map(string)
+  default = {
+    a="user1"
+    b="user2"
+    c="user3"
+    }
+}
+
+resource "aws_iam_user" "name" {
+  for_each = var.usersnew
+  name =each.value
+
+}
+
+output "outcome" {
+  value = aws_iam_user.name
+  
+}
+```
