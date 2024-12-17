@@ -86,6 +86,17 @@ variable "instance_type" {
 output "outcomeis"{
   value= var.instance_type
 }
+list of lists example
+
+variable "list_example" {
+  type = list(list(string))
+  default = [["t2.small","shashi"],["anand","devops"],["manish","devliferay"]]
+  
+}
+output "outcomes" {
+  value = var.list_example
+  
+}
 ```
 
 * map
