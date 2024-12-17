@@ -108,14 +108,21 @@ output "outcomes" {
   age = "20"
   }
   ```
-Eg2:
+Map_of_List:
 ```
-  variable var_name2{
-  type=map(string)
-  default={
-  name ="shashi"
-  age = 20
+  variable "list_example" {
+  type = map(list(string))
+  default = {
+    abc=["t2.micro","t2.large"]
+    abd=["t2.micro","t2.large"]
+    abe=["t2.micro","t2.large"]
   }
+  
+}
+output "outcomes" {
+  value = var.list_example
+  
+}
   ```
 eg3:
 ```
