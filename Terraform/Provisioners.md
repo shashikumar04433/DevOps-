@@ -45,15 +45,18 @@ Eg:
 resource "aws_instance" "example2" {
   instance_type = var.instance_type
   ami = var.ami
+  key_name = "terraform_client"
+  vpc_security_group_ids = ["sg-00f3b6a5bf52b6ea1"] ### create a security group manually and then add the group id here
 
 
   connection {
     type = "ssh"
     user = "ubuntu"
-    private_key = "terraform_client"
+    private_key = file("terraform_client.pem")
     host = "self.public.ip"
+    
   }
-  provisioner "remote_exec"{
+  provisioner "remote-exec" {
     inline = [
       "apt update -y",
       "apt upgrade -y",
