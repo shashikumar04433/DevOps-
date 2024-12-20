@@ -64,6 +64,7 @@ It imports the existing ec2 which created manually created into under terraform 
 ```
 Show the providers required by the configuration.
 * terraform providers
+Providers are plugins that enable Terraform to interact with various APIs or services to manage their infrastructure. 
 ```
 
 **Terraform refresh**
