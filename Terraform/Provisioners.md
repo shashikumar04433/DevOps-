@@ -42,28 +42,25 @@ This provisioners is used to execute a remote server and runs a command or scrip
 ```
 Eg:
 ```
-resource "aws_instance" "example2" {
+resource "aws_instance" "name" {
+  ami           = var.ami
   instance_type = var.instance_type
-  ami = var.ami
   key_name = "terraform_client"
-  vpc_security_group_ids = ["sg-00f3b6a5bf52b6ea1"] ### create a security group manually and then add the group id here
+}
 
-
+resource "null_resource" "execution" {
+  depends_on = [aws_instance.name]
   connection {
-    type = "ssh"
-    user = "ubuntu"
-    private_key = file("terraform_client.pem")
-    host = "self.public.ip"
-    
+    type        = "ssh"
+    host        = aws_instance.name.public_ip
+    user        = "ec2-user"
+    private_key = file("./terraform_client.pem")
   }
+
   provisioner "remote-exec" {
     inline = [
-      "apt update -y",
-      "apt upgrade -y",
-      "apt install nginx -y",
-      "systemctl enable nginx",
-      "systemctl start nginx"
-
+      "sudo yum install nginx -y",
+      "sudo service nginx start"
     ]
   }
 }
