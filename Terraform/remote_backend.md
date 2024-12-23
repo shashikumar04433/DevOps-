@@ -12,3 +12,14 @@ enabling collaboration, versioning, and security.
 * Present concurrent modifications to the state file.
 * Security sensitive data is stored securely in a remote backend.
 ```
+```
+terraform {
+  backend "s3" {
+    bucket         = "my-terraform-backend-bucket"
+    key            = "terraform/state"
+    region         = "us-west-2"
+    dynamodb_table = "terraform-lock" # Optional for state locking
+    encrypt        = true
+  }
+}
+```
