@@ -60,7 +60,7 @@ It imports the existing ec2 which created manually created into under terraform 
 
 ```
 
-**Terraform Provides**
+**Terraform Providers**
 ```
 Show the providers required by the configuration.
 * terraform providers
