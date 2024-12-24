@@ -23,3 +23,23 @@ terraform {
   }
 }
 ```
+**Eg2**
+```
+resource "aws_instance" "name" {
+  ami           = var.ami
+  instance_type = "t2.micro"
+  
+}
+
+terraform {
+  backend "s3" {
+    bucket = "my-terraform-state-bucket02"
+    key    = "terraform_client/terraform.tfstate"
+    region = "ap-south-1"
+    encrypt = true
+    # profile = "my-aws-profile" # Replace with the correct AWS profile name
+  }
+}
+
+```
+
