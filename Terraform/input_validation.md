@@ -3,6 +3,7 @@
 Terraform provides the validation block within a variable definition to enforce rules.
 You can combine this with custom error messages to guide users.
 ```
+```
 variable "inputcheck" {
   type = string
 
