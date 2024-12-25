@@ -69,3 +69,11 @@ resource "null_resource" "execution" {
 ```
 This provisioner is used to copy a file from the local machine to the remote machine.
 ```
+```
+resource "null_resource" "namen" {
+  provisioner "file" {
+    source = "./terraform_client.pem"
+    destination = "/home/ec2-user/terraform_client.pem"
+    
+  }
+```
