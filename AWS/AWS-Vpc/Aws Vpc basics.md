@@ -10,6 +10,7 @@ Topics in VPC:
       6. VPC Peering. 
       7. VPC Connection.
 ```
+
 1.Whai is Vpc?
 VPC is a virtual private network which has isolated environment with the aws cloud.
 
@@ -36,7 +37,18 @@ Peering connections:
 
  Peering connections enable resources in different VPCs to communicate with each other as if they were on the same                         network.
 
-```               
+```
+**Steps to set up Vpc**
+```
+* Setting up a VPC
+* Creating a custom VPC
+* Configuring subnets (public/private)
+* Attaching an Internet Gateway
+* Creating and associating route tables
+* Setting up security groups and NACLs
+* Adding a NAT Gateway for private subnets
+* Allocating and attaching Elastic IPs
+```            
 ### VPC Practical Demo:
 
       Step1:  (VPC)
