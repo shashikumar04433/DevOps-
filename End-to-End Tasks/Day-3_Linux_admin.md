@@ -27,7 +27,7 @@
 It will give the process id of the current process.
 echo $1
 ```
-**$#**
+## $#
 ```
 It will give the number of arguments passed to the script.
 
