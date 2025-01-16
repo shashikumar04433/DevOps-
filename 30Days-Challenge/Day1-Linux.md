@@ -107,4 +107,22 @@ lsof -u ubuntu
 lsof -u root
 ```
 
+**Process Control Commands Cheat Sheet**
+```
+ps -> Display process information.
+top-> Real-time interactive process viewer.
+htop-> Enhanced real-time interactive process viewer.
+kill [PID]-> Kill a process by PID.
+kill -9 [PID]	-> Forcefully terminate a process.
+nice [command]-> Start a process with a specific priority.
+renice [PID]-> Change the priority of a running process.
+pkill [process_name]-> Kill all processes with a specific name.
+bg %job_number-> Resume a suspended process in the background.
+fg %job_number-> Bring a background process to the foreground.
+strace -p [PID]-> Trace the system calls of a process.
+lsof -p [PID]-> List open files by a specific process.
+crontab -e-> Edit cron jobs for scheduling tasks.
+crontab -l-> List cron jobs for the current user.
+```
+
 
