@@ -108,11 +108,15 @@ lsof -u root
 ```
 
 **Process Control Commands Cheat Sheet**
+
+**ps**
 ```
-ps
 Display process information.
+```
 top
+```
 Real-time interactive process viewer.
+```
 htop
 Enhanced real-time interactive process viewer.
 kill [PID]
