@@ -94,3 +94,17 @@ Important Notes
 Only the root user can run commands with a negative niceness (higher priority).
 Regular users can only assign positive niceness values (lower priority).
 ```
+**strace**
+```
+Traces System Calls for example
+* strace -p pid
+* strace -p 87676
+```
+**List of Open Files**
+```
+lsof -p 29177
+lsof -u ubuntu
+lsof -u root
+```
+
+
