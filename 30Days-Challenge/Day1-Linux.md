@@ -166,4 +166,100 @@ crontab -l
 List cron jobs for the current user.
 ```
 
+**List of Open Files**
+```
+lsof -p 29177
+lsof -u ubuntu
+lsof -u root
+```
+
+### 3. Linux Storage Management:
+Key Concepts:
+Block Devices
+```
+Devices that store data in blocks (e.g., hard drives, SSDs).
+```
+File Systems: 
+```
+Structures that organize and manage data (e.g., ext4, xfs, ntfs).
+```
+
+Partitions: 
+```
+Logical divisions of storage devices.
+```
+Mounting: 
+```
+Associating a file system with a specific directory.
+```
+
+**Command to wipe existing mounted disk**
+```
+sudo dd if=/dev/zero of=/dev/xvds bs=1M status=progress
+```
+
+### 4. Most asked interview commands
+
+sed (stream editor)
+```
+sed -i 's/old/new/g' file.txt
+sed -i 's/hi/hello/g' file.txt
+```
+
+awk (pattern scanning and processing language)
+```
+100 manish
+150 shashi
+200 anand
+300 kusuma
+400 vadina
+awk '$1>100 {print $0}' awknew.txt
+
+output:
+150 shashi
+200 anand
+300 kusuma
+400 vadina
+```
+grep (global search and print)
+```
+grep -r "pattern" directory
+```
+
+abcnew.sh
+```
+echo "First argument: $1"
+echo "Second argument: $2"
+echo "third argument: $3"
+echo "total arguments: $#"
+```
+output
+```
+run ./abcnew.sh shashi anand vadina shashi kumare reddy new one 
+First argument: shashi
+Second argument: anand
+third argument: vadina
+total arguments: 9
+```
+grep
+```
+Basic search for a string:
+grep "search_name" filename.txt
+```
+Case-insensitive search:
+```
+grep -i "pattern" file.txt
+```
+Display line numbers with matches:
+```
+grep -n "pattern" file.txt
+```
+Count the number of matching lines:
+```
+grep -c "pattern" file.txt
+```
+Search recursively in a directory:
+```
+grep -r "pattern" /path/to/directory/
+```
 
