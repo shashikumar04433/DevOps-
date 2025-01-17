@@ -271,4 +271,8 @@ Search recursively in a directory:
 ```
 grep -r "pattern" /path/to/directory/
 ```
+diskuseage from higher two lower
+```
+du -ah /home/ubuntu/ | sort -rh
+```
 
