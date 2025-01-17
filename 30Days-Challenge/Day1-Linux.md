@@ -226,6 +226,8 @@ grep (global search and print)
 grep -r "pattern" directory
 ```
 
+## $0 ,$1 ..$9 $\10
+
 abcnew.sh
 ```
 echo "First argument: $1"
@@ -240,6 +242,11 @@ First argument: shashi
 Second argument: anand
 third argument: vadina
 total arguments: 9
+```
+```
+$*-->treats all arguments as a single string when quoted.
+$@-->treats all arguments as separate strings when quoted.
+$? --> It takes the last command as input
 ```
 grep
 ```
