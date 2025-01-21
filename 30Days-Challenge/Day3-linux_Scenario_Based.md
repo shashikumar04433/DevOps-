@@ -238,3 +238,19 @@ find "$LOG_DIR" -type f -mtime +60 -delete
 echo "Backup completed successfully!"
 
 ```
+
+or 
+
+d.I have a List of IP's. Copy "dummy.txt" file from one server to all the servers.
+```
+#!/bin/bash
+for IP in 192.168.1.101 192.168.1.102 192.168.1.103; do
+    scp dummy.txt user@"$IP":/home/user/ && echo "Copied to $IP" || echo "Copy failed: $IP"
+done
+echo "Task complete!"
+```
+
+e. Take a Backup of Old logs more than 60+ days ??
+```
+find /path/to/logs -type f -mtime +60 -exec tar -rvf backup-logs.tar {} \; -exec rm {} \;
+```
