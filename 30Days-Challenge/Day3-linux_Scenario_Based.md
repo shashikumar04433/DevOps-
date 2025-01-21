@@ -252,5 +252,5 @@ echo "Task complete!"
 
 e. Take a Backup of Old logs more than 60+ days ??
 ```
-find /path/to/logs -type f -mtime +60 -exec tar -rvf backup-logs.tar {} \; -exec rm {} \;
+find / -type f -mtime +60 -exec tar -rvf backup.tar {} + -exec rm {} \;
 ```
