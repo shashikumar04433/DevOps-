@@ -25,6 +25,7 @@ stress --cpu 2 --timeout 30
 ```
 
 1. Linux Booting Process ?
+```
 Linux Booting Process is a series of steps that occur when a Linux system is powered on. 
 The process involves the following steps:
 - POST: Hardware initialization.
@@ -35,7 +36,7 @@ The process involves the following steps:
 - Services: Network, hardware drivers, and other services are started.
 - Login: User login prompt or GUI login.
 - User Environment: Final setup and user interaction.
-
+```
 2. Mount an EBS Volume to EC2 Instance
 ```
 * Attach the EBS volume to ec2 instance.
