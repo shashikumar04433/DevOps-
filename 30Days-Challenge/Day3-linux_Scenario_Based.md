@@ -252,5 +252,8 @@ echo "Task complete!"
 
 e. Take a Backup of Old logs more than 60+ days ??
 ```
+find /home/ubuntu/ -type f -mtime 60 -exec cp -r /home/ubuntu/newone {} /home/ubuntu/newone \;
 find / -type f -mtime +60 -exec tar -rvf backup.tar {} + -exec rm {} \;
+find / -type f -mtime +60 -exec zip -u backup.zip {} + --->-u defines just copy latest updates and zip it.
+find / -type f -mtime +60 -exec zip -m backup.zip {} +  --> -m defines it deletes the exising one after adding them into zip.
 ```
