@@ -1,7 +1,7 @@
 ### Ansible Roles
 ```
 In an Ansible role, the following directories and files serve specific purposes:
-
+```
 1. README.md
 ```
 Documentation file that describes the role's purpose, usage, and requirements.
