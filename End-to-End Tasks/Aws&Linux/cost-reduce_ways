@@ -1,0 +1,14 @@
+Reducing costs in AWS involves optimizing resource usage, leveraging AWS's built-in tools, and adopting best practices for architecture and resource management. Here are several strategies to make your AWS deployment more cost-effective:
+
+**Right-Sizing Resources**
+**Optimize Instance Types:**
+Use instances that match your workload requirements. For example, choose compute-optimized instances for CPU-intensive tasks or memory-optimized instances for RAM-intensive applications.
+**Auto-Scaling:**
+Implement auto-scaling groups to dynamically adjust the number of instances based on demand.
+**Rightsizing Recommendations:**
+Use AWS Compute Optimizer to identify underutilized or over-provisioned resources.
+**Reserved Instances and Savings Plans**
+Reserved Instances (RIs):
+Commit to one- or three-year terms for predictable workloads to get significant discounts (up to 72%).
+**Savings Plans:**
+Use Compute Savings Plans or EC2 Instance Savings Plans for flexible, discounted pricing across different instance types and regions.

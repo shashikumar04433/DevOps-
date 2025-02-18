@@ -1,0 +1,70 @@
+## First
+- get the files name which contains "GKMS" string under folder and files.
+- Replace "GKMS" with "KeyProtect".
+- Provide 655 permissions to all the files.
+
+## Second 
+Create a folders with the script input like below 
+sh deploy.sh f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12
+
+Shell tee 
+
+
+
+**- get the files name which contains "GKMS" string under folder and files.**
+**- Replace "GKMS" with "KeyProtect".**
+**- Provide 655 permissions to all the files.**
+
+#!/bin/bash
+
+Target_dir="/opt"
+
+find "$search_dir" -type f | while read -r file; do
+    if grep -q "KeyProtect" "$file"; then
+        sed -i 's/KeyProtect/KeyProtect/g' "$file"
+
+        chmod 655 "$file"
+        echo "Processed: $file"
+    fi
+done
+
+
+
+
+
+**Create a folders with the script input like below**
+**sh deploy.sh f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12**
+#!/bin/bash
+
+echo "Argument 1: $1"
+echo "Argument 2: $2"
+echo "Argument 3: $3"
+echo "Argument 4: $4"
+echo "Argument 5: $5"
+echo "Argument 6: $6"
+echo "Argument 7: $7"
+echo "Argument 8: $8"
+echo "Argument 9: $9"
+echo "Argument 10: ${10}"
+echo "Argument 11: ${11}"
+echo "Argument 12: ${12}"
+
+echo "Total number of arguments: $#"
+
+
+
+calling those arguments:
+sh abc.sh f1 f2 f3 f4 f5 f6 f7 f8 f9 
+
+**creating directories**
+#!/bin/bash
+
+for arg in {$@}
+do
+mkdir -p "$arg"
+echo "directory created :$arg"
+done
+
+
+
+``
