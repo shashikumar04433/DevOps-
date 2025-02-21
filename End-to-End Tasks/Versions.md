@@ -11,4 +11,6 @@
 * Ansible: v2.15.3
 * Ubuntu: 22.04.3 LTS
 * Red Hat Enterprise Linux (RHEL): 9.2
+* Terraform AWS Provider: v5.87.0
+* Terraform AzureRM (Azure) Provider: v4.16.0
 ```
