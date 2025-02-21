@@ -1,7 +1,7 @@
 ## Versions of the Tools:
 ```
-Terraform: v1.10.5
-Kubernetes: v1.32.0
+* Terraform: v1.10.5
+* Kubernetes: v1.32.0
 Docker: v24.0.2
 AWS CLI: v2.13.24
 Azure CLI: v2.55.0
