@@ -51,6 +51,7 @@ Ingress manages external access to services using HTTP/HTTPS routing.
 ```
 
 **Intermediate Level (Cluster & Networking)**
+
 11.How does the Kubernetes Scheduler work?
 ```
 The scheduler assigns pods to nodes based on resource requirements and constraints.
