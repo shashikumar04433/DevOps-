@@ -1,6 +1,7 @@
 ## Interview_Questions_k8s:
 
 **Beginner Level (Fundamentals)**
+
 1.What is Kubernetes? Why is it used?
 ```
 Kubernetes is an open-source container orchestration platform for automating deployment, scaling, and management of containerized applications.
