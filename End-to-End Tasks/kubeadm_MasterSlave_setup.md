@@ -1,4 +1,4 @@
-### Kubernetes Setup with Calico CNI 
+### Kubernetes Master-Slave Setup with Kubeadm (Calico CNI )
 **1. System Preparation**
 ```
 Update the system and install necessary packages:
