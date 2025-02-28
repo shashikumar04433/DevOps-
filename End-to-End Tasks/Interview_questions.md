@@ -2,8 +2,11 @@
 ```
 1. What is Terraform dynamic block and why it is used?
 
-2.What is replicaset vs deployment
-
+2.What is replicaset vs deployment?
+```
+ReplicaSet: Purpose	Ensures the desired number of pod replicas are running.
+Deployment: Manages ReplicaSets and allows rolling updates.
+```
 3. How do u set up dynamodb lock for your state file in terraform?
 
 4.What are the types of data blocks and their use case?
