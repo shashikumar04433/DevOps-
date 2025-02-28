@@ -5,6 +5,7 @@
 2.What is replicaset vs deployment?
 ```
 ReplicaSet: Purpose	Ensures the desired number of pod replicas are running.
+
 Deployment: Manages ReplicaSets and allows rolling updates.
 ```
 3. How do u set up dynamodb lock for your state file in terraform?
