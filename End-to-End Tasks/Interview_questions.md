@@ -123,5 +123,4 @@ variable -> Defines reusable input values
 * Plugin download failure	-> Network issues	-> Retry with terraform init -upgrade
 * State lock issue -> Another user is running Terraform	-> Manually unlock with terraform force-unlock <LOCK_ID>
 * Provider version conflict	-> Incorrect provider versions -> Specify the correct provider version
-* 
 ```
