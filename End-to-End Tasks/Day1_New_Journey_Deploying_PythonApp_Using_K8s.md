@@ -184,4 +184,26 @@ Apply it:
 kubectl apply -f ingress.yaml
 Now, map python-api.local to the cluster's IP in /etc/hosts.
 ```
+**To automate this write a cronjob**
+```
+It auto-checks for new images every 2 minutes
 
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: auto-update-python-api
+spec:
+  schedule: "*/2 * * * *"  # Runs every 5 minutes
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: update-container
+            image: bitnami/kubectl
+            command:
+            - /bin/sh
+            - -c
+            - kubectl set image deployment/python-api python-api=shashikumar023/pythonimage:latest --record
+          restartPolicy: Never
+```
