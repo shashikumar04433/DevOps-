@@ -231,7 +231,7 @@ spec:
     spec:
       template:
         spec:
-          serviceAccountName: deployment-updater  # ✅ Use the new ServiceAccount
+          serviceAccountName: deployment-updater  # Use the new ServiceAccount
           containers:
           - name: update-container
             image: bitnami/kubectl
