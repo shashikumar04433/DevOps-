@@ -207,3 +207,6 @@ spec:
             - kubectl set image deployment/python-api python-api=shashikumar023/pythonimage:latest --record
           restartPolicy: Never
 ```
+```
+kubectl apply -f cronjob.yml
+```
