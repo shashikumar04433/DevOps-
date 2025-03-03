@@ -210,3 +210,62 @@ spec:
 ```
 kubectl apply -f cronjob.yml
 ```
+**If u get error above for updates then follow below steps:**
+**Create a service account and bind it to a ClusterRole that has permission to manage deployments.**
+```
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: deployment-updater
+  namespace: default
+```
+```
+kubectl apply -f serviceaccount.yml
+```
+**Grant Cluster-Wide Permissions**
+```
+create a ClusterRoleBinding to give deployment-updater permission to restart deployments.
+Create a file rolebinding.yml:
+```
+```
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: deployment-updater-binding
+subjects:
+- kind: ServiceAccount
+  name: deployment-updater
+  namespace: default
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin  # Gives full cluster access (Use carefully)
+  apiGroup: rbac.authorization.k8s.io
+```
+```
+kubectl apply -f rolebinding.yml
+```
+**reapply cron again**
+```
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: auto-update-python-api
+spec:
+  schedule: "*/5 * * * *"  # Runs every 5 minutes
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: deployment-updater  # ✅ Use the new ServiceAccount
+          containers:
+          - name: update-container
+            image: bitnami/kubectl
+            command:
+            - /bin/sh
+            - -c
+            - kubectl rollout restart deployment python-api
+          restartPolicy: Never
+```
+
+
+
