@@ -245,5 +245,8 @@ spec:
 kubectl apply -f cronjob.yml
 ```
 
+**Deploying the Python App with the Database and deploying with K8s**
+```
+```
 
 
