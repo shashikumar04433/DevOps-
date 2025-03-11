@@ -99,3 +99,8 @@ roleRef:
   name: cluster-admin
   apiGroup: ""
 ```
+**Testing the RBAC**
+```
+kubectl auth can-i --as system:serviceaccount:test:foo create deployment -n all
+If you applied cluster yml then only it shows yes otherwise it shows no as it doesnt have all permissions with in the cluster.
+```
