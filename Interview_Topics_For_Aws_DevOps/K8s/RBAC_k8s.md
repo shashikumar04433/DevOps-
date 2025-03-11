@@ -102,5 +102,48 @@ roleRef:
 **Testing the RBAC**
 ```
 kubectl auth can-i --as system:serviceaccount:test:foo create deployment -n all
-If you applied cluster yml then only it shows yes otherwise it shows no as it doesnt have all permissions with in the cluster.
+If you applied cluster yml then only it shows yes otherwise
+it shows no as it doesnt have all permissions with in the cluster.
 ```
+
+**Full List of RBAC Verbs**
+```
+Verb -->Description
+get	--> Retrieve a specific resource
+list -->List multiple resources
+watch-->Monitor resources for changes
+create-->Add new resources
+update-->Modify existing resources
+patch-->Partially modify a resource
+delete-->Remove a resource
+bind-->Attach roles to users or groups
+escalate-->Grant higher permissions (modify RBAC roles)
+* --> All possible actions (admin-level access)
+```
+**Types of Access in RBAC**
+**Read-Only Access**
+```
+Allows users to view resources but not modify them.
+verbs: ["get", "list", "watch"]
+```
+**Read-Write Access**
+```
+Allows users to view and modify resources.
+verbs: ["get", "list", "watch", "create", "update", "patch"]
+```
+**Delete Access**
+```
+Allows users to remove resources.
+verbs: ["delete"]
+```
+**Full Admin Access**
+```
+Grants full control over resources.
+verbs: ["*"]
+```
+**Escalation Privileges**
+```
+Allows modifying RBAC roles and permissions.
+verbs: ["bind", "escalate"]
+```
+ 
