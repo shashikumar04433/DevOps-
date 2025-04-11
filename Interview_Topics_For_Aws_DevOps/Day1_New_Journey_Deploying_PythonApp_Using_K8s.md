@@ -248,6 +248,6 @@ kubectl apply -f cronjob.yml
 **Python App with the Database and deploying with K8s**
 ```
 
-```
+
 
 
