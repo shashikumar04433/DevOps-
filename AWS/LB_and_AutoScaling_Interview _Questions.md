@@ -2,7 +2,7 @@
 
 ---
 
-### 💡 Load Balancing – Advanced Q&A
+###  Load Balancing – Advanced Q&A
 
 **1. How does a Layer 7 load balancer differ from a Layer 4 load balancer?**
 - Layer 4: Operates at TCP/UDP level. Routes traffic based on IP and port.
@@ -44,7 +44,7 @@
 
 ---
 
-### 🚀 Auto Scaling – Advanced Q&A
+###  Auto Scaling – Advanced Q&A
 
 **1. How does Auto Scaling differ between EC2, ECS, and Lambda?**
 - EC2: Scales VM instances.
