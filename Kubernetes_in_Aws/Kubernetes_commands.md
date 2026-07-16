@@ -4,18 +4,23 @@
 ```
     
   **List the API resources that are available.**
+  ```
    * kubectl api-resources
+  ```
      
   **List the API versions that are available.**
+  ```
    * kubectl api-versions
+  ```
 
   **Apply a configuration change to a resource from a file or create a pod.**
+  ```
    * kubectl apply -f pod.yml
-     
+  ```
   **Attach to a running container either to view the output stream or interact with the container (stdin).**
+  ```
    * kubectl attach POD -c CONTAINER [-i] [-t] [flags]
-  
-
+  ```
 **Installation of Minikube and Kubectl in ubuntu**
 ```
 * curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
