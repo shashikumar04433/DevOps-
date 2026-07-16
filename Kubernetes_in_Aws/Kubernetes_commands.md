@@ -55,11 +55,11 @@ spec:
 * kubectl delete pod<pod name>
 
 ### How Pods work?
-
+```
 * kubectl apply -f pod.yaml
 * kubectl describe pod nginx
 * kubectl logs nginx
-  
+```
 ### All the types used in the kubernetes:
 ```
 1.Container
