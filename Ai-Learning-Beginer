@@ -1,1 +1,52 @@
+# AI Basics
 
+'''
+AI	--> Machines performing tasks that normally require human intelligence
+
+ML	--> Machine learns patterns from data
+
+Deep --> Learning	ML using neural networks
+
+Generative AI	--> AI that generates text, images, code, etc.
+
+LLM	--> Large Language Model such as GPT, Claude , Microsoft Copilot .
+
+Prompt	--> Instructions you give to an AI model.
+
+Embedding	--> Converting text into numbers so computers can compare meaning.
+
+Vector --> DB	Database used to search similar meanings.
+
+RAG	--> Give an LLM information from your own documents/data.
+
+AI Agent	--> AI that can reason, use tools, retrieve data and perform actions.
+
+Fine-tuning	--> Training/adapting a model for a specific task.
+
+```
+
+```
+STAGE 1
+Python basics
+     ↓
+STAGE 2
+AI / ML fundamentals
+     ↓
+STAGE 3
+LLM + Prompt Engineering
+     ↓
+STAGE 4
+Build AI applications with APIs
+     ↓
+STAGE 5
+RAG + Vector Databases
+     ↓
+STAGE 6
+AI Agents + Tool Calling
+     ↓
+STAGE 7
+AWS + Production AI
+     ↓
+STAGE 8
+Real-world AI/DevOps project
+```
